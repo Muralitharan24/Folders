@@ -1,0 +1,467 @@
+*{
+        font-family:'Rubik',sans-serif;
+       }
+    .maincontainer{
+        height:100%;
+        width:100%;
+        overflow-y:auto;
+        background-color:#6e76f7;
+    }
+    .maindiv{
+        height:100%;
+        width:100%;
+        overflow-y:auto;
+      background-color:#f5f2f2;
+      border-radius:0px 0px 60px 60px;
+
+    }
+      .subdiv{
+          width: 0%;
+          height: 85px;
+         float: right;
+         border-top: 0px solid transparent;
+         border-bottom: 397px solid transparent;
+         border-right: 610px solid #6e76f7;
+         border-bottom-left-radius:100%;
+          
+      }
+      .slidediv{
+          width:90px;
+          height:85px;
+          float:left;
+          margin:40px 40px;
+      }
+      .slidediv img{
+             width:76px;
+             height:65px;
+      }
+      .slide1{
+           width:45%;
+           height:300px;
+           clear: left;
+           margin: 37px 42px;
+           font-size:25px;
+           font-weight:bold;
+      }
+      .slide1 p{
+        color:grey;        
+      }
+      .btn{
+        width:17%;
+        height:50px;
+        float:left;
+        margin-left:45px;
+        margin-top:26px;
+        font-size:19px;
+        text-align:center;
+        border:2px solid #7367d8;
+        border-radius:70px;
+      }
+      .btn p{
+          line-height: 7px;
+      }
+       .logo{
+          width:45px;
+        height:55px;
+        float:left; 
+        margin-left:112px;
+       }
+        .logo img {
+          width:45px;
+          height:45px;
+          border-radius:30px;
+          margin-top:26px;
+        }
+       .content{
+           width:20%;
+           height:70px;
+           float:left;
+           margin-left:10px;
+           margin-top:26px;
+           font-size:12px;
+           line-height:11px;
+           color:grey;
+       }
+       .content h1{
+         font-size:18px;
+       }
+       .container{
+             width:100%;
+             height:100%;
+             overflow-y:auto;
+             padding-top:70px;
+         }
+         .subcontainer{
+              width:20%;
+              height:300px;
+              float:left;
+         }
+         .dvcontainer{
+               width:73%;
+               height:100%;
+               overflow-y:auto;
+               float:right;
+         }
+
+         .toolLogo{
+              width:65px;
+              height:65px;
+              margin-top:17px;
+              margin-left:45px;
+             }
+          .toolLogo img{
+                 width:65px;
+                 height:65px;
+          }
+         .toolcnt{
+              width:221px;
+              height:80px;
+              margin-left: 43px;
+              font-size: 34px;
+              color:grey;
+         }
+         
+         .productCls{
+             width:172px;
+             height:221px;
+             background-color:white; 
+             margin-left:37px;
+             float:left; 
+              border-bottom:4px solid #FA5F6A;
+             text-align:center;
+             font-size:17px;
+             color: grey;
+             border-radius:23px;
+         }
+        .productCls:hover{
+               border-bottom:10px solid #FA5F6A;
+              
+         }
+         
+          .iconCls{
+           width:20px;
+           height:20px;
+           margin-right: 10px;
+           margin-top: 8px;
+           float:right;
+           background-size: 100% 100%;
+       }
+       .windowBackgroundCls{
+           background-repeat: no-repeat;
+           background-image: url("windows.png");
+       }
+       .macBackgroundCls{
+           background-repeat: no-repeat;
+           background-image: url("mac.svg");
+       }
+       .icondv{
+             width:94px;
+             height:85px;
+             margin-left:36px;
+             margin-top:50px;
+             background-size:100% 100%;
+       }
+       .icondv:hover{
+
+             transform: translateY(5px) rotate(4deg) scale(1.16, 1.16);
+       }
+
+         
+      .AdobeAi{
+          background-image: url("illustrator.png");  
+      }
+      .Design{
+         background-image: url("indesign.png");
+      }
+      .AdobePs{
+          background-image: url("photoshop.png");
+      }
+      .AdobeXD{
+        background-image: url("XD.png");
+      }
+      .partdv{
+           width:100%;
+           height:255px;
+           clear:both;
+      }
+      .Afinityphto{
+           background-image: url("Afinityphto.png");
+      }
+      .Effect{
+           background-image: url("AfterEfct.png");
+      }
+      .figjam{
+          background-image: url("figjam.png");
+      }
+      .figma{
+          background-image: url("figma.png");
+      }
+      .FClassic{
+           background-image: url("frmer.png");
+      }
+      .FormerX{
+           background-image: url("frmrX.png");
+      }
+      .Ivision{
+           background-image: url("invision.png");
+           border-radius:28px;
+      }    
+      .vision{
+           background-image: url("instudio.svg");
+           border-radius:28px;
+      }
+      .mro{
+        background-image: url("miro.svg");
+      }
+      .Oflow{
+          background-image: url("ovrflow.png")
+      }
+      .prncpl{
+             background-image: url("principle.png")
+      }
+      .sktch{
+         background-image: url("sketch.png")
+      }
+      .Zlin{
+           background-image: url("zeplin.png")
+      }
+       .Addnew{
+             width:172px;
+             height:221px;
+             margin:17px 16px;
+             float:left; 
+             text-align:center;
+             color:grey;           
+       }
+      .New{
+          width:61px;
+          height: 60px;
+          color:white;
+          background-color:#6e53be;
+          font-size:50px;
+          margin-left:50px;
+          border-radius:74px;
+      }
+      .partcontainer{
+           width:100%;
+           height:100%;
+           overflow-y:auto;
+           padding-top:70px;
+      }
+      .leftdv{
+           width:20%;
+            height:300px;
+            float:left;
+      }
+      .Rightdv{
+            width:73%;
+            height:100%;
+            overflow-y:auto;
+            float:right;
+      }
+      .Rightdv .productCls{
+          border-bottom:5px solid #58ed93;
+      }
+      .Rightdv .productCls:hover{
+            border-bottom:10px solid #58ed93;
+      }
+      .Androidtudio{
+          background-image: url("android.jpeg");
+      }
+       .Atm{
+         background-image: url("atom.png");
+       }
+       .Github{
+          background-image: url("github.png");
+       }
+       .limeText{
+            background-image: url("sublime.png");
+       }
+       .Transmt{
+            background-image: url("transmit.png");
+       }
+       .VScode{
+             background-image: url("code.png");
+       }
+       .Webflw{
+             background-image: url("wbflow.png");
+       }
+       .wrdpress{
+             background-image: url("wordpress.png");
+       }
+       .xCode{
+            background-image: url("Xcode.png");
+       }
+       .menucontainer{
+            width:100%;
+            height:100%;
+            overflow-y:auto;
+            padding-top:70px;            
+       }
+       .LeftTabcontainer{
+               width:20%;
+               height:300px;
+              float:left;
+       }
+       .RightTabcontainer{
+              width:73%;
+             height:100%;
+             overflow-y:auto;
+             float:right;
+       }
+       .RightTabcontainer .productCls{
+              border-bottom:5px solid #36c5cc;
+       }
+       .RightTabcontainer .productCls:hover{
+            border-bottom: 10px solid #36c5cc;
+       }
+        .Chrome{
+            background-image:url("chrome-logo.jpg");
+        }
+        .iAWritter{
+              background-image:url("iA-writter.png");
+        }
+        .MacOS{
+             background-image:url("macOS.png");
+        }
+        .notion{
+             background-image:url("Notion.png");
+        }
+        .slack{
+             background-image:url("slack.png");
+        }
+        .things{
+              background-image:url("things.png");
+        }
+        .Wndows{
+             background-image:url("window.png");
+        }
+        .leftwave{
+             width:40%;
+             height:381px;
+             background-color:#694ff7;
+             float:left;
+             padding: 23px 41px;
+             margin-top:150px;
+             margin-left:43px;
+             border-radius:30px;
+             margin-bottom:155px;
+        }
+        .cursive h1{
+             font-size:40px;
+             color:white;
+        }
+        .cursive p{
+               font-size:19px;
+               color:#d0c7c7;
+        }
+        .cursive a{
+             text-decoration:none;
+             color:white;
+        }
+        .clickbutton{
+             width: 200px;
+             height: 60px;
+             background-color: white;    
+             text-align: center;
+             line-height: 57px;
+             font-size: 24px;
+             border-radius:35px;
+             color:#694ff7;
+             margin-top:60px;
+
+        }
+        .clickbutton:hover{
+             transform: translateY(3px)  scale(1.10, 1.10);
+        }
+        .Rightwave{
+             width:45%;
+             height:425px;
+             background-color:white;
+             float:right;
+             margin-top:150px;
+             margin-right:43px;
+             border-radius:30px;
+             margin-bottom:155px;
+        }
+        .getcnt{
+            width: 380px;
+            height: 100px;
+            float: right;
+            font-size: 16px;
+            margin-top: 8px;
+            margin-right:25px;
+        }
+        .para{
+            width:80%;
+            height:143px;
+            clear: both;
+            color:grey;
+            margin-left:72px;
+            font-size: 19px;
+            line-height: 34px;
+        }
+        .para a{
+             text-decoration:none;
+             color:blue;
+        }
+        .lnk1{
+           width: 193px;
+           height: auto;
+           background-color:#694ff7;
+           font-size: 16px;
+           text-align: center;
+           margin-left: 72px;
+           margin-top: 48px;
+           float: left;
+           border-radius:30px;
+           color:white;
+        }
+        .lnk1:hover{
+            transform: translateY(3px)  scale(1.10, 1.10);
+        }
+        .image{
+            width:24px;
+           height:24px;                    
+           background-size: 100% 100%;  
+        }
+        .lnk2{
+             width: 190px;
+             float: right;
+             background-color:#ee82ee00;
+             margin-top: 48px;
+             text-align: center;
+             margin-right: 72px;
+             border-radius: 59px;
+             border: 2px solid blue;
+            font-size: 17px;           
+
+        } 
+        .lnk2:hover{
+              transform: translateY(3px)  scale(1.10);
+        }
+
+
+               
+        
+        .footer{
+            width:100%;
+            height:160px;
+            background-color:#6e76f7;
+        }
+        .footercontent{
+              width:100%;
+              height:60px;
+              background-color:#6e76f7;
+              text-align: center;
+              position:fixed;
+              font-size:20px;
+              bottom:0px;
+              color:white;
+        }
+
+
+
+
+
+      
