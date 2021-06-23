@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container{
+  	   width:100%;
+  	   height:700px;
+  	   background-image:linear-gradient(45deg, #222222, transparent);
+  }
+  .subcontainer{
+  	    width:30%;
+  	    height:700px;
+  	    float:left;
+  	    font-size:21px;
+        padding-left:80px;
+  } 
+
+  .slide{
+  	float:left;
+  	font-size:18px;
+  	margin-top: 450px;
+  } 
+  
+  
+  input{
+  	font-size:17px;
+  }
+  
+  table{
+  	float:right;
+    background-color: blue;
+    border-collapse:collapse;
+    border:2px solid black;
+    text-align: center;
+    margin-top:35px;
+  }
+  th{
+  	border:2px solid black;
+  	font-size: 18px;
+    padding: 20px;
+  }
+  td{
+  	border:2px solid black;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container"> 
+    <div class="subcontainer"> 
+      <h1><ins>Billing Receipt</ins></h1>
+      <form autocomplete="off" id="remove">      
+        <label>Customer ID :</label><br>
+        <input type="number" id="Cid" name="number"><br>
+        <lable>Customer Name :</lable><br>
+        <input type="text" id="Cname" name="name"><br>
+        <lable>Product-Code :</lable><br>
+        <input type="text" id="Pcode" name="Pcode"><br>
+        <label>Product-Name :</label><br>
+        <input type="text" id="Pname" name="Pname"><br>
+        <label>Quantity :</label><br>
+        <input type="number" id="Qty" name="Qty"><br>
+        <label>PerUnitPrice :</label><br>
+        <input type="number" id="price" name="price" onchange="calculate(this.value)"><br>
+        <lable>Amount :</lable><br>
+        <input type="number" id="amount" name="number"><br><br>
+        <input type="button" value="Addnew" id="btn" onclick="Addbtn()">
+      </form>
+    </div>
+     <table id="display">
+        <tr>
+           <th>productName</th>
+           <th>Qty</th>
+           <th>Per-Unit Price</th>
+           <th>Amount</th>
+           <th></th>
+        </tr>
+     </table>
+     <div class="slide">
+       <form id="remove">
+         <lable>Total : </lable><br>
+          <input type="text" id="totl" name="text" value=" &#8377"><br>
+         <lable>GST12%:</lable><br>
+           <input type="text" id="gst" name="text" value="%"><br>
+         <lable>Grand Total :</lable><br>
+            <input type="text" id="Gtotal" name="text" value=" &#8377"><br>
+            <button onclick="ResetFunction()">Reset</button>
+       </form>
+      </div>
+    <script>
+          var btn=document.getElementById("btn");
+           btn.addEventListener("click",displayDetails);
+           row=1;     
+       function  displayDetails(){
+       	     var Cid=document.getElementById("Cid").value;
+       	     var Cname=document.getElementById("Cname").value;
+       	     var Pcode=document.getElementById("Pcode").value;
+       	     var Pname=document.getElementById("Pname").value;
+       	     var Qty=document.getElementById("Qty").value;
+       	     var price=document.getElementById("price").value;
+       	     var amount=document.getElementById("amount").value;
+       	     if (Cid==""){
+                 alert("Must fill the Id")
+                 return false;
+       	     }else if(Cname==""){
+       	     	alert("Must fill the name");
+       	     	return false;
+       	      }else if(Pcode==""){
+       	     	alert("Must fill the code");
+       	     	return false;
+       	      } else if(Pname==""){
+       	        alert("Must fill the product name")
+       	        return false;
+                } else if(Qty==""){
+                	alert("Must fill the Quantity")
+                	return false;
+                } else if(price==""){
+                  alert("Must fill the price");
+                  return false;
+                }             
+
+           var display=document.getElementById("display");
+           var newRow=display.insertRow(row);
+            var cell1=newRow.insertCell(0);
+            var cell2=newRow .insertCell(1);
+            var cell3=newRow.insertCell(2);
+            var cell4=newRow.insertCell(3);
+            var cell5=newRow.insertCell(4);
+           cell1.innerHTML=Pname;
+           cell2.innerHTML=Qty;
+           cell3.innerHTML=price;
+           cell4.innerHTML=amount;
+           cell5.innerHTML="<button onclick='Resetbtn(this)'>Remove</button>";                            
+           row++;          
+            }
+                                                                                    
+            function Resetbtn(r){ 
+           var i = r.parentNode.parentNode.rowIndex;
+           document.getElementById("display").deleteRow(i);        
+               }
+            function Addbtn(){
+              var display = document.getElementById("display");
+              var row = display.insertRow(row);
+              var cell1=newRow.insertCell(0);
+              var cell2=newRow .insertCell(1);
+              var cell3=newRow.insertCell(2);
+              var cell4=newRow.insertCell(3);
+              var cell5=newRow.insertCell(4)            
+              cell1.innerHTML=Pname;
+              cell2.innerHTML=Qty;
+              cell3.innerHTML=price;
+              cell4.innerHTML=amount;  
+              
+            }
+            
+          function calculate(val){
+          	var x=val*50;
+          	var y=document.getElementById("amount");
+          	var z=document.getElementById("totl")
+          	y.value=x;
+          	z.value=x;
+          	var a=x+(x*0.12);
+          	var b=document.getElementById("gst");
+          	b.value=a;
+          	var c=b.value;
+          	var  d=document.getElementById("Gtotal")
+          	d.value=c;
+          }
+         function ResetFunction(){
+         	document.getElementById("remove").reset();
+         }     
+        
+    </script>    
+  </div>
+
+</body>
+</html>
