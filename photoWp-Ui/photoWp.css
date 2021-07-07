@@ -1,0 +1,442 @@
+*{
+    	font-family: sans-serif;
+    }
+    .container{
+    	width:100%;
+    	height:590px;
+    	background:url(Photography.png) fixed;
+        background-size:cover;
+    }
+    .Header{
+    	width:100%;
+    	height:72px;
+    	background-color:rgb(81,196,20);
+    }
+    .Header:{
+        display:none;
+    }
+    .logo{
+        width: 149px;
+        height: 40px;
+        float: left;
+        padding-left: 52px;
+        padding-top: 19px;
+    }
+    .logo img{
+        width: 146px;
+        height: 32px;
+    }
+    ul{
+
+      float:right;
+      list-style:none;
+      margin-right: 18px;
+      line-height:38px;
+      color:white;
+      font-style:italic;
+    }
+    li{
+    	display:inline;
+    	padding:12px;
+
+    }
+    .box{
+    	width: 108px;
+       float: right;
+       text-align: center;
+       background-color:#5eda25;
+       border-radius:4px;
+       color:white;
+       padding: 11px;
+       margin-right: 20px;
+       margin-top: 14px;
+       line-height: 21px;
+       font-style:italic;
+    }
+    .emoji{
+       float:right;
+       color:white;
+       margin-right: 65px;
+       line-height:40px;
+    }
+    .subcontainer1{
+    	 width:50%;
+    	 height:518px;
+    	 float:left;
+         background-color:rgba(83,199,20,0.97);
+    }
+    .line{
+    	width:85px;
+    	height:4px;
+    	background-color:yellow;
+    	margin-bottom: 47px;
+    }
+    .content{
+    	padding:100px;
+    	
+    }
+    .head{
+       font-size: 42px;
+       font-weight: 901;
+       color:white;
+    }
+    .para{
+    	padding-bottom:35px;
+        color:#f6f6f6;
+        line-height:26px;
+    }
+    .para2{
+       padding-bottom:35px;
+        color:grey;
+        line-height:26px; 
+    }
+    .subcontainer2{
+    	width:50%;
+    	height:518px;
+    	background-color:rgba(83,199,20,0.97);
+    	background-image: url(photography.webp);
+    	background-size: cover;
+    	float:left;
+    }
+    .icons{
+        width:200px;
+        height:50px;
+    }
+    .icon1{
+    	width:45px;
+    	height:45px;
+    	background-color:green;
+    	color:red;
+    	float:left;
+    	display:flex;
+    	border-radius: 25px;
+    }
+    
+    .icon2,.icon3{
+    	width:45px;
+    	height:45px;
+    	background-color:green;
+    	float:left;
+    	display:flex;
+        border-radius: 25px;
+        margin-left: 14px;
+    }
+    .sloat1{
+    	width:20px;
+    	height:20px;
+    	margin:auto;
+    	background-image:url(twitter.png); 
+    	background-size:cover;
+    	border-radius:10px;     	
+      
+    }
+    .sloat2{
+    	width:20px;
+    	height:20px;
+    	margin:auto;
+    	background-color:blue;
+    	background-image:url(pinterest.png); 
+    	background-size:cover;
+    	border-radius:10px;    
+      
+    }
+    .sloat3{
+    	width:20px;
+    	height:20px;
+    	margin:auto;
+    	background-color:blue;
+    	background-image:url(instagram.png); 
+    	background-size:cover;
+    	border-radius:10px;       
+    }
+
+    .container1{
+    	width:100%;
+    	height:500px;
+        clear:both;
+    	background-color:white;
+    }
+    .dvcontainer1{
+    	width:60%;
+    	height:500px;
+    	float:left;
+    }
+    .head1{
+    	font-size: 38px;
+        font-weight: 910;
+        color:rgb(206,206,206);
+    }
+    .content1{
+    	padding-top:100px;
+    	padding-left:100px;
+    }
+    .line1{
+    	width:133px;
+    	height:4px;
+    	background-color:rgb(81,196,20);
+    	margin-bottom: 47px;
+    }
+    .box1{
+         width: 174px;
+        border: 1px solid rgb(81,196,20);
+        color:rgb(81,196,20);
+        padding: 13px;
+        text-align: center;
+        border-radius: 26px;
+    }
+    .dvcontainer2{
+    	width:40%;
+    	height:500px;
+        float:left;
+    	display:flex;
+    }
+    .image{
+    	width:425px;
+    	height:300px;
+    	float:left;
+    	margin:auto;
+    	background-image: url(night.jpeg);
+    	background-size:cover;
+    }
+    .container2{
+    	width:100%;
+    	height:500px; 
+        clear:both; 
+        background:url(girl-with-camera.jpg)fixed; 
+        background-size: cover; 	
+    }
+    .slide{
+    	width:50%;
+    	 height:500px;
+    	 float:left;
+         background-color:rgba(135,110,227,0.72);
+    }
+    .slide1{
+    	width:50%;
+    	height:500px; 
+    	background-color:rgba(135,110,227,0.72);
+    	float:right;
+    }
+    .content2{
+    	padding-top:100px;
+    	padding-right:47px;
+    }
+    .head2{
+       font-size: 38px;
+       color:white;
+        font-weight: 910;
+    }
+    .container3{
+    	width:100%;
+    	height:300px;
+    	background-color:white;
+    	text-align:center; 
+    }
+    .head3{
+    	margin: 0px;
+       font-size: 47px;
+       font-weight: 910;
+       color:rgb(206,206,206);
+        padding-top: 100px; 
+    }
+     .para1{
+     	font-size:14px;
+        color:rgb(81,196,20);
+     }
+     .container4{
+     	width:100%;
+     	height:500px;
+     	background-color:orange;     	
+     }
+     .grid{
+        width:33%;
+        height:250px;
+        float:left;
+     }
+     .item1{
+       background-image:url(sun.jpg);
+       background-size:cover;
+     }
+     .item2{
+       background-image:url(girl.jpeg);
+       background-size:cover;
+     }
+     .item3{
+        width:34%;
+       background-image:url(nature.jpeg);
+       background-size:cover;
+     }
+     .item4{
+       background-image:url(couple.jpeg);
+       background-size:cover;
+     }
+     .item5{
+       background-image:url(man.jpg);
+       background-size:cover;
+     }
+     .item6{
+        width:34%;
+       background-image:url(moments.jpg);
+       background-size:cover;
+     }
+     span:hover{
+       color:blue;
+     }
+     .highlite:hover{
+        color:rgb(81,196,20);
+     }
+     .container5{
+     	width:100%;
+     	height:600px;
+     	background:url(coffee-girl.jpg)fixed;
+        background-size:cover;
+     	cursor:pointer;
+     }
+     .leftdv{
+     	width:50%;
+     	height:600px;
+     	background-color:rgba(225,225,225,0.75);
+     	float:left;
+        display:flex;
+     }
+     .demo{
+        width: 125px;
+       height: 150px;
+       margin: auto;
+      transform: rotate(341deg);
+     }     
+     .section1{
+         width: 70px;
+         height: 15px;
+         margin-top: 12px;
+         background-color:rgb(81,196,20);
+         border-radius: 3px;         
+     }
+     .section2{
+       width: 100px;
+       height: 15px;
+       margin-top: 12px;
+       background-color:rgb(81,196,20);
+       border-radius: 3px;
+     }
+     .rightdv{
+     	width:50%;
+        height:600px;
+        float:left;
+        background-color:rgba(225,225,225,0.75);
+     }
+     .part1{
+     	width: 100px;
+        height: 100px;
+        background-image:url(girl.png);
+        margin-top: 100px;
+        float: left;
+        border-radius:6px;
+     }
+     .part2{
+     	   width: 100px;
+           height: 100px;
+           background-image:url(happy.png);
+           margin-top: 40px;
+           float: left;
+           clear: both;
+           border-radius:6px;
+     }
+     .part3{
+     	   width: 100px;
+           height: 100px;
+           background-image:url(evening.png);
+           background-size:cover;
+           margin-top: 40px;
+           float: left;
+           clear: both;
+           border-radius:6px;
+     }
+     .partcontent1{
+       width: 75%;
+       height: 100px;
+       float: left;
+        margin-top:100px;
+         padding-left:25px;
+     }
+     .partcontent2,.partcontent3{
+        width:75%;
+        height: 100px;
+        float: left;
+        font-size:15px;
+        margin-top: 40px;
+        padding-left:25px;
+     }
+     .lite{
+     	font-size:12px;
+     	line-height:0px;
+        color:#aaa8a8;
+     } 
+
+   @media  screen and (max-width:1000px){
+      .subcontainer1,.dvcontainer1,.dvcontainer2,.slide1{
+        width:100%;
+        height:508px;
+        text-align:center;
+
+      }
+      .subcontainer2{
+        width:100%;
+        height:650px;
+
+      }
+      .container{
+        width:100%;
+        height:100%;
+        overflow-y:auto;
+      }
+      
+      .container5{
+        width:100%;
+        height:620px;
+
+      }
+      .rightdv{
+        width:100%;
+        height:600px;
+
+      }
+      .icons,.line,.line1{
+        width:180px;
+        margin: auto;
+      }
+      .box1{
+        margin:auto;
+      }
+      .slide{
+        display:none;
+      }
+      .grid{
+        width:100%;
+        height:500px;
+      }
+      .part1,.part2,.part3{
+        width: 115px;
+        height: 120px;
+        background-size: cover;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .partcontent1,.partcontent2,.partcontent3{
+              width: 70%;
+              height: 135px;
+              margin-top: 5px;
+             font-size: 28px;
+
+      }
+      .lite{
+        font-size:18px;
+        line-height:0px;
+      }
+
+      .leftdv{
+           width:100%;
+           height:200px;
+      }
+
+   }  
