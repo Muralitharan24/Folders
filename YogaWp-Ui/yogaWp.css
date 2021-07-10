@@ -1,0 +1,680 @@
+   *{
+    margin:0;
+    padding:0;
+   }
+   .container{
+       width:100%;
+       height:700px;
+       background:url(sunyoga.jpg)fixed;
+       background-size:cover;
+   }
+   .Header{
+   	  width:100%;
+   	  height:65px;
+   	  background-color:white;
+      position:fixed;
+   }
+   .logo{
+   	 width: 120px;
+     height: 50px;
+     float: left;
+     margin-left: 52px;
+     margin-top: 11px;
+   }
+   .logo img{
+      width:93px;
+      height:33px;
+   }   
+   .leftcontainer{
+   	    width:40%;
+   	    height:700px;
+   	    float:left;
+        background-color:rgba(80,80,80,0.36);
+   }
+   .rightcontainer{
+   	   width:60%;
+   	   height:700px;
+   	   float:left;
+       background-color:rgba(80,80,80,0.36);
+   }
+   .Header ul{
+   	 list-style: none;
+    float: right;
+    font-size: 13px;
+    margin-right: 65px;
+    line-height: 60px;
+    color: #565454;
+      
+   }
+   .Header li{
+   	 display: inline;
+     padding: 14px;
+   }
+   .slide{
+   	  width:85%;
+      height:465px;
+      padding-top: 205px;
+   }
+   .para{
+   	  font-size: 57px;
+      font-family: "Courier New";
+      margin: 0;
+      color:white;
+      text-transform: uppercase;
+   }
+   .para1{
+   	   font-size:22px;
+       color:white;
+       margin-top:27px;
+   }
+   .box{
+   	 text-align: center;
+    width: 165px;
+    height: 52px;
+    color: rgb(81,196,20);
+    font-size: 16px;
+    line-height: 55px;
+    margin-top: 60px;
+    border-radius: 4px;
+    background-color: white;
+   }
+   .box:hover{
+      background-color:rgb(132,195,64);
+      color:white;
+   }
+   .container1{
+   	  width: 100%;
+      height: 130px;
+      padding-top: 62px;
+      text-align: center;
+   }
+   .container1 h1{
+   	    font-size:41px;
+   	   font-family: "Courier New";
+       margin: 0;
+      font-weight: 100;
+
+   }
+   .line{
+   	   line-height:20px;
+   }
+   .para3{
+   	   font-size:19px;
+       line-height:70px;
+       color: #bdbdbc;
+   }
+   .container3{
+   	width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 80px;
+   }
+   .lead{
+     width:30%;
+     height:440px;
+     float: left;
+     text-align: center;
+     margin-left:3%;
+   }
+   .menu1{
+     width: 270px;
+     height: 250px;
+     margin: auto;
+   }
+   .lead1{
+      width: 33%;
+      height: 440px;
+      float: left;
+      text-align: center;
+   }
+   .menu2,.menu3{
+   	  width: 270px;
+      height: 250px;
+      margin:auto;
+   }
+   img{
+   	 width:270px;
+   	 height:250px;
+   }
+
+   .content1{
+   	  width:92%;
+      height: 190px;
+      margin:auto;            
+   }
+   .content2,.content3{
+   	    width:87%;
+       height: 190px;
+       margin:auto;       
+   }
+   .head{
+   	  font-size: 23px;
+      font-family: "Courier New", monospace;
+      font-weight: 100;
+   }
+   .para4{
+   	 line-height: 26px;
+   	 font-size:18px;
+     color:#3d3d3d;
+   }
+   .container4{
+   	   width:100%;
+   	   height:400px;
+   	   background:url(namaste.jpg)fixed;
+       background-size:cover;
+   }
+   .subcontainer1,.subcontainer2{
+   	  width:50%;
+   	  height:400px;
+   	  float:left;	
+      background-color:rgba(5,5,5,0.3)  
+   }   
+   .subcontainer2 h1{
+      font-family: "Courier New", monospace;
+      font-weight: 400;
+      font-size: 50px;
+      padding-top:70px;
+      padding-bottom:30px;
+      color:white;
+   }
+   .subcontainer2 p{
+   	   font-size: 18px;
+       line-height:30px;
+       margin-left:45px;
+       color:white;
+   }
+   span{
+   	  margin-left:66px
+   }
+   .container5{
+   	    width:100%;
+   	    height:460px;
+   }
+   .slide1,.slide2{
+   	   width:50%;
+   	   height:460px;
+   	   float:left;
+   }
+   .item{
+   	   width:90%;
+       height: 370px;
+       background-image:url(yoga.jpg);
+       background-size: cover;
+       margin:auto;
+       margin-top: 54px;
+       border-radius:12px;
+   }
+   
+   .slide2 h1{
+   	   font-family: "Courier New", monospace;
+      font-weight: 100;
+      font-size:35px;
+      margin-bottom:0px;
+      padding-top:25px;
+   }
+   .line1{
+   	   line-height:15px;
+   	   margin-top:0px;
+   }
+   .slide2 ul{
+   	   padding-left:20px;
+   	   padding-top:20px;
+   	   font-size:18px;
+   }
+   .slide2 li{
+       line-height:40px;
+   }
+   .box1{
+   	  width: 150px;
+      height: 50px;
+      background-color:rgb(132,195,64);
+      color:white;
+      text-align: center;
+      line-height: 51px;
+      border-radius:4px;
+      margin-top:30px;
+   }
+   .container6{
+        width:100%;
+        height:550px;
+        background:url(testi.jpg)fixed;
+        background-size:cover;
+        text-align:center;
+   }
+    .contain{
+      width:100%;
+      height:550px;
+      background-color:rgba(255,255,255,0.83)
+    }
+   .container6 h1{
+       font-family: "Courier New", monospace;
+       font-weight: 400;
+       margin:0px;
+       font-size:35px;
+       padding-top:86px;
+   }
+   .demo1{
+      width:30%;
+      height:260px;
+      float:left;
+      margin-left:53px;
+      margin-top:41px;
+      font-size:19px;
+      color:#3d3d3d;
+   }
+   .demo2,.demo3{
+       width:30%;
+      height:260px;
+      float:left;
+      font-size:19px;
+      margin-top:41px;
+      margin-left:24px;
+      color:#3d3d3d;
+   }
+   .lite{
+      width: 350px;
+      height: 85px;
+      padding-top:25px;
+     
+   }
+   .avathar1{
+      width: 70px;
+      height: 70px;
+      float:left;
+      margin-left: 55px;
+      border-radius: 40px;
+      background-image:url(avathar1.jpg);
+      background-size: cover;
+   }
+   .avathar2{
+      width: 70px;
+      height: 70px;
+      float:left;
+      margin-left: 55px;
+      border-radius: 40px;
+     background-image:url(avathar2.jpg);
+     background-size: cover;
+   }
+    .avathar3{
+       width: 70px;
+      height: 70px;
+      float:left;
+      margin-left: 55px;
+      border-radius: 40px;
+     background-image:url(avathar3.jpg);
+     background-size: cover;
+    }
+    .detail{
+        width:215px;
+        height:70px;
+        float:left;
+        padding-left: 8px;
+    }
+    .para2{
+      margin: 0px;
+      margin-top: 19px;
+      text-align: initial;
+      font-size: 18px;
+      color:rgb(132,195,64);
+    }
+    .para5{
+      margin: 0px;
+      text-align: initial;
+      font-size: 15px;
+      color:#3d3d3d;
+    }
+    .dvcontainer{
+         width:100%;
+         height:150px;
+         background-color:rgb(132,195,64);
+    }
+    .dvcontainer p{
+       margin: 0px;
+      text-align: center;
+      font-size: 30px;
+      color:white;
+      line-height: 148px;
+      font-style: italic;
+    }
+    .container7{
+         width:100%;
+         height:900px;
+         text-align:center;
+    }
+    .container7 h1{
+        margin: 0;
+       font-family: "Courier New", monospace;
+       font-weight: 100;
+       font-size: 33px;
+       padding-top:85px;
+    }
+    .main{
+       width: 90%;
+       height: 550px;
+       background-color: yellow;
+       margin: auto;
+       margin-top: 70px;
+    }
+    .grid{
+       width: 33%;
+       height: 275px;
+       background-color: orange;
+       float: left;
+    }
+    .item1{
+       background-image:url(gallery2.jpg);
+       background-size: cover;
+
+    }
+    .item2{
+       background-image:url(gallery1.jpg);
+       background-size: cover;
+    }
+    .item3{
+       width:34%;
+       background-image:url(gallery3.jpg);
+       background-size: cover;
+    }
+    .item4{
+       background-image:url(gallery4.jpg);
+       background-size: cover;
+    }
+    .item5{
+       background-image:url(gallery5.jpg);
+       background-size: cover;
+    }
+    .item6{
+      width:34%;
+      background-image:url(gallery6.jpg);
+      background-size: cover;
+    }
+    .container8{
+        width:100%;
+        height:410px;
+        background:url(beach.jpg)fixed;
+        background-size:cover;
+    }
+    .dvcontainer1{
+        width:47%;
+       height: 320px;
+       padding-left:6%;
+       padding-top: 90px;
+       float:left;
+       background-color:rgba(0,0,0,0.28);
+    }
+    .dvcontainer1 h1{
+        margin: 0px;
+       font-family: "Courier New", monospace;
+       font-weight: 100;
+       color:white;
+       font-size: 55px;
+    }
+    .line2{
+        line-height:20px;
+    }
+    .para6{
+      font-size: 19px;
+      padding-top:23px;
+      color:white;
+      line-height: 28px;
+    }
+    .dvcontainer2{
+        width:47%;
+        height:410px;
+        float:left;
+        background-color:rgba(0,0,0,0.28);
+    }
+    .partcontainer{
+       width:100%;
+       height:140px;
+       text-align:center;
+       padding-top:65px;
+    }
+    .partcontainer h1{
+        font-family: "Courier New", monospace;
+       font-weight: 100;
+       margin:0px;
+       font-size: 37px;
+    }
+    .container9{
+         width:100%;
+         height:270px;
+         background-color:white;
+         padding-top:45px;
+    }
+    .site1{
+      width:22%;
+      height:255px;
+      float:left;
+      margin-left:7%;
+    }
+    .site2,.site3,.site4{
+       width:22%;
+       height:255px;
+       float:left;
+    }
+    .logo1{
+       width: 100px;
+       height: 100px; 
+       margin:auto;
+       border-radius: 55px;
+       background-color:rgb(248,248,248);
+       display:flex;
+    }
+    
+    .logo1 img{
+        width:70px;
+        height:70px;
+        margin:auto;
+
+    }
+    .contain1{
+       width:230px;
+       height:130px;
+       text-align:center;
+       margin:auto;
+    }
+    .contain1 h1{
+       font-size: 18px;
+       font-weight: 100;
+       line-height:70px;
+    }
+    .contain1 p{
+        font-size:17px;
+        line-height:25px;
+        color:#4d4c4c;
+    }
+    @media screen and (max-width:1000px){
+        .Header{
+           width:100%;
+           height:100px;
+        }
+        .logo{
+           width:120px;
+           height:50px;
+           margin-top:26px;
+        }
+        .logo img{
+            width:118px;
+            height:47px;
+        }
+        .Header ul{
+          font-size:17px;
+          line-height:95px;
+        }
+        .Header li{
+          padding:6px;
+        }
+
+       .leftcontainer,.subcontainer1,.dvcontainer2{
+          display:none;
+       }
+       .rightcontainer,.container,.container5{
+           width:100%;
+           height:1000px;
+       }
+       .slide{
+          margin:auto;
+       }
+       .para{
+           font-size:84px;
+       }
+       .para1,.para3{
+          font-size:48px;
+          padding-right:20px;
+       }
+       .box{
+          width:220px;
+          height:80px;
+          font-size:30px;
+          line-height:80px;
+       }
+       .container1,.dvcontainer{
+           width:100%;
+           height:300px;
+       }
+       .container1 h1{
+           font-size:100px;
+       }
+       .line,.line2{
+           font-size:26px;
+           padding-bottom:27px;
+       }
+       .lead,.lead1{
+         width:93%;
+         height:500px;
+         text-align:center;
+       }
+       .subcontainer2{
+          width:100%;
+          height:400px;
+          text-align:center;
+       }
+       .subcontainer2 h1{
+           font-size:67px;
+       }
+       .subcontainer2 p{
+          font-size:27px;   
+       }
+       .slide1{
+          width:100%;
+          height:550px;
+          display:flex;
+       }
+       .slide2{
+          width:100%;
+          height:500px;
+        }
+
+       .slide2 h1{
+          padding-left:75px;
+          font-size:70px;
+       }
+       .slide2 ul,.line1{
+          padding-left:75px;
+          font-size:30px;
+       }
+       .item{
+          width:80%;
+          height:530px;
+          margin:auto;
+       }
+       .box1{
+          width:220px;
+          height:80px;
+          font-size:26px;
+          line-height:80px; 
+          margin-left:75px;
+       }
+
+       .container6,.contain,.container7,.container9{
+          width:100%;
+          height:100%;
+          overflow-y:auto;
+       } 
+       .container6 h1,.container7 h1{
+          font-size:50px
+       }      
+       
+       .demo1,.demo2,.demo3{
+          width: 70%;
+          height:250px;
+          margin: auto;
+          padding-top: 64px;
+          float: none;
+          font-size:35px;
+       }
+       .para2{
+        margin-top:8px;
+        font-size:30px;
+       }
+
+       .para5{
+        font-size:22px;
+       }
+       .para4{
+          font-size:24px;
+       }
+
+       .dvcontainer p{
+          font-size:61px;
+          line-height:95px;
+       }
+       .grid{
+          width:100%;
+          height:590px;
+       }
+       .container8{
+          width:100%;
+          height:550px;
+       } 
+       .dvcontainer1{
+           width:70%;
+           height: 460px;
+           margin: auto;
+           float: none;
+       } 
+       .dvcontainer1 h1,.partcontainer h1{
+            font-size:75px;
+       }
+       .para6{
+          font-size:40px;
+          line-height:40px;
+       }
+       .partcontainer{
+           width:100%;
+           height: 250px;
+       } 
+       .site1,.site2,.site3,.site4{
+            width: 100%;
+            height: 450px;
+            margin: 0;
+       } 
+       .contain1{
+          width:430px;
+          height:200px;
+          margin:auto;
+       }
+       .contain1 h1{
+          font-size:45px;
+       }
+       .contain1 p{
+           font-size:35px;
+           line-height:50px;
+       }
+       .logo1{
+          width: 212px;
+          height: 205px;
+          margin: auto;
+          border-radius: 160px;
+       } 
+       .logo1 img{
+           width:132px;
+           height:160px;
+       }
+    }
+
+    
+    
+    
+    
