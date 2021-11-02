@@ -1,0 +1,73 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+}
+.container{
+    width: 465px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 90px 0px;
+    margin: 30px 35px;
+    box-shadow: 5px 5px 22px #7070705e;
+}
+ h2{ 
+    text-align: center;
+    font-style: oblique;
+    color: #42d074;
+    flex-grow: 1;
+    line-height: 42px;
+}
+.day{
+    width: 61px;
+    height: 20px;
+    text-align: center;
+    font-style: oblique;
+}
+.header{
+    display: flex;
+    margin-left: 15px;
+    height: 38px;
+    cursor: pointer;
+} 
+button{
+    padding:3px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Vaaram{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.W1{
+    width: 60px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.Naatkal{
+    display:grid;
+    grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+    grid-gap: 5px; 
+    padding-top: 15px;   
+}
+.box{    
+    text-align: center;
+    font-size: 16px;
+    padding: 13px;
+    color: #151414;
+    font-weight: bold;
+    border-radius: 0px 18px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color:#575a566b;
+}
+.solo{
+    color :red
+}
+p{
+    padding-left: 40px;
+}
+
