@@ -1,0 +1,109 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ background-color: #d1d1d1;
+}
+.container{
+ height: 300px;
+ width: 300px;
+ border-radius: 50%;
+ transform: translate(160%, 50%);
+}
+.mesmerizing{
+ margin-top: 3rem;
+ box-sizing: border-box;
+ height: 300px;
+ width: 300px;
+ border-radius: 50%;
+ padding-left: 50px;
+ animation: rotate 10s linear infinite;
+ background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);
+}
+.mesmerAni01{
+ height: 150px;
+ width: 150px;
+ border-radius: 50%;
+ transform: translate(35px, 0px);
+ margin-left: 20px;
+ animation: rotate 4s linear infinite;
+ animation-direction: reverse;
+ background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);
+}
+.animaBlack01{
+ width: 75px;
+ height: 75px;
+ border-radius: 50%;
+ background-color: #000;
+ transform: translate(35px, 0px);
+}
+.dotanimetion01{
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background-color: #fff;
+ transform: translate(23px, 23px);
+}
+.animaBlack02{
+ width: 75px;
+ height: 75px;
+ border-radius: 50%;
+ background-color: #fff;
+ transform: translate(35px, 0px);
+}
+.dotanimetion02{
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background-color: #000;
+ transform: translate(22px, 24px);
+}
+/********** next animation ***********/
+.mesmerAni02{
+ height: 150px;
+ width: 150px;
+ border-radius: 50%;
+ transform: translate(35px, 0px);
+ background-image: linear-gradient(to left, #fff, #fff 50%, #000 50%, #000);
+ animation: rotate 4s linear infinite;
+ animation-direction: reverse;
+ margin-left: 20px;
+}
+.animationWrite01{
+ width: 75px;
+ height: 75px;
+ border-radius: 50%;
+ background-color: #000;
+ transform: translate(35px, 0px);
+}
+.dotwriteani01{
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background-color: #fff;
+ transform: translate(24px, 24px);
+}
+.animationWrite02{
+ width: 75px;
+ height: 75px;
+ border-radius: 50%;
+ background-color: #fff;
+ transform: translate(35px, 0px);
+}
+@keyframes rotate {
+ 0% {
+  transform:rotate(0deg);
+ }
+ 100% {
+  transform:rotate(-360deg);
+ }
+}
+.dotwriteani02{
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ background-color: #000;
+ transform: translate(24px, 24px);
+}
