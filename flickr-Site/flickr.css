@@ -50,6 +50,7 @@
    li{
    	 display:inline;
    	 padding:15px;
+       cursor : pointer
    }
    .tooltip1{
    	  width: 125px;
@@ -100,6 +101,7 @@
    	  width:71px;
    	  height:50px;
       margin-left:16px;
+      cursor:pointer
    }
    .word p {
    	  line-height:60px;
@@ -112,6 +114,7 @@
    	  margin-top:15px;
    	  background-image:url(icons.png);
    	  background-position: 146px -445px;
+         cursor:pointer
    }
    .box2{
    	  width:205px;
@@ -144,7 +147,8 @@
       font-weight: bold;
       font-size: 15px;
       background-color:rgb(17,143,220);
-      color:white
+      color:white;
+      cursor:pointer
    } 
    input[type = "text"]:focus-visible{
        outline: none;
@@ -165,6 +169,7 @@
      display:flex;
      margin-right: 103px;
      margin-top: 9px;
+     cursor:pointer
    }
    .menu p{   	 
    	 line-height:30px;
