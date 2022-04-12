@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+body{
+    background-image: url(https://www.desktopbackground.org/download/800x600/2015/04/11/931291_wallpapers-wooden-texture-minimalistic-wood-textures-hd-online_1366x768_h.jpg);
+    background-size: cover;
+}
+.container{
+    width: 360px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.players{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+#player1,#player2{
+    width: 50%;
+    height: 100%;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid black;
+    color: white;
+    font-size: 21px;
+    line-height: 15px;
+}
+#player2{
+    border-left: none;
+}
+.guess{
+    background-color: #9f9f4e4f;
+}
+.gameArea{   
+    width: 260px;
+    height: 260px;
+    padding: 5px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transform: translate(55px,25px);
+}
+.mainArea{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 6px;
+    background-color: #14141452;
+    padding: 6px;
+    border-radius: 10px;
+}
+.board{
+    width: 73px;
+    height: 73px;
+    background-image: url(https://i.pinimg.com/736x/e2/eb/8e/e2eb8eabf57592ed2f57aa1190693ce0.jpg);
+    background-size: cover;
+    text-align: center;
+    line-height: 70px;
+    font-size: 45px;
+    font-family: system-ui;
+    cursor: pointer;
+    box-shadow: -1px -1px 2px 0px;
+}
+.curve1{
+    border-radius: 6px 0px 0px 0px;
+}
+.curve2{
+    border-radius: 0px 6px 0px 0px;
+}
+.curve3{
+    border-radius: 0px 0px 0px 6px;
+}
+.curve4{
+    border-radius: 0px 0px 6px 0px;
+}
+#subContainer,#mainContainer{
+    position: absolute;
+     width: 100%;
+     height:100vh;
+     background-color: #000000ab;
+     z-index: 1;
+     display: none;
+}
+#mainContainer{
+    background-image: url(https://images.pexels.com/photos/268976/pexels-photo-268976.jpeg);
+    background-size: cover; 
+    display: block;
+}
+#pop-dv,#choose-dv{
+    width: 400px;
+    height: 180px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#head,#choose-dv h1{
+    font-size: 56px;
+    text-align: center;
+    line-height: 130px;
+    color: white;
+}
+#btn{
+    width: 119px;
+    height: 43px;
+    margin: 0px 150px;
+    font-size: 19px;
+    cursor: pointer;
+}
+#choose-dv{
+    height: 230px;
+}
+.buttons{
+    display: flex;
+    width: 75%;
+    height: 79px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: flex-end; 
+}
+#myBtn1,#myBtn2{
+    width: 110px;
+    height: 38px;
+    font-size: 19px;
+    cursor: pointer;
+}
+#home{
+    width: 55px;
+    height: 56px;
+    margin: 14px 169px;
+    font-family: 'Material Icons';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 66px;
+    color: white;
+}
+#choose-dv h1 {
+    font-size: 56px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+}

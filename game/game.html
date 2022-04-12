@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTak game</title>
+</head>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<body>
+    <div class="container">
+        <div class="players">
+            <div id ="player1">Player1(O)</div>
+            <div id ="player2">Player2(X)</div>
+        </div>
+        <div class="gameArea">
+            <div class="mainArea">
+                <div class="board curve1"></div>
+                <div class="board"></div>
+                <div class="board curve2"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board"></div>
+                <div class="board curve3"></div>
+                <div class="board"></div>
+                <div class="board curve4"></div>
+            </div>
+        </div>
+    </div>
+    <div id = "subContainer">
+        <div id="pop-dv">
+            <h1 id = "head"></h1>
+            <button id = "btn" onclick="show()">Main menu</button>
+        </div>        
+    </div>
+    <div id="mainContainer">
+        <div id = "choose-dv">
+            <div id="home">home</div>
+            <h1>Choose Player</h1>
+            <div class="buttons">
+                <button id = "myBtn1" onclick = "selection1()">Player1</button>
+                <button id = "myBtn2" onclick = "selection2()">Player2</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
