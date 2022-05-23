@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <div class="sound-container">
+                <div class="sound-dv">
+                    <span class="material-symbols-outlined">volume_up</span>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="drop-dv">
+                    <div class="search-icon">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                    <div class="txt-dv">
+                        <p>All</p>
+                    </div>
+                    <div class="arrow-dv">
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+                <input type="text" id="iput" placeholder="Search in All (ctrl+k)" autocomplete="off">
+                <div class="plus">
+                    <span class="material-symbols-outlined">add</span>
+                </div>
+            </div>
+            <div class="icons-dv">
+                <div class="icon1">
+                    <span class="material-symbols-rounded">star_border</span>
+                </div>
+                <div class="icon2">
+                    <span class="material-symbols-rounded">alternate_email</span>
+                </div>
+                <div class="icon3">
+                    <span class="material-symbols-rounded">pending_actions</span>
+                </div>
+                <div class="icon4">
+                    <span class="material-symbols-rounded">calendar_today</span>
+                </div>
+                <div class="icon5">
+                    <span class="material-symbols-rounded">power</span>
+                </div>
+                <div id="test"></div>
+            </div>
+            <div class="profile">
+                <div id="round"></div>
+            </div>
+            <div class="Apps">
+                <span class="material-symbols-rounded">apps</span>
+            </div>
+        </div>
+        <div class="subcontainer">
+            <div class="left-container">
+                <div class="login-dv">
+                    <h3>Remote Work</h1>
+                        <div class="timing-dv">
+                            <p class="timer">00:00:00 Hrs</p>
+                            <label class="togglebtn">
+                                <input type="checkbox">
+                                <div class="slider shaper"></div>
+                            </label>
+                        </div>
+                </div>
+                <div class="menu-container"> 
+                   <div class="menu-leftContainer">
+                        <div class="menu-list">
+                            <div class="list-container dark1">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>CHATS</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark2">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">person_outline</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>CONTACTS</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark3">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">tag</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>CHANNELS</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark4">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">history</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>HISTORY</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark5">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>FILES</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark6">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">event</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>CALENDAR</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark7">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">note_alt</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>NOTES</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark8">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">widgets</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>WIDGETS</p>
+                                </div>
+                            </div>
+                            <div class="list-container dark9">
+                                <div class="list-icon">
+                                    <span class="material-symbols-outlined">corporate_fare</span>
+                                </div>
+                                <div class="list-content">
+                                    <p>ORG</p>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="togglebtn1">
+                            <input type="checkbox">
+                            <div class="slider1 shaper1"></div>
+                        </label>
+                    </div>
+                    <div class="menu-displayer">
+                        <div id ="chat-displayer">
+                            <div id="heading">My Pins</div>
+                            <div class="conversation-dv">
+                                <h3>Conversations</h3>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Nithiskumar K</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Jesintha T</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Saliha Sherif Nisha</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Illaya ganesh</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Esakkivash N</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Dhivya</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Sakthivel</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicator"></div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Mani</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicate-icon">
+                                            <span class="material-symbols-outlined">webhook</span>
+                                        </div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>Incubation Batch 1</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <div class="naming-dv">
+                                    <div class="indicating-dv">
+                                        <div class="indicate-icon">
+                                            <span class="material-symbols-outlined">tag</span>
+                                        </div>
+                                    </div>
+                                    <div class="nameContain">
+                                        <p>announcement</p>
+                                    </div>
+                                    <div class="pin">
+                                        <span class="material-symbols-outlined">push_pin</span>
+                                    </div>
+                                    <div class="close">
+                                         <span class="material-symbols-outlined">close</span>
+                                    </div>
+                                </div>
+                                <a href="#">Show all</a>
+                            </div>
+                        </div>
+                        <div id ="contact-displayer">
+                            <div class="contact-dv">
+                                <h3 class="contact-txt">Contacts</h3>
+                                <div class="add-icon">
+                                    <span class="material-symbols-outlined">add</span>
+                                </div>
+                            </div>
+                            <div class="contact-profile">
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Dhivya</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Nithiskumar</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Hari</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Jesintha</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Sakthivel</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Mani</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Illaya Ganesh</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Saliha</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Subha</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon">
+                                        <div class="fun2"></div>
+                                    </div>
+                                    <div class="contact-profileContent">
+                                        <p>Vishnu</p>
+                                    </div>
+                                </div>
+                                <a href="#">Show all</a>
+                            </div>
+                            <div class="Bots-container">
+                                <div class="Bots-dv">
+                                    <div class="bots-txt">
+                                        <h3>Bots</h3>
+                                    </div>
+                                    <div class="add2">
+                                        <span class="material-symbols-outlined">add</span>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon taz-icon"></div>
+                                    <div class="contact-profileContent">
+                                        <p>Taz</p>
+                                    </div>
+                                </div>
+                                <div class="naming-container">
+                                    <div class="contact-profileIcon project-icon"></div>
+                                    <div class="contact-profileContent">
+                                        <p>Project Bot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-displayer">
+                            <div class="channel-search">
+                                <div class="channel-searchIcon">
+                                    <span class="material-symbols-outlined">search</span>
+                                </div>
+                                <input type="text" id="iput2" placeholder="Search">
+                            </div>
+                            <div class="channel-content">
+                                <div class="content-leftdv">
+                                    <h3>Channels</h3>
+                                    <div id="roll-dv"></div>
+                                    <p>Join</p>
+                                </div>
+                                <div class="add2">
+                                    <span class="material-symbols-outlined">add</span>
+                                </div>
+                            </div>
+                            <div class="channel-subcontainer">
+                                <div class="channel-subdv1">
+                                    <div class="subdv1-icon"></div>
+                                    <div class="subdv1-content">Organization</div>
+                                    <div class="join-icon">
+                                        <span class="material-symbols-outlined">more_horiz</span>
+                                    </div>
+                                </div>
+                                <div class="channel-subdv2">
+                                    <div class="subdv2-icon">
+                                        <span class="material-symbols-outlined">tag</span>
+                                    </div>
+                                    <div class="subdv2-content">announcements</div>
+                                    <div class="pin-icon"></div>
+                                </div>
+                                <div class="channel-subdv1">
+                                    <div class="subdv1-icon personal-icon"></div>
+                                    <div class="subdv1-content unique">Personal</div>
+                                    <div class="join-icon">
+                                        <span class="material-symbols-outlined">more_horiz</span>
+                                    </div>
+                                </div>
+                                <div class="channel-subdv2">
+                                    <div class="subdv2-icon">
+                                        <span class="material-symbols-outlined">tag</span>
+                                    </div>
+                                    <div class="subdv2-content eco">App Studio Bug Report</div>
+                                    <div class="pin-icon"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history-displayer">
+                            <div class="history-head">
+                                <h3>History</h3>
+                            </div>
+                            <div class="history-subdv">
+                                <div class="call-dv">
+                                    <div class="icon">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div class="txt">
+                                        <p>Direct Calls</p>
+                                    </div>
+                                </div>
+                                <div class="meeting-dv">
+                                    <div class="icon">
+                                        <span class="material-symbols-outlined">video_call</span>
+                                    </div>
+                                    <div class="txt">
+                                        <p>Meetings</p>
+                                    </div>
+                                </div>
+                                <div class="conversation-dv2">
+                                    <div class="icon">
+                                        <span class="material-symbols-outlined">chat</span>
+                                    </div>
+                                    <div class="txt">
+                                        <p>Conversations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="files-displayer">
+                            <div class="files-header">
+                                <h3>Files</h3>
+                            </div>
+                            <div class="files-menu">
+                                <div class="shared-dv">
+                                    <div class="file-menuIcon"></div>
+                                    <div class="file-menuContent">
+                                        <p>Shared in Cliq</p>
+                                    </div>
+                                </div>
+                                <div class="taz-dv">
+                                    <div class="file-menuIcon"></div>
+                                    <div class="file-menuContent">
+                                        <p>Taz</p>
+                                    </div>
+                                </div>
+                                <div class="recording-dv">
+                                    <div class="recording-Icon">
+                                        <span class="material-symbols-outlined">video_call</span>
+                                    </div>
+                                    <div class="file-menuContent">
+                                        <p>Recordings</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calendar-displayer">
+                            <div class="Caldisplayer-header">
+                                <h3>My Calendars</h3>
+                            </div>
+                            <div class="Caldisplayer-subdv">
+                                <input type="checkbox" id="cal-Iput">
+                                <div class="calendar-Id">
+                                    <p>vigneshvky4711</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notes-displayer">
+                            <div class="notes-header">
+                                <h3>Notes</h3>
+                            </div>
+                            <div class="notes-menuContainer">
+                                <div class="notes-containDv1">
+                                    <div class="containdv-icon"></div>
+                                    <div class="containdv-txt">
+                                        <p>All Notes</p>
+                                    </div>
+                                </div>
+                                <div class="notes-containDv2">
+                                    <div class="containdv-icon cliq"></div>
+                                    <div class="containdv-txt">
+                                        <p>Cliq Meeting Notes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notebook-header">
+                                <div class="notebook-txt">
+                                    <h3>Notebooks</h3>
+                                </div>
+                                <div class="notebook-addIcon">
+                                    <span class="material-symbols-outlined">add</span>
+                                </div>
+                            </div>
+                            <div class="notebook-category">
+                                <div class="category-icon"></div>
+                                <div class="category-txt">
+                                    <p>My Notebook</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widgets-displayer">
+                            <div class="widgets-header">
+                                <h3>Widgets</h3>
+                            </div>
+                            <div class="widgets-logodv">
+                                <div class="widgets-logo"></div>
+                                <div class="widgets-content">
+                                    <p>No widgets to show</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-displayer">
+                            <div class="org-header">
+                                <h3>People</h3>
+                            </div>
+                            <div class="org-menuContainer">
+                                <div class="menudv1">
+                                    <div class="org-menuIcon"></div>
+                                    <div class="org-menuContent">
+                                        <p>All Users</p>
+                                    </div>
+                                </div>
+                                <div class="menudv2">
+                                    <div class="org-menuIcon"></div>
+                                    <div class="org-menuContent">
+                                        <p>My Department</p>
+                                    </div>
+                                </div>
+                                <div class="menudv3">
+                                    <div class="org-menuIcon"></div>
+                                    <div class="org-menuContent">
+                                        <p>My Direct Reports</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="dropdown-menu">
+                    <div class="option-dv paint">
+                        <div class="option-content">
+                            <p>All</p>
+                        </div>
+                        <div class="option-icon checked">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Users</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Channels</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Chat</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Bots</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Department</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Threads</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                    <div class="option-dv">
+                        <div class="option-content">
+                            <p>Messages</p>
+                        </div>
+                        <div class="option-icon">
+                            <span class="material-symbols-outlined">done</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainPage">
+                    <div class="mainpage-header">
+                        <div class="vdo-feedDv">
+                            <div id="feed">
+                                <h3>Live video feed:</h3>
+                            </div>
+                            <div class="video-icon">
+                                <span class="material-symbols-outlined">videocam</span>
+                            </div>
+                        </div>
+                        <div class="subHead-status">
+                            <h3 id="txt">Status:</h3>
+                            <div class="status-icons">
+                                <div class="collaboration-dv"></div>
+                                <div class="engaged-dv"></div>
+                                <div class="mealbreak-dv">
+                                    <div class="meal-icon"></div>
+                                    <div class="meal-duration">for 60 min</div>
+                                </div>
+                                <div class="shortbreak-dv">
+                                    <div class="icon-dv"></div>
+                                    <div class="icon-content">for 15 min</div>
+                                    <div class="down-arrow">
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                                <div class="elips-dv">
+                                    <div class="icon-dv1"></div>
+                                    <div class="icon-content">for 15 min</div>
+                                    <div class="down-arrow">
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-dv">
+                            <p>Check In</p>
+                        </div>
+                        <div class="cancel">
+                            <span class="material-symbols-outlined">close</span>
+                        </div>
+                    </div>
+                    <div class="mainpage-displayer">
+                        <div class="departments">
+                            <div class="depart-list">
+                                <h3>zohoforms <span id ="count">(16)</span></h3>
+                                <div class="drop-list">
+                                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                                </div>
+                            </div>
+                            <div class="btn-dv">
+                                <div class="meet-dv">
+                                    <div class="call-icon">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div class="meet-content">
+                                        <p>Meet Now</p>
+                                    </div>
+                                    <div class="drop-icon">
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                                <div class="schedule-dv">
+                                    <div class="schedule-icon">
+                                        <span class="material-symbols-outlined">calendar_today</span>
+                                    </div>
+                                    <div class="schedule-content">
+                                        <p>Schedule Meeting</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meetType-drop">
+                                <div class="meetType-dv">
+                                    <div class="meetType-icon">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div class="meetType-content">
+                                        <p>Audio Meeting</p>
+                                    </div>
+                                </div>
+                                <div class="meetType-dv">
+                                    <div class="meetType-icon">
+                                        <span class="material-symbols-outlined">videocam</span>
+                                    </div>
+                                    <div class="meetType-content">
+                                        <p>Video Meeting</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-dv">
+                            <div class="search-icon2">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input type="text" id="myIput" placeholder="Search for department members">
+                        </div>
+                        <div class="status-container">
+                            <div class="work-status">
+                                <div class="work-txt">
+                                    <p>At Work <span class="status-count">(1)</span></p>
+                                </div>
+                                <div class="member-dv">
+                                    <div class="member-status">
+                                        <p class="login-status test-colour">In</p>
+                                        <div class="circle"></div>
+                                        <p class="counter">1</p>
+                                    </div>
+                                    <div class="member-list">
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun wonder"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>You</p>
+                                                </div>
+                                                <div class="user-id">vigneshvky4711@gmail.com</div>
+                                            </div> 
+                                            <div class="vdo-dv">
+                                                <span class="material-symbols-outlined">videocam</span>
+                                            </div>                                                                                       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="away-status">
+                                <div class="away-txt">
+                                    <p>Away <span class="status-count">(15)</span></p>
+                                </div>
+                                <div class="member-dv">
+                                    <div class="member-status">
+                                        <p class="login-status">Out</p>
+                                        <div class="circle"></div>
+                                        <p class="counter">15</p>
+                                    </div>
+                                    <div class="member-list">
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Dhivya</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>dhivyap18598@gmail.com</p>
+                                                </div>
+                                            </div> 
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>                                                                                       
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Esakkivash N</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>esakkivash.n@zohotest.com</p>
+                                                </div>                                  
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Gnana Elisa</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>gnanaelisa.r+1@zohotest.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Hari</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>t.hariharan2014@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Ganesh</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>ganesh.cmr2004@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Jesintha T</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>jesintha2507@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Karpagaselvam</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>karpagaselvam.s@zohotest.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Mani</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>yeyav36000@wwdee.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Sakthivel</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>mv2475922@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Saliha</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>salihasherif.s@zohomail.in</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Subha</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>subhadev3696@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Venkatesh P</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>venkatesh.p@zohotest.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Vishnu</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>vishnuvichu9487@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Nithiskumar K</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>nithiskumarknr@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                        <div class="person-container">
+                                            <div class="profile-dv">
+                                               <div class="user-profile">
+                                                   <div class="fun"></div>
+                                               </div>
+                                            </div>
+                                            <div class="content-dv">
+                                                <div class="user-name">
+                                                    <p>Ramya D</p>
+                                                </div>
+                                                <div class="user-id">
+                                                    <p>ramyad965@gmail.com</p>
+                                                </div>                                   
+                                            </div>
+                                            <div class="cell">
+                                                <span class="material-symbols-outlined">call</span>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meeting-status">
+                                <div class="meeting-txt">
+                                    <p>Meetings</p>
+                                </div>
+                                <div class="meeting-subdv">
+                                    <div class="meeting-displayer">
+                                        <p>No ongoing or scheduled meetings.</p>
+                                    </div>
+                                    <div class="history-dv">
+                                        <p>My recent meetings <a href="#">View history</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-callContainer">
+                    <div class="callContainer-header">
+                        <div class="create-calls">
+                            <div class="create-callIcon">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div class="create-callTxt">
+                                <p>Direct Calls</p>
+                            </div>
+                        </div>
+                        <div class="call-types">
+                            <div class="all-dv">
+                                <p>All</p>
+                            </div>
+                            <div class="missedcall-dv">
+                                <p>Missed</p>
+                            </div>
+                            <div class="receivedcall-dv">
+                                <p>Received</p>
+                            </div>
+                        </div>
+                        <div class="call-btn">
+                            <p>Make a Call</p>
+                        </div>                      
+                    </div>
+                    <div class="call-logs">
+                        <h3>Call Logs</h3>
+                        <div class="logsOf-dv">
+                            <p>Logs Of :</p>
+                            <div class="drop-menudv">
+                                <p class ="individual">All Calls</p>
+                                <div class="down-menuIcon">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="history-Container">
+                        <div class="empty-displayer">
+                            <div class="empty-icon"></div>
+                            <div class="empty-content">
+                                <p>Your call history is empty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-meetingContainer">
+                    <div class="meetingContainer-header">
+                        <div class="create-meeting">
+                            <div class="create-meetingIcon">
+                                <span class="material-symbols-outlined">video_call</span>
+                            </div>
+                            <div class="create-meetingTxt">
+                                <p>Meetings</p>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <div class="meeting-dv1">
+                                <div class="meeting-Icon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="meeting-content">
+                                    <p>Meet Now</p>
+                                </div>
+                                <div class="drop-option">
+                                    <span class="material-symbols-outlined">arrow_drop_down</span>
+                                </div>
+                            </div>
+                            <di class="scheduling-dv1">
+                                 <div class="scheduling-Icon">
+                                    <span class="material-symbols-outlined">calendar_today</span>
+                                 </div>
+                                 <div class="scheduling-content">
+                                     <p>Schedule Meeting</p>
+                                 </div>
+                            </di>
+                        </div>
+                    </div>
+                    <div class="meeting-logs">
+                        <h3>Meeting Logs</h3>
+                        <div class="meeting-logOf">
+                            <p>Logs Of :</p>
+                            <div class="meeting-menudv">
+                                <p class ="individual">All Meetings</p>
+                                <div class="down-menuIcon">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meeting-history">
+                        <div class="empty-displayer">
+                            <div class="meeting-emptyIcon"></div>
+                            <div class="empty-content">
+                                <p>Your call history is empty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-conversation">
+                    <div class="conversation-header">
+                        <div class="conversation-container">
+                            <div class="conversation-icon">
+                                <span class="material-symbols-outlined">chat</span>
+                            </div>
+                            <div class="conversation-content">
+                                <p>Converstions</p>
+                            </div>
+                        </div>
+                        <div class="chat-btn">
+                            <p>Start Chat</p>
+                        </div>
+                    </div>
+                    <div class="conversation-subheader">
+                        <div class="all-dropdv">
+                            <div class="filter-icon">
+                                <span class="material-symbols-outlined">filter_alt</span>
+                            </div>
+                            <div class="all-content">
+                                <p>All</p>
+                            </div>
+                            <div class="arrow-icon">
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="conversation-searchbar">
+                            <div class="searchbar-icon">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input type="text" id ="searchbar-iput" placeholder="Enter chat title or user name...">
+                        </div>
+                        <div class="hide-conversation">
+                            <input type="checkbox" id="checkiput">
+                            <div class="hide-all">
+                                <p>Hide all muted conversations</p>
+                            </div>
+                        </div>
+                        <div class="mark-conversation">
+                            <div class="markAll-icon">
+                                <span class="material-symbols-outlined">playlist_add_check</span>
+                            </div>
+                            <div class="markAll-content">
+                                <p>Mark all as read</p>
+                            </div>
+                        </div>
+                        <div class="conversation-drop">
+                            <div class="conversation-dropDv paint2">
+                                <div class="conversation-dvTxt">
+                                    <p>All</p>
+                                </div>
+                                <div class="conversation-dvIcon check1">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Channels</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Direct Messages</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Group Chats</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Threads</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Bots</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                            <div class="conversation-dropDv">
+                                <div class="conversation-dvTxt">
+                                    <p>Muted Conversation</p>
+                                </div>
+                                <div class="conversation-dvIcon">
+                                    <span class="material-symbols-outlined">done</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-container">
+                        <div class="result-dv">
+                            <div class="result-icon"></div>
+                            <div class="result-content">
+                                <p>No result</p>
+                                <p>Tinker with a word or two and try again.</p>
+                            </div>
+                            <button id="trynew-btn">Try new search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-shareContainer">
+                    <div class="shareContainer-header">
+                        <div class="sharing-container">
+                            <div class="sharing-icon"></div>
+                            <div class="sharing-content">
+                                <p>Shared in Cliq</p>
+                            </div>
+                        </div>
+                        <div class="share-wholedv">
+                            <div class="sharing-types">
+                                <div class="share-type1">
+                                    <p>Images</p>
+                                </div>
+                                <div class="share-type2">
+                                    <p>Videos</p>
+                                </div>
+                                <div class="share-type3">
+                                    <p>Audio</p>
+                                </div>
+                                <div class="share-type4">
+                                    <p>Files</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share-subheader">
+                        <div class="subheader-icondv">
+                            <div class="search-icon3">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <div class="sharedby-dv">
+                                <p>Shared By:</p>
+                                <p id ="para">All</p>
+                                <div class="drop-icon2">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="calendar-icon">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                            </div>
+                            <div class="menu-icon">
+                                <span class="material-symbols-outlined">list</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shared-emptyDisplayer">
+                        <div class="shared-emptydv">
+                            <div class="shared-emptyIcon"></div>
+                            <div class="shared-emptyContent">
+                                <p>Oops! It's empty here.</p>
+                                <p>Looks like there are no images shared in this conversation yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-recordingContainer">
+                    <div class="recordContainer-header">
+                        <div class="record-dv">
+                            <div class="recordDv-icon">
+                                <span class="material-symbols-outlined">video_call</span>
+                            </div>
+                            <div class="recordDv-content">
+                                <p>Recordings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recording-subheader">
+                        <div class="recording-types">
+                            <div class="recordType1">
+                                <p>All Recordings</p>
+                            </div>
+                            <div class="recordType2">
+                                <p>My Meetings</p>
+                            </div>
+                            <div class="recordType3">
+                                <p>Shared With Me</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recording-subdv">
+                        <div class="subdv-iconContainer">
+                            <div class="search-icon3">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <div class="recordedby-dv">
+                                <p>Recorded By:</p>
+                                <p id ="para">All</p>
+                                <div class="drop-icon2">
+                                    <span class="material-symbols-outlined">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="calendar-icon">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                            </div>
+                            <div class="menu-icon">
+                                <span class="material-symbols-outlined">list</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recording-history">
+                        <div class="record-historydv">
+                            <div class="historydv-icon"></div>
+                            <div class="historydv-content">
+                                <p>You've got no recorded meetings!</p>
+                                <p>The recording of all the meetings you host/attend and the ones shared with you will be listed here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-calendarContainer">
+                    <div class="calendar-header">
+                        <div class="calendar-Content">
+                            <div class="content-icon">
+                                <span class="material-symbols-outlined">event</span>
+                            </div>
+                            <div class="content-txt">
+                                <p>Calendar</p>
+                            </div>
+                        </div>
+                        <div class="calendar-buttons">
+                            <div class="Schedule-btn">
+                                <p>Schedule Meeting</p>
+                            </div>
+                            <div class="createEvent-btn">
+                                <p>Create Event</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Allnotes-displayer">
+                    <div class="Allnotes-header">
+                        <div class="Allnotes-txt">
+                            <p>All Notes</p>
+                        </div>
+                        <div class="notesHeader-subdv">
+                            <div class="modifing-dv">
+                                <div class="date-modifier">
+                                    <div class="modifier-icon"></div>
+                                    <div class="modifier-txt">
+                                        <p>Date Modified</p>
+                                    </div>
+                                </div>
+                                <div class="fliter-dv">
+                                    <div class="fliterdv-icon"></div>
+                                    <div class="fliterdv-txt">
+                                        <p>Filter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whole-icondv">
+                                <div class="icondv1"></div>
+                                <div class="icondv2"></div>
+                                <div class="icondv3"></div>
+                                <div class="icondv4"></div>
+                                <div class="icondv5"></div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="Allnotes-subdisplayer">
+                        <div class="txt-content">
+                            <p>Strive not to be a success, but rather to be of value.</p>
+                            <p>- Albert Einstein</p>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="cliqMeeting-displayer">
+                    <div class="cliqMeeting-header">
+                        <div class="cliqMeeting-txtdv">
+                            <p>Cliq Meeting Notes</p>
+                        </div>                       
+                    </div>
+                    <div class="cliq-subDisplayer">
+                        <div class="cliq-contentdv">
+                            <p>No Associated Notes</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="widgets-mainContainer">
+                    <div class="widgets-mainHeader">
+                        <div class="widgets-headerdv">
+                            <div class="widgets-icon">
+                                <span class="material-symbols-outlined">widgets</span>
+                            </div>
+                            <div class="widgets-txt">
+                                <p>Widgets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets-subDv">
+                        <div class="subdv-container">
+                            <div class="subdv-widgetIcon"></div>
+                            <div class="subdv-widgetContent">
+                                <p>Widgets are essentially just plug-ins that can be used to create a home page view with custom actions for all your daily activities. You can also create a widget exclusively for an extension.</p>
+                            </div>
+                            <div class="create-widgetbtn">
+                                <p>Create Widget</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="right-orgDisplayer">
+                    <div class="orgDisplayer-header">
+                        <div class="people-dv">
+                            <div class="peopleDv-icon"></div>
+                            <div class="peopleDv-content">
+                                <p>People</p>
+                            </div>
+                        </div> 
+                        <div class="people-searchdv">
+                            <div class="people-searchIcon">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input type="text" placeholder="Search by name or email address">
+                        </div>                      
+                    </div>
+                    <div class="Alluser-container">
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Dhivya</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>dhivyap18598@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Esakkivash.n</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>esakkivash.n@zohotest.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Geo_Hari</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>t.hariharan2014@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Saliha</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>salihasherif.s@zohomail.in</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Nithiskumar</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>nithiskumarknr@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Mani</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>yeyav36000@wwdee.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Gnana Elisa</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>gnanaelisa.r+1@zohotest.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Ganesh</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>ganesh.cmr2004@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Jesintha</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>jesintha2507@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Karpagaselvam S</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>karpagaselvam.s@zohotest.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>You</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>vigneshvky4711@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Ramya D</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>ramyad965@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Venkatesh P</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>venkatesh.p@zohotest.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Sakthivel</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>mv2475922@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Vishnu</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>vishnuvichu9487@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                        <div class="user-card">
+                            <div class="card-profile"></div>
+                            <div class="profile-detail">
+                                <div class="profile-name">
+                                    <p>Suba</p>
+                                </div>
+                                <div class="profile-id">
+                                    <p>subhadev3696@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-callIcon">
+                                    <span class="material-symbols-outlined">call</span>
+                                </div>
+                                <div class="card-videoIcon">
+                                    <span class="material-symbols-outlined">videocam</span>
+                                </div>
+                                <div class="card-txtIcon">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </div>
+                                <div class="card-iIcon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-subContainer">
+                        <div class="org-subdv">
+                            <div class="org-subIcon"></div>
+                            <div class="org-subContent">
+                                <p>No department members added yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

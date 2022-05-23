@@ -1,0 +1,1231 @@
+.files-displayer{
+    width: 100%;
+    height: 300px;
+    font-family: "Lato";
+    display: none;
+    cursor: pointer;
+}
+.files-header{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: flex-end;
+    padding-left: 15px;
+    padding-bottom: 3px;
+    color: #e1e3e4;
+    font-size: 15px;
+}
+.files-menu{
+    width: 100%;
+    height: 200px;
+}
+.shared-dv,.taz-dv,.recording-dv{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+}
+.shared-dv{
+    background-color: rgba(44, 73, 102, 1);
+    border-left: 2px solid #6CA534;
+    font-weight: bold;
+}
+.file-menuIcon,.recording-Icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(image1.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: 6px 7px;
+}
+.recording-Icon{
+    display: flex;
+    background-image: none;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    color: #859ca7;
+}
+.file-menuContent{
+    display: flex;
+    width: 160px;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+.right-shareContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.shareContainer-header{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    font-family: "Lato";
+    align-items: center;
+    padding: 0px 37px;
+    border-bottom: 1px solid #38485A;
+}
+.sharing-container{
+    display: flex;
+    width: 200px;
+    height: 38px;
+    flex-grow: 1;
+}
+.sharing-icon{
+    width: 30px;
+    height: 38px;
+    background-image: url(image2.png);
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    background-position: 4px 12px;
+}
+.sharing-content{
+    display: flex;
+    height: 38px;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.share-wholedv{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-grow:1
+}
+.sharing-types{
+    display: flex;
+    width: 352px;
+    height: 38px;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #38485A;
+}
+.share-type1,.share-type2,.share-type3,.share-type4{
+    display: flex;
+    width: 83px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;    
+    font-size: 14px;
+    color: #778491;
+    font-weight: bold;
+    cursor: pointer;
+}
+.share-type1:hover,.share-type2:hover,.share-type3:hover,.share-type4:hover{
+    background-color: #1C2A38;   
+}
+.share-type1{
+    background-color: #1C2A38;   
+    color: #6CA534;
+}
+.share-subheader,.recording-subdv{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 0px 37px;
+    justify-content: flex-end;
+}
+.subheader-icondv{
+    display: flex;
+    width: 284px;
+    height: 38px;
+    gap: 19px;
+    align-items: center;
+}
+.search-icon3,.calendar-icon,.menu-icon{
+    display: flex;
+    width: 34px;
+    height: 34px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 5px;
+    color: #8899A6;
+    border: 1px solid #475461;
+    cursor: pointer;
+}
+.search-icon3:hover,.calendar-icon:hover,.menu-icon:hover,.sharedby-dv:hover{
+    background-color: #1C2A38;
+    color:#6CA534 ;
+}
+.calendar-icon{
+    font-size: 16px;
+}
+.menu-icon{
+    font-size: 22px;
+}
+.sharedby-dv,.recordedby-dv{
+    display: flex;
+    width: 120px;
+    height: 34px;
+    font-family: "Lato";
+    gap: 4px;
+    font-size: 14px;
+    align-items: center;
+    padding-left: 7px;
+    border-radius: 4px;
+    border:1px solid #475461;
+    cursor:pointer
+}
+.sharedby-dv p,.recordedby-dv p{
+    color: #8899A6;
+}
+.drop-icon2{
+    display: flex;
+    width: 20px;
+    height: 38px;
+    /* background-color: crimson; */
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    color: #8899A6;
+}
+#para{
+    font-size: 14px;
+    color: #fff;
+}
+.shared-emptyDisplayer{
+    display: flex;
+    width: 100%;
+    height: 79%;
+    justify-content: center;
+    padding-top: 97px;
+}
+.shared-emptydv{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 218px;
+    align-items: center;
+    font-family: "Lato";
+    justify-content: space-around;
+}
+.shared-emptyIcon{
+    width: 180px;
+    height: 146px;
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/default/media_listing/ml_nmempty_image.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 25px;
+}
+.shared-emptyContent{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 18px;
+    color: #afb3b7;
+}
+.right-recordingContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.recordContainer-header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding: 0px 32px;
+    border-bottom: 1px solid #38485A;
+}
+.record-dv{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    font-family: "Lato";
+}
+.recordDv-icon{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #fff;
+}
+.recordDv-content{
+    display: flex;
+    width: 190px;
+    height: 35px;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.recording-subheader{
+    width: 100%;
+    height: 45px;
+    padding: 0px 16px;
+    border-bottom: 2px solid #00000042;
+}
+.recording-types{
+    display: flex;
+    width:450px;
+    height: 45px;
+    gap: 2px;
+    font-family: "Lato";
+}
+.recordType1,.recordType2,.recordType3{
+    display: flex;
+    width: 130px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #778491;
+}
+.recordType1{
+    color: #fff;
+    border-bottom: 2px solid #6CA534;
+}
+.recordType3{
+    width: 150px;
+}
+.subdv-iconContainer{
+    display: flex;
+    width: 300px;
+    height: 38px;
+    gap: 19px;
+    align-items: center;
+}
+.recordedby-dv{
+    width: 137px;
+}
+.recording-history{
+    display: flex;
+    width: 100%;
+    height: 71%;
+    justify-content: center;
+    padding-top: 78px
+}
+.record-historydv{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 240px;
+    align-items: center;
+    justify-content: space-around;
+}
+.historydv-icon{
+    width: 200px;
+    height: 120px;
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/default/media_listing/ml_nmempty_video.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 12px;
+}
+.historydv-content {
+    width: 100%;
+    height: 70px;
+    font-family: "Lato";
+    text-align: center;
+    line-height: 28px;
+    color: #afb3b7;
+}
+.calendar-displayer{
+    width: 100%;
+    height: 20%;
+    font-family: "Lato";
+    display: none;
+}
+.Caldisplayer-header{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    font-size: 14px;
+    align-items: flex-end;
+    padding-left: 13px;
+    color: #fff;
+    padding-bottom: 2px;
+}
+.Caldisplayer-subdv{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    padding-left: 19px;
+}
+#cal-Iput{
+    background-color: #6CA534;
+    border: none;
+    border-radius: 4px;
+}
+#cal-Iput:checked{
+    background-position: 2px 2px;
+}
+.calendar-Id{
+    display: flex;
+    width: 160px;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 7px;
+    color: #fff;
+}
+.right-calendarContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #15202B;
+    display: none;
+}
+.calendar-header{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    background-color: #15202B;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 33px;
+    box-shadow: 2px 2px 3px 0px #04040459;
+}
+.calendar-Content{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+.content-icon{ 
+    display: flex;
+    width: 21px;
+    height: 30px;
+    font-family: "Material Icons";
+    align-items: center;
+    font-size: 17px;
+    color: #8899A6;
+}
+.content-txt{
+    display: flex;
+    width: 117px;
+    height: 35px;
+    font-family: "Lato";
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.calendar-buttons{
+    display: flex;
+    width: 289px;
+    height: 40px;
+    font-family: "Lato";
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+.Schedule-btn{
+    display: flex;
+    width: 153px;
+    height: 31px;
+    background-color: #6CA534;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.createEvent-btn{
+    display: flex;
+    width: 119px;
+    height: 31px;
+    background-color: #6CA534;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.notes-displayer{
+    width: 100%;
+    height: 45%;
+    font-family: "Lato";
+    display: none;
+    cursor: pointer;
+}
+.notes-header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: end;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #fff;
+}
+.notes-menuContainer{
+    width: 100%;
+    height: 74px;
+    padding-top: 6px;
+}
+.notes-containDv1,.notes-containDv2{
+    display: flex;
+    width: 100%;
+    height: 28px;
+    padding-left: 10px;
+    align-items: center;    
+}
+.notes-containDv1{
+    background-color: rgba(44, 73, 102, 1);
+    border-left: 2px solid #6CA534;
+    font-weight: bold;
+}
+.containdv-icon{
+    width: 25px;
+    height: 25px;
+    background-image: url(sticky.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 9px 5px;
+}
+.cliq{
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/newlogo_260x50.png);
+    background-size: 141px 27px;
+    background-position: 1px -1px;
+    filter: invert(46%);
+}
+.containdv-txt{
+    display: flex;
+    width: 77%;
+    height: 28px;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+    color: #fff;
+}
+.notebook-header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;    
+}
+.notebook-txt{
+    display: flex;
+    width: 81%;
+    height: 40px;
+    align-items: center;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #fff;
+}
+.notebook-addIcon{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #859ca7;
+}
+.notebook-category{
+    display: flex;
+    width: 100%;
+    height: 26px;
+    padding-left: 17px;
+    align-items: center;
+}
+.category-icon{
+    width: 15px;
+    height: 16px;
+    background-image: url(notebook.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -5px;
+}
+.category-txt{
+    display: flex;
+    width: 78%;
+    height: 26px;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 14px;
+    align-items: center;
+}
+.Allnotes-displayer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.Allnotes-header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    font-family: "Lato";
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 42px;
+    border-bottom: 1px solid #38485a;
+}
+.Allnotes-txt{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.notesHeader-subdv{
+    display: flex;
+    width: 488px;
+    height: 48px;
+    align-items: center;
+}
+.modifing-dv{
+    display: flex;
+    width: 250px;
+    height: 45px;
+    justify-content: space-between;
+}
+.date-modifier{
+    display: flex;
+    width: 156px;
+    height: 45px;
+}
+.modifier-icon{
+    width: 35px;
+    height: 40px;
+    background-image: url(https://notebook.zoho.in/zcliq_notes/icon-assets/secondary-all.svg);
+    background-size: 47px 110px;
+    background-position: 5px -33px;
+    filter: invert(100%);
+}
+.modifier-txt{
+    display: flex;
+    width: 120px;
+    height: 33px;
+    align-items: end;
+    font-size: 14px;
+    color: #fff;
+}
+.fliter-dv{
+    display: flex;
+    width: 92px;
+    height: 45px;
+}
+.fliterdv-icon{
+    width: 28px;
+    height: 40px;
+    background-image: url(https://notebook.zoho.in/zcliq_notes/icon-assets/secondary-all.svg);
+    background-size: 47px 110px;
+    background-position: -23px -32px;
+    filter: invert(100%);
+}
+.fliterdv-txt{
+    display: flex;
+    width: 60px;
+    height: 33px;
+    align-items: end;
+    font-size: 14px;
+    color: #fff;
+}
+.whole-icondv{
+    display: flex;
+    width: 235px;
+    height: 43px;
+    background-color: black;
+    gap: 9px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.icondv1,.icondv2,.icondv3,.icondv4,.icondv5{
+    width: 35px;
+    height: 40px;
+    background-image: url(https://notebook.zoho.in/zcliq_notes/icon-assets/topbar-all.svg);
+    background-size: 189px 134px;
+    background-position: 5px -32px;
+    filter: invert(100%);
+}
+.icondv2{
+    background-position: -24px -32px;
+}
+.icondv3{
+    width: 34px;
+    background-position: -51px -32px;
+}
+.icondv4{
+    width: 34px;
+    background-position: -105px -32px;
+}
+.icondv5{
+    background-position: 112px -32px;
+}
+.Allnotes-subdisplayer{
+    display: flex;
+    width: 100%;
+    height: 89%;
+    align-items: center;
+    justify-content: center;
+}
+.txt-content{
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    line-height: 37px;
+    font-family: "Baskerville";
+    font-style: italic;
+    font-size: 24px;
+    color: #999;
+}
+.txt-content p:last-child{
+    font-family: "Lato";
+    font-size: 18px;
+}
+.cliqMeeting-displayer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.cliqMeeting-header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #15202b;
+    align-items: center;
+    padding: 0px 41px;
+    border-bottom: 1px solid #38485a;
+}
+.cliqMeeting-txtdv{
+    display: flex;
+    width: 155px;
+    height: 40px;
+    font-family: "Lato";
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+.cliq-subDisplayer{
+    display: flex;
+    width: 100%;
+    height: 89%;
+    align-items: center;
+    justify-content: center;
+}
+.cliq-contentdv{
+    display: flex;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato";
+    font-style: italic;
+    color: #666;
+}
+.widgets-displayer{
+    width: 100%;
+    height: 40%;
+    display: none;
+}
+.widgets-header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-family: "Lato";
+    align-items: end;
+    font-size: 15px;
+    padding-left: 13px;
+    padding-bottom: 10px;
+    color: #e1e3e4;
+}
+.widgets-logodv{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 159px;
+    align-items: center;
+    justify-content: center;
+}
+.widgets-logo{
+    width: 80px;
+    height: 80px;
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/default/emptystate/widgets_empty_state.svg);
+    background-size: 78px 67px;
+    background-position: 1px 10px;
+    background-repeat: no-repeat;
+}
+.widgets-content{
+    width: 70%;
+    height: 22px;
+    font-family: "Lato";
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+    color: #778491;
+}
+.widgets-mainContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.widgets-mainHeader{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 0px 25px;
+    align-items: center;
+    border-bottom: 1px solid #38485A;    
+}
+.widgets-headerdv{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+}
+.widgets-icon{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    font-family: "Material Icons";
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    color: #8899A6;
+}
+.widgets-txt{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    font-family:"Lato";
+    font-weight: bold;
+    align-items: center;
+    padding-left: 3px;
+    color: #fff;
+}
+.widgets-subDv{
+    display: flex;
+    width: 100%;
+    height: 91%;
+    align-items: center;
+    justify-content: center;
+}
+.subdv-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 300px;
+    align-items: center;
+}
+.subdv-widgetIcon{
+    width: 150px;
+    height: 130px;
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/default/emptystate/applets_dark_empty.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -2px 16px;
+}
+.subdv-widgetContent{
+    display: flex;
+    width: 92%;
+    height: 99px;
+    font-family: "Lato";
+    text-align: center;
+    align-items: end;
+    color: #778491;
+    font-size: 17px;
+    line-height: 23px;
+}
+.create-widgetbtn{
+    display: flex;
+    width: 138px;
+    height: 40px;
+    background-color: #6CA534;
+    font-family: "Lato";
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.org-displayer{
+    width: 100%;
+    height: 40%;
+    display: none;
+}
+.org-header{
+    display: flex;
+    width: 100%;
+    height: 42px;
+    font-family: "Lato";
+    align-items: flex-end;
+    font-size: 15px;
+    padding-left: 14px;
+    padding-bottom: 5px;
+    color: #e1e3e4;
+}
+.org-menuContainer{
+    width: 100%;
+    height: 110px;
+    padding-top: 2px;
+}
+.menudv1,.menudv2,.menudv3{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.menudv1{
+    background-color: rgba(44, 73, 102, 1);
+    border-left: 2px solid #6CA534;
+}
+.org-menuIcon{
+    width: 24px;
+    height: 30px;
+    background-image: url(network.png);
+    background-size: 13px 14px;
+    background-repeat: no-repeat;
+    background-position: 4px 9px;
+    filter: invert(75%);
+}
+.menudv1 .org-menuIcon:first-child{
+    filter: invert(100%);
+}
+.org-menuContent{
+    display: flex;
+    width: 165px;
+    height: 30px;
+    font-family: "Lato";
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+    color: #e1e3e4;
+}
+.menudv1 .org-menuContent:last-child{
+    font-weight: bold;
+}
+.right-orgDisplayer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21,32,43);
+    display: none;
+}
+.orgDisplayer-header{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding: 0px 23px;
+    border-bottom: 1px solid #38485A;
+}
+.people-dv{
+    display: flex;
+    width: 308px;
+    height: 35px;
+    align-items: center;
+}
+.peopleDv-icon{
+    width: 25px;
+    height: 30px;
+    background-image: url(contact-book.png);
+    background-size: 19px 17px;
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+}
+.peopleDv-content{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: bold;
+    padding-left: 3px;
+    color: #fff;
+}
+.people-searchdv{
+    display: flex;
+    width: 404px;
+    height: 36px;
+    align-items: center;
+    border: 1px solid #2e3c4a;
+    border-radius: 5px;
+    flex-grow: 0.5;
+}
+.people-searchIcon{
+    display: flex;
+    width: 34px;
+    height: 30px;
+    /* background-color: indianred; */
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: #515b62;
+    padding-right: 3px;
+}
+.people-searchdv input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Lato";
+    padding-left: 2px;
+    color: #fff;
+}
+::placeholder{
+    color: #31404e;
+}
+.Alluser-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 84vh;
+    background-color: rgb(19,28,38);
+    gap: 31px 31px;
+    padding: 40px 224px 17px 72px;
+    overflow-y: hidden;
+}
+.Alluser-container::-webkit-scrollbar {
+    width: 4px;
+}
+.Alluser-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #b3b3b3;
+}
+.Alluser-container:hover{
+    overflow-y: auto;
+}
+.user-card{
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+    height: 220px;
+    background-color: #1A2B3C;
+    border-radius: 15px 0px;
+    padding: 0px 13px;
+    align-items: center;
+    cursor: pointer;
+}
+.card-profile{
+    width: 110px;
+    height: 110px;
+    background-image: url(https://contacts.zoho.in/file?ID=60013738816&exp=6000&t=user&fs=thumb);
+    background-size: cover;
+}
+.profile-detail{
+    width: 100%;
+    height: 60px;
+    font-family: "Lato";
+    padding-top: 10px;
+}
+.profile-name{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #e1e3e4;
+}
+.profile-id{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    font-size: 13px;
+    align-items: center;
+    color: #afb3b7;
+}
+.card-icons{
+    display: flex;
+    width: 100%;
+    height: 46px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.card-callIcon,.card-videoIcon,.card-txtIcon,.card-iIcon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #8899A6;
+    border-radius: 5px;
+    border: 1px solid #8899A6;
+    background-color: #15202B;
+    display: none;
+}
+.card-iIcon{
+    background-image: url(alphabet.png);
+    background-size: 14px 15px;
+    background-repeat: no-repeat;
+    background-position: 7px 6px;
+}
+.org-subContainer{
+    display: flex;
+    width: 100%;
+    height: 91%;
+    justify-content: center;
+    padding-top: 177px;
+    display: none;
+}
+.org-subdv{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 198px;
+    align-items: center;
+    justify-content: space-between;
+}
+.org-subIcon{
+    width: 201px;
+    height: 146px;
+    background-image: url(https://static.zohocdn.com/chat/source/officechat/images/default/emptystate/people_empty_myreports_dark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 27px;
+}
+.org-subContent{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    font-family: "Lato";
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    color: #afb3b7;
+    padding-right: 10px;
+}
+.dropdown-menu{
+    position: absolute;
+    width: 156px;
+    height: auto;
+    background-color: rgb(26,43,60);
+    padding: 5px;
+    top: -3px;
+    left: 7px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px 0px 4px 0px rgb(20 31 42);
+    display: none;
+}
+.option-dv{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: center;  
+    font-family: "Lato"; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+.option-dv:hover,.paint,.meetType-dv:hover,.paint2{
+    background-color: rgb(38,56,73);
+}
+.option-content{
+    display: flex;
+    width: 115px;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 28px;
+    color: #fff;
+}
+.option-icon,.conversation-dvIcon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #6CA534;
+    visibility: hidden;
+}
+.checked,.check1{
+    visibility: visible;
+}
+.meetType-drop{
+    position: absolute;
+    width: 175px;
+    height: auto;
+    background-color: rgb(26,43,60);
+    top: 45px;
+    left: 58%;
+    padding: 3px;
+    box-shadow: 0px 0px 4px 0px rgb(13 21 28);
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+.meetType-dv{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    font-family: "Lato";
+    border-radius: 4px;
+    cursor: pointer;
+}
+.meetType-icon{
+    display: flex;
+    width: 24px;
+    height: 30px;
+    font-family: "Material Icons";
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #727F86;
+}
+.meetType-content{
+    display: flex;
+    width: 137px;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    color: #e1e3e4;
+    padding-left: 5px;
+}
+.conversation-drop{
+    position: absolute;
+    width: 185px;
+    height: auto;
+    background-color: rgb(26,43,60);
+    top: 47px;
+    padding: 4px;
+    box-shadow: 0px 0px 4px 0px rgb(13 21 28);
+    border-radius: 5px;
+    display: none;
+}
+.conversation-dropDv{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.conversation-dvTxt{
+    display: flex;
+    width: 144px;
+    height: 30px;
+    font-size: 14px;
+    align-items: center;
+    padding-left: 7px;
+    color: #fff;
+}
+.mystyle{
+    display: block;
+}
+@media screen and (max-width : 970px) {
+    .container{
+        height: 350vh;
+        overflow: inherit;
+    }
+}
