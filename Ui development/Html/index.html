@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI development</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <div class="container">
+        <input type="checkbox" id="show-menu">
+        <div class="menu-container">
+            <div class="menu-subdv1">
+                <div class="subdv-header">
+                    <div class="menuheader-leftdv">
+                        <div class="logo-icon">
+                            <div class="logo-outerdv">
+                                <div class="logo-innerdv"></div>
+                            </div>
+                        </div>
+                        <div class="logo-name">Acme</div>
+                        <div class="logo-dropicon">
+                            <span class="material-symbols-outlined" style="font-size: 22px;color: #fff;">arrow_drop_down</span>
+                        </div>
+                    </div>
+                    <div class="headericon-dv">
+                        <div class="notification-icon"></div>
+                        <label for="show-menu" class="cancel-menu">
+                            <span class="cancel-icon"></span>
+                        </label>                        
+                    </div>
+                </div>
+                <div class="menu-body">
+                    <div class="subdv-body">
+                        <div class="search-container">
+                            <div class="search-icon"></div>
+                            <input type="text" id="txt-iput" placeholder="Find anything">
+                        </div>
+                        <div class="document-dv">
+                            <div class="add-icon"></div>
+                            <div class="document-txt">New doc</div>
+                        </div>
+                        <div class="Favorite-dv">
+                            <div class="favorite-content">Favorites</div>
+                            <div class="favorite-icon"></div>
+                        </div>
+                        <div class="menu-dropdv">
+                            <input type="checkbox" id="menu-drop">
+                            <label for="menu-drop">
+                                <span class="right-dropicon"></span>
+                                <span class="user-icon"></span>
+                                <span class="drop-content">My private notes</span>
+                            </label>                            
+                            <input type="checkbox" id="menu-drop1">
+                            <label for="menu-drop1">
+                                <span class="down-dropicon"></span>
+                                <span class="user-icon1"></span>
+                                <span class="drop-content">Marketing</span>
+                            </label>                            
+                            <ul id="menu">
+                                <li>
+                                   <label id="sub-lable">
+                                       <span id="menupin-icon"></span>
+                                       <span class="drop-content">Marketing home</span>
+                                   </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="dropicon1"></span>
+                                        <span class="book-icon"></span>
+                                        <span class="drop-content">Guidelines</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="dropicon2"></span>
+                                        <span class="fire-icon"></span>
+                                        <span class="drop-content">Product marketing</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <span class="dropicon3"></span>
+                                        <span class="project-icon"></span>
+                                        <span class="drop-content">Projects</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="catch-up">
+                                    <label for="catch-up">
+                                        <span class="dropicon4"></span>
+                                        <span class="message-icon"></span>
+                                        <span class="drop-content">Marketing catch up</span>
+                                    </label>                                    
+                                    <ul id="menu1">
+                                        <li>
+                                            <label class="sub-lable2 lable-colour">
+                                                <span class="sublabel-icon"></span>
+                                                <span class="drop-content">Meeting - Week 2</span>
+                                            </label>
+                                         </li>
+                                        <li>
+                                            <label class="sub-lable2">
+                                                <span class="sublabel-icon"></span>
+                                                <span class="drop-content">Status update - Week1</span>
+                                            </label>
+                                         </li>
+                                        <li>
+                                            <label class="sub-lable2">
+                                                <span class="sublabel-icon"></span>
+                                                <span class="drop-content">Meeting - Week 1</span>
+                                            </label>
+                                         </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="channel-dv">
+                            <div class="channel-content">
+                                All Channels
+                                <span>(8 hidden)</span>
+                            </div>
+                            <div class="channnel-icon"></div>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <div class="contact">
+                            <div class="contact-icon"></div>
+                            <div class="contact-content">Import content</div>
+                        </div>
+                        <div class="template">
+                            <div class="template-icon">
+                                <div class="dot-dv">
+                                    <div class="dot-subdv"></div>
+                                </div>
+                            </div>
+                            <div class="template-content">Templates</div>
+                        </div>
+                        <div class="archive">
+                            <div class="archive-icon"></div>
+                            <div class="archive-content">Archive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="header">
+                <div class="directing-container">
+                    <label for="show-menu" id = "menu-lable">
+                        <span class="menu-icon"></span>
+                    </label>                    
+                    <div class="navigation-dv">
+                        <div class="nav-backword">
+                            <span class="material-symbols-outlined" style = "color: #8f8f8f">chevron_left</span>
+                        </div>
+                        <div class="nav-forward">
+                            <span class="material-symbols-outlined" style = "color: #8f8f8f">chevron_right</span>
+                        </div>
+                    </div>
+                    <div class="path-container">
+                        <a href="#" class="link">Marketing</a>
+                        <span class="slach">/</span>
+                        <div class="path2">
+                            <div id="message-icon"></div>
+                            <a href="#" class="link">Marketing catch-up</a>
+                        </div>
+                        <span class="slach">/</span>
+                        <a href="#" class="link2">Meeting - Week 2</a>
+                    </div>
+                </div>
+                <div class="header-rightdv">
+                    <div class="icon-dv">
+                        <div class="chat-icon"></div>
+                        <div class="aligntext-icon">
+                            <div class="dash1"></div>
+                            <div class="dash2"></div>
+                            <div class="dash2"></div>
+                            <div class="dash1"></div>
+                        </div>
+                        <div class="hand-symbol"></div>
+                        <div class="star-icon"></div>
+                    </div>
+                    <button class="share-btn">Share</button>
+                    <div class="more-icon"></div>
+                </div>
+            </div>            
+            <div class="main-page">
+                <div class="main-leftPage">
+                    <div class="leftpage-header">
+                        <div class="minimize-icon"></div>
+                    </div>
+                    <div class="leftpage-body">
+                        <div class="body-content">
+                            <div class="content-dv1">
+                                <h1>Meeting - Week 2</h1>
+                                <div class="user-details">
+                                    <div class="detail1">
+                                        <span class="uniqe">Attendees:</span>
+                                        <span><a href="#" class="txt-link">@anya</a></span>
+                                        <a href="#" class="txt-link">@david</a>
+                                        <a href="#" class="txt-link">@yuan</a>
+                                    </div>
+                                    <div class="detail2">
+                                        <span class="uniqe">Date & time:</span>
+                                        <span>April 4th, 2020</span>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="content-dv2">
+                                <div class="Agenda-dv">
+                                    <div class="board-icon"></div>
+                                    <div class="board-content">
+                                        <h2>Agenda</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-dv3">
+                                <div class="content-leftdv">
+                                    <div class="profile-icons">
+                                        <div class="profile1"></div>
+                                        <div class="profile2"></div>
+                                    </div>
+                                </div>
+                                <div class="content-rightdv">
+                                    <p>Main topic(s) to discuss:</p>
+                                    <div class="update-dv">
+                                        <div class="tick">
+                                            <span class="material-symbols-outlined" style="font-size: 22px;color:green">done</span>
+                                        </div>
+                                        <span>Marketing hiring update</span>
+                                    </div>
+                                    <form id="form-list">
+                                        <div class="form-group">
+                                            <input type="checkbox">
+                                            <lable class="lable-txt">Content roadmap</lable>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox">
+                                            <lable class="lable-txt">Press roadmap</lable><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox">
+                                            <lable class="lable-txt">New templates</lable><br>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox">
+                                            <lable class="lable-txt">"Remote office hour" retrospective</lable>
+                                        </div>
+                                    </form>
+                                    <div class="notes-dv">
+                                        <div class="note-icon"></div>
+                                        <div class="notes-content">
+                                            <h3>Notes</h3>
+                                        </div>
+                                    </div>
+                                    <p>Hiring</p>
+                                </div> 
+                                <div class="hiring-user">
+                                    <div class="hiring-userIcon"></div>
+                                </div>
+                                <div class="hiring-content">
+                                    <ul>
+                                        <li>Alex-Panwell & Tanya Fawcett will be joining the marketing team.</li>
+                                    </ul>
+                                </div> 
+                                <div class="content-dv4">
+                                    <div class="outcome-dv">
+                                        <div class="pin-icon"></div>
+                                        <div class="outcome-content">
+                                            <h3>Outcomes</h3>
+                                        </div>
+                                    </div>
+                                    <p class="para1">Summarize key decisions in a tidy paragraph and communicate them to the team.</p> 
+                                    <div class="action-dv">
+                                        <div class="action-item"></div>
+                                        <div class="action-content">
+                                            <h3>Action items</h3>
+                                        </div>
+                                    </div> 
+                                    <p class="para1">What's next? E.g. @jess to review the templates quality</p>
+                                </div>                                                                                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-rightPage">
+                    <div class="customer-profile">
+                        <div class="customer-icon1"></div>
+                        <div class="customer-icon2"></div>
+                        <div class="customer-icon3"></div>
+                    </div>
+                    <div class="footer-icon">
+                        <div class="circle-icon">
+                            <div class="circle1"></div>
+                            <div class="circle2"></div>
+                        </div>
+                        <div class="Question-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
