@@ -27,7 +27,7 @@
     grid-template-rows: 1fr;
 }
 .main-leftdv{
-    border: 1px solid lightgray;
+   box-shadow: 1px 0px 0px 0px lightgrey;
 }
 .main-leftdv,.main-rightdv{
     padding: 0px 15px;
