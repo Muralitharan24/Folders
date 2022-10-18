@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.container{
+    display: flex;
+}
+.sideMenu-container{
+    display: flex;
+    width: 210px;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+.sidemenu-header,.sidemenu-footer{
+    display: flex;
+    padding: 25px 35px;
+    align-items: center;
+    gap: 5px;
+}
+.sidemenu-header > span{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menuList-container{
+    flex:1;
+    overflow-y: auto ;
+}
+ul{
+    padding: 0px 20px;
+}
+li{
+    list-style: none;
+    border-radius: 5px;
+}
+li:hover{
+    background-color:lightgrey;
+}
+a{
+    display: flex;    
+    padding: 10px 15px;
+    align-items: center;    
+    gap: 7px;
+}
+a > span,.sidemenu-footer > span{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.pick{
+    background-color: black;
+}
+.pick > a > span{
+    color: white;
+}
+.invoice,.dashboard,.estimates,.transection,.product,.team,.setting,.switch{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/groupIcons.svg);
+    background-size: 216px;
+}
+.invoice{
+    background-position: 95px;
+}
+.dashboard{
+    background-position: 71px;
+}
+.estimates{
+    background-position: 47px;
+}
+.transection{
+    background-position: 120px;
+}
+.product{
+    background-position: 144px;
+}
+.team{
+    background-position: 168px;
+}
+.setting{
+    background-position: 192px;
+}
+.switch{
+   background-position: 24px;
+}
+.sidemenu-footer{
+    gap: 7px;
+}
