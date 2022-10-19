@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.sideMenu-container{
+    display: flex;
+    min-width: 210px;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+.sidemenu-header,.sidemenu-footer{
+    display: flex;
+    padding: 25px 35px;
+    align-items: center;
+    gap: 5px;
+}
+.sidemenu-header > span{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menuList-container{
+    flex:1;
+    overflow-y: auto ;
+}
+ul{
+    padding: 0px 20px;
+}
+li{
+    list-style: none;
+    border-radius: 5px;
+}
+li:hover{
+    background-color:lightgrey;
+}
+li > a{
+    display: flex;    
+    padding: 10px 15px;
+    align-items: center;    
+    gap: 7px;
+}
+li > a > span,.sidemenu-header > span,.sidemenu-footer > span{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.pick{
+    background-color: black;
+}
+.pick > a > span{
+    color: white;
+}
+.invoice,.dashboard,.estimates,.transection,.product,.team,.setting,.switch{
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/groupIcons.png);
+    background-size: 336px;
+}
+.invoice{
+    background-position: 214px;
+}
+.dashboard{
+    background-position: 192px;
+}
+.estimates{
+    background-position: 166px;
+}
+.transection{
+    background-position: 239px;
+}
+.product{
+    background-position: 263px;
+}
+.team{
+    background-position: 287px;
+}
+.setting{
+    background-position: 311px;
+}
+.switch{
+   background-position: 144px;
+}
+.sidemenu-footer{
+    gap: 7px;
+}
+.main-dashboard{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.dashboard-header{
+    display: flex;
+}
+.header-leftdv{
+    display: flex;
+    /* background-color: red; */
+    padding: 22px 20px;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.header-leftdv > h2{
+    font-size: 20px;
+}
+.search-dv{
+    display: flex;
+}
+.search-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/groupIcons.png);
+    background-size: 242px;
+    background-position: -154px;
+    background-repeat: no-repeat;
+}
+.search-dv > input{
+    padding-left: 8px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search-dv > input::placeholder{
+    color:rgb(172, 171, 171);
+}
+.header-rightdv{
+    display: flex;
+    /* background-color: red; */
+    padding: 18px 20px;
+    gap: 13px;
+    align-items: center;
+}
+.notification-icon{
+    width: 28px;
+    height:28px;
+    background-color: rgb(250,250,250);
+    border-radius: 20px;
+    background-image: url(../images/notification.png);
+    background-size: 16px;
+    background-position: 6px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.profile-dv{
+    display: flex;
+    gap: 7px;
+}
+.profile-dv > a{
+    font-size: 0;
+}
+.profile-dv > a > img{
+     width: 35px;
+     height: 35px;
+}
+.profile-detail{
+   padding-top: 4px;
+}
+.profile-name{
+    display: flex;
+}
+.profile-name > p{
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.arrow{
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/groupIcons.png);
+    background-position: 28px 2px;
+    background-size: 192px;
+    cursor: pointer;
+}
+.designation{
+    font-family: 'Lato', sans-serif;
+    font-size: 9px;
+    color: grey;
+}
+.mainContent-page{
+    /* background-color: red; */
+    flex: 1;
+    overflow-y: auto;
+    text-align: justify;
+    padding: 10px 10px;
+    padding-top: 5px;
+    border-top: 1px solid lightgray;
+}
