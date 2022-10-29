@@ -209,6 +209,7 @@ body{
     border-radius: 4px;
     background-color: rgb(234,154,1);
     color: white;
+    cursor:pointer;
 }
 .add-icon{
     background-position: -56px -19px;
