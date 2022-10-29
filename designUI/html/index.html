@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignUI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-container">
+            <a href="#" class="menu-header">
+                <img src="../images/logo1.png" alt="logo" width="26" height="26">
+            </a>
+            <ul class="menu-list1">
+                <li>
+                    <a href="#">
+                        <i class="menu-icon home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="menu-icon product"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon document"></i>
+                        <span>Documents</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon analytics"></i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-list2">
+                <li>
+                    <a href="#">
+                        <i class="menu-icon setting"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon notification"></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon search"></i>
+                        <span>Search</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="menu-footer">
+                <img src="../images/avathar.png" alt="profile" width="28" height="28">
+                <div class="profile-details">
+                    <div class="profile-name">Jane Cooper</div>
+                    <div class="designation">NBS LLC</div>
+                    </div>
+                <i class="menu-icon down-arrow"></i>
+            </a>
+        </div>
+        <div class="main-dashboard">
+            <div class="header">
+                <a href="#" class="back-btn">
+                    <i class="menu-icon left-arrow"></i>
+                    <span class="previous">Back</span>
+                </a>
+                <ul class="bread-crumb">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Reimagined TENS Device</a></li>
+                    <li><a href="#">Design Control Index</a></li>
+                    <li><a href="#">Design Control</a></li>
+                </ul>
+                <div class="view-type">
+                    <i class="list-view"></i>
+                    <i class="row-view"></i>                    
+                </div>
+                <button id="create-btn">
+                    <i class="menu-icon add-icon"></i>
+                    Create Design Review
+                </button>
+            </div>
+            <div class="dashboard-contentpage">
+                <div class="contentpage-filtermenu">
+                    <span class="filtermenu-header">
+                        <h3>Filters</h3>
+                        <i class="menu-icon enter-icon"></i>
+                    </span>
+                    <div class="filtermenu-sublistcontainer">
+                        <div class="filter-search">
+                            <i class="menu-icon filter-searchicon"></i>
+                            <input type="text" placeholder="Search by title...">
+                        </div>
+                        <div class="tag-search">
+                            <p>Tags</p>
+                            <input type="text" placeholder="Search for tags...">
+                        </div>
+                        <div class="owner-search">
+                            <p>Owner</p>
+                            <input type="text" placeholder="Search for owner...">
+                        </div>
+                        <span class="status">Status</span>
+                        <ul class="filter-list1">
+                            <li>
+                                <input type="checkbox" id="draft-iput">
+                                <label for="draft-iput" class="list-text">Draft</label>
+                                <span class="count">6</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="pending-iput">
+                                <label for="pending-iput" class="list-text">Pending</label>
+                                <span class="count">17</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="review-iput">
+                                <label for="review-iput" class="list-text">In Review</label>
+                                <span class="count">9</span>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="approved-iput">
+                                <label for="approved-iput" class="list-text">Approved</label>
+                                <span class="count">8</span>
+                            </li>
+                        </ul>
+                        <div class="filter-components">
+                            <i class="component-icon"></i>
+                            <span>Components</span>
+                        </div>
+                        <ul class="filter-list2">
+                            <li id = "individual-list">
+                                <input type="checkbox" id="reimagined-iput">
+                                <label for="reimagined-iput" class="list-text">Reimagined TENS Device</label>
+                                <span class="count">40</span>
+                            </li>
+                            <li class="individual-list2">
+                                <input type="checkbox" id="list3-iput">
+                                <span>
+                                    <label for="list3-iput" class="dropdown-label">
+                                        <i class="dropdown-arrow"></i>
+                                    </label>
+                                    <input type="checkbox" id="battery-iput">
+                                    <label for="battery-iput" class="list-text">Battery</label>
+                                    <span class="count">16</span>
+                                </span>
+                                <ul class="filter-list3">
+                                    <li>
+                                        <input type="checkbox" id="alkaline-iput">
+                                        <label for="alkaline-iput" class="list-text">Alkaline</label>
+                                        <span class="count">10</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="coincell-iput">
+                                        <label for="coincell-iput" class="list-text">Coin Cell</label>
+                                        <span class="count">6</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>
+                                    <label class="dropdown-label">
+                                        <i class="dropdown-arrow"></i>
+                                    </label>
+                                    <input type="checkbox" id="labeling-iput">
+                                    <label for="labeling-iput" class="list-text">Labeling</label>
+                                    <span class="count">9</span>
+                                </span>
+                            </li>
+                            <li>
+                               <span>
+                                    <label class="dropdown-label">
+                                        <i class="dropdown-arrow"></i>
+                                    </label>
+                                    <input type="checkbox" id="electrode-iput">
+                                    <label for="electrode-iput" class="list-text">Electrode</label>
+                                    <span class="count">15</span>
+                               </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-rightpage">
+                    <ul class="contentrightpage-list1">
+                        <li>
+                            <input type="checkbox" id="sublist-iput">
+                            <span class="user-needs">
+                                <label for="sublist-iput">
+                                    <i class="dropdown-arrow arrow1"></i>
+                                    <span class="user-txt">User Needs</span>
+                                    <span class="user-count">2</span>
+                                </label>
+                                <i class="dropdown-arrow plus"></i>
+                            </span>
+                            <ul class="userneeds-sublist">
+                                <li>
+                                    <span class="labeling">
+                                        <i class="menu-icon labeling-icon"></i>
+                                        <span>Labeling</span>
+                                    </span>
+                                    <span class="standards">
+                                        <span class="standards-txt">UN-1</span>
+                                        <span class="standard-txt2">US Standards Conformance</span>
+                                    </span>
+                                    <span class="label-user">
+                                        <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                    </span>
+                                    <span class="label-option">
+                                        <span class="connectivity">
+                                            <i class="menu-icon connect-icon"></i>
+                                            <span>3</span>
+                                        </span>
+                                        <span class="connectivity">
+                                            <i class="menu-icon connect-icon2"></i>
+                                            <span>2</span>
+                                        </span>
+                                        <span class="connectivity">
+                                            <i class="menu-icon connect-icon3"></i>
+                                            <span>5</span>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="labeling">
+                                        <i class="menu-icon labeling-icon"></i>
+                                        <span>Electrode</span>
+                                    </span>
+                                    <span class="standards">
+                                        <span class="standards-txt">UN-2</span>
+                                        <span class="standard-txt2">User Functional Use</span>
+                                    </span>
+                                    <span class="label-user">
+                                        <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                    </span>
+                                    <span class="label-option">
+                                        <span class="connectivity">
+                                            <i class="menu-icon connect-icon2"></i>
+                                            <span>1</span>
+                                        </span>
+                                        <span class="connectivity">
+                                            <i class="menu-icon connect-icon3"></i>
+                                            <span>3</span>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>   
+                    </ul>
+                    <ul class="contentrightpage-list2">
+                        <li>
+                            <input type="checkbox" id="designlist-iput">
+                            <span  class="user-needs">
+                                <label for="designlist-iput">
+                                    <i class="dropdown-arrow arrow1"></i>
+                                    <span class="user-txt">Design Inputs</span>
+                                </label>
+                                <i class="dropdown-arrow plus"></i>
+                            </span>
+                            <ul class="design-list">
+                                <li class="requirements">
+                                    <span class="requirements-txt">SYSTEM REQUIREMENTS</span>
+                                    <span class="user-count">4</span>
+                                </li>
+                                <ul class="design-sublist">
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Battery</span>
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">DI-1</span>
+                                            <span class="standard-txt2">System shall conform to all standards required for sale</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon"></i>
+                                                <span>3</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon2"></i>
+                                                <span>2</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>5</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Software</span>
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">DI-2</span>
+                                            <span class="standard-txt2">System shall have batteryu life of 10 hours</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon"></i>
+                                                <span>2</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon2"></i>
+                                                <span>5</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>1</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Electrode</span>
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">DI-3</span>
+                                            <span class="standard-txt2">System shall conform to UN 70 3</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon"></i>
+                                                <span>3</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>3</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Battery</span>
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">DI-4</span>
+                                            <span class="standard-txt2">US Standards Conformance</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon"></i>
+                                                <span>3</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon2"></i>
+                                                <span>1</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>3</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <li class="requirements">
+                                    <span class="requirements-txt">SUBSYSTEM REQUIREMENTS</span>
+                                    <span class="user-count">2</span>
+                                </li>
+                                <ul class="design-sublist2">
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Labeling</span>
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">UN-1</span>
+                                            <span class="standard-txt2">US Standards Conformance</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon"></i>
+                                                <span>3</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon2"></i>
+                                                <span>2</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>5</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="labeling">
+                                            <i class="menu-icon labeling-icon"></i>
+                                            <span>Electrode</span>  
+                                        </span>
+                                        <span class="standards">
+                                            <span class="standards-txt">UN-2</span>
+                                            <span class="standard-txt2">US Standards Conformance</span>
+                                        </span>
+                                        <span class="label-user">
+                                            <img src="../images/avathar.png" alt="usericon" width="20" height="20">
+                                        </span>
+                                        <span class="label-option">
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon2"></i>
+                                                <span>1</span>
+                                            </span>
+                                            <span class="connectivity">
+                                                <i class="menu-icon connect-icon3"></i>
+                                                <span>3</span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
