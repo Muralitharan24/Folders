@@ -1509,9 +1509,6 @@
     display: grid;
 }
                            /*----- normal style starts here ------*/
-body{
-    justify-content: center;
-}
 .icon-wrapper{
     font-family: sans-serif;
 }
@@ -1520,8 +1517,9 @@ body{
     gap: 5px;
 }
 .list-wrapper{
-    gap:24px;
-    grid-template-columns: repeat(8,1fr);
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+    place-items: center;
 }
 .icon-list{
     list-style: none;
