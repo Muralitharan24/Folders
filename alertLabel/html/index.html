@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Labels</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>       
+            $(document).ready(function(){
+                
+                    $("#icon-access").load("alert-svgicon.html");
+
+            });
+    </script>
+</head>
+<body class="mar:0">
+    <div id="icon-access"></div>
+    <div class="container dis-flex:col pad-lr:65 pad-tb:25">
+        <div class="comp-container dis-flex:col">
+            <h3 class="mar:0 font-s:17">With description</h3>
+            <div class="label-container pad-tb:30 bor-solid:1 bor-c:grey3 dis:flex bor-r:6 pad-lr:65">
+                <div class="alert-label alert-mes dis:flex pad:12 bg-c:yellow2 bor-r:5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="lab-ico" width="18" height="18">
+                        <use xlink:href="#attention-icon"></use>
+                    </svg>   
+                    <div class="label-content dis-flex:col pad-t:1">
+                        <h4 class="lab-head mar:0 font-s:14">Attention needed</h4>
+                        <p class="para mar:0 font-s:13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eaque quod saepe accusamus temporibus eos doloribus placeat nesciunt excepturi voluptates sequi ab dolore officiis? Deleniti sunt non obcaecati provident optio.</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="comp-container dis-flex:col">
+            <h3 class="mar:0 font-s:17">With list</h3>
+            <div class="label-container pad-tb:30 bor-solid:1 bor-c:grey3 dis:flex bor-r:6 pad-lr:65">
+                <div class="alert-label alert-mes dis:flex pad:12 bg-c:red2 bor-r:5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="lab-ico" width="18" height="18" fill-stroke="2">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>   
+                    <div class="label-content dis-flex:col pad-t:1">
+                        <h4 class="lab-head mar:0 font-s:14">There were 2 errors with your submission</h4>
+                        <ul class="para mar:0 font-s:13 pad-l:15">
+                            <li>Your password must be at least 8 characters</li>
+                            <li>Your password must include at least one pro wrestling finishing move</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="comp-container dis-flex:col">
+            <h3 class="mar:0 font-s:17">With action</h3>
+            <div class="label-container pad-tb:30 bor-solid:1 bor-c:grey3 dis:flex bor-r:6 pad-lr:65">
+                <div class="alert-label alert-mes dis:flex pad:12 bg-c:green2 bor-r:7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="lab-ico" width="18" height="18">
+                        <use xlink:href="#check-icon"></use>
+                    </svg>   
+                    <div class="label-content dis-flex:col pad-t:1">
+                        <h4 class="lab-head mar:0 font-s:14">Completed</h4>
+                        <p class="para mar:0 font-s:13">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="btn-container dis:flex">
+                            <button class="lab-btn bor:none bg-c:trans pad:0 font-s:14 cur:po">View status</button>
+                            <button class="lab-btn bor:none bg-c:trans pad:0 font-s:14 cur:po">Dismiss</button>
+                        </div>  
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <div class="comp-container dis-flex:col">
+            <h3 class="mar:0 font-s:17">Unavailable</h3>
+            <div class="label-container pad-tb:30 bor-solid:1 bor-c:grey3 dis:flex bor-r:6 pad-lr:65">
+                <div class="alert-label alert-mes dis:flex pad:12 bg-c:grey2 bor-r:7">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="lab-ico" width="18" height="18">
+                        <use xlink:href="#block-icon"></use>
+                    </svg>   
+                    <div class="label-content dis-flex:col pad-t:1">
+                        <h4 class="lab-head mar:0 font-s:14">Disable</h4>
+                        <p class="para mar:0 font-s:13">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
