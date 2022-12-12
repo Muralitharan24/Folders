@@ -1,0 +1,482 @@
+// @import "var.less";
+@import "comp.less";
+
+@color1:2%;
+@color2:93%;
+@color3:60%;
+
+*{
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+.wrapper{
+    flex-grow: 1;
+}
+.division{
+    background-color: white;
+}
+.location-dv{
+    justify-content: space-between;
+}
+.location{
+    align-items: center;
+}
+.ico{
+    @grey-l-bg:@color3;
+
+    fill: @grey-bg;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.ico1{
+    @grey-l-bg:100%;
+
+    fill: @grey-bg;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.arrow{
+    @grey-l-bg:@color3;
+
+    stroke:@grey-bg;
+}
+.flight-editbtn{
+    @grey-l-bor:73%;
+
+    align-items: center;
+    box-shadow: 0px 0px 1px 0px @grey-bor;
+    cursor: pointer;
+}
+.flight-editbtn:hover{
+    @grey-l-bg:97%;
+
+    background-color: @grey-bg;
+}
+.btn-content{
+    white-space: nowrap;
+}
+.common::after{
+    @grey-s-bg :@color1;
+    @grey-l-bg : 90%;
+
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: @grey-bg;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+.flight-detail::after{
+    top:4px;
+}
+.clock{
+    @grey-l-bg:@color3;
+    
+    stroke:@grey-bg;
+    
+    &:hover{
+        @grey-l-bg:0%;
+
+        stroke: @grey-bg;
+    }
+}
+.timeline-dv::before{
+    @grey-s-bor :@color1;
+    @grey-l-bor :@color2;
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px dashed @grey-bor;
+}
+.line{
+    @grey-s-bg :@color1;
+    @grey-l-bg : @color2;
+    
+    @grey-s-bor :@color1;
+    @grey-l-bor :@color2;
+
+    height: 100%;
+    left: 0;
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        left:-6px;
+    }
+    &::before{
+        top:-1px;
+        background-color:@grey-bg;
+    }
+    &::after{
+        @grey-l-bg : 100%;
+        top:calc(100% - 11px);
+        background-color:@grey-bg;
+        box-shadow: 0px 0px 0px 2px @grey-bor inset;
+    }
+}
+.duration-list{
+    @grey-s-bg :@color1;
+    @grey-l-bg : @color2;
+    
+    @grey-s-bor :@color1;
+    @grey-l-bor :@color2; 
+
+    .line{
+        &::before{
+            @grey-l-bg : 100%;
+            background-color:@grey-bg;
+            box-shadow: 0px 0px 0px 2px @grey-bor inset;
+        }
+        &::after{
+            background-color:@grey-bg;
+        }
+    }
+}
+.details-pannel{
+    @grey-l-bor:73%;
+
+    align-self: flex-start;
+    box-shadow: 0px 0px 1px 0px @grey-bor;
+}
+.flight-name::after{
+    @grey-s-bor :@color1;
+    @grey-l-bor : 90%;
+
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    right: 0;
+    top: 3px;
+    background-color: @grey-bor;
+}
+.time{
+    left:-48px;
+
+    &:nth-child(5){
+        top:-2px;
+    }
+    
+    &:last-child{
+        top:calc(100% - 12px);
+    }
+}
+.term{
+    .time{
+        text-align: end;
+        &:nth-child(5){
+            top:-16px
+        }
+        &:last-child{
+            top:calc(100% - 22px);
+        }
+    }
+}
+.duration{
+    left: -56px;
+    top:calc(100% - 55%);
+}
+.period{
+    left:-62px;
+}
+li{
+   list-style-type: disc; 
+}
+.load-icon{
+    @grey-l-bg : 100%;
+
+    background-color:@grey-bg;
+    left: -13px;
+    top:calc(100% - 55%);
+    stroke: @orange-bg;
+}
+.code{
+    vertical-align: top;
+}
+.article:hover{
+    @grey-l-bg: 91%;
+    
+    box-shadow: 0px 0px 7px 1px @grey-bg inset;
+}
+.comment-section{
+    @blue-s-bor: 90%;
+    @blue-l-bor: 57%;
+
+    box-shadow: 0px 0px 1px 1px @blue-bor;
+
+    &:focus-within{
+        box-shadow: 0px 0px 0px 1px @blue-bor;
+    }
+}
+.comment-iput{
+    flex-grow: 1;
+    outline: none;
+}
+.send-btn{
+    &:hover{
+         @blue-s-bg:73%;
+         @blue-l-bg:51%;
+
+        background-color: @blue-bg;
+    }
+}
+.dropdown-list{
+    @grey-l-bor: 78%;
+
+    min-width: 160px;
+    box-shadow: 0px 0px 5px 0px @grey-bor;
+    top:40px;
+    left: 32px;
+}
+.dropdown-list{
+    li{
+        &:hover{
+            @grey-l-bg: 93%;
+
+            background-color: @grey-bg;
+        }
+    }
+}
+.status{
+    left: 24px;
+    top: 21px;
+
+    &1{
+        left: 17px;
+        top: 19px;
+    }
+}
+.comment-reply{
+    @grey-s-bg :@color1;
+    @grey-l-bg : 90%;
+
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 13px;
+        background-color:@grey-bg;
+        top:4px;
+    }
+    &::before{
+        left: 0;
+    }
+    &::after{
+        right: 0;
+    }
+}
+.round{
+    @grey-l-bg: 66%;
+
+    width: 25px;
+    height: 25px;
+    transform: rotate(271deg);
+    stroke: @grey-bg;
+    animation-name:circle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.check-iput{
+    width:15px;
+    height: 15px;
+}
+.check-iput:not(:checked){
+    @grey-s-bor : 2%;
+    @grey-l-bor : 90%;
+
+    appearance: none;
+    border:1px solid @grey-bor;
+    border-radius: 3px;
+}
+.time-iput{
+    min-width: 200px;
+    word-spacing: -1px;
+}
+:is(.date-container,input[type="date"]){
+    flex-grow: 1;
+}
+::-webkit-calendar-picker-indicator{
+    display:none;
+}
+.eventdv-head{
+    white-space: nowrap;
+}
+.event-iputdv:focus-within{
+    @blue-s-bor: 90%;
+    @blue-l-bor: 57%;
+
+    box-shadow: 0px 0px 0px 2px @blue-bor;
+}
+.title-iput{
+    min-width: 190px;
+    outline: none;
+}
+select{
+  appearance: none;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+.tic{
+    @green-s-ico : 78%;
+    @green-l-ico : 41%;
+
+    fill:@green-ico;
+}
+.close-profile{
+    right: -1px;
+    top: -3px;
+    outline-color: rgb(255 255 255);
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    border-radius: 10px;
+}
+.notify-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.notify-btn:focus{
+    @grey-l-bg : 100%;
+    background-color: @grey-bg;
+    font-weight: 600;
+}
+.bite{
+    vertical-align: 4px;
+}
+.tick{
+    @blue-s-txt : 85%;
+    @blue-l-txt : 60%;
+
+    color:@blue-txt;
+}
+.loader{
+    @grey-l-bg: 66%;
+
+    width: 25px;
+    height: 25px;
+    transform: rotate(271deg);
+    stroke:@grey-bg;
+}
+.load-wrapper{
+    height: 4px;
+}
+.loader-bar{
+    width:70%;
+    height: 100%;
+}
+.generate-event{
+    @grey-l-bg:67%;
+
+    box-shadow: 0px 1px 1px 0px @grey-bg;
+}
+.moon{
+    transform: rotate(260deg);
+}
+.flight-icon{
+    place-self: end;
+    padding-bottom: 4px;
+}
+.bg-c{
+    &\:green9{
+        @green-s-bor : 91%;
+        @green-l-bor : 84%;
+
+        border-color: @green-bor;
+        
+        .para{
+            @green-s-txt : 78%;
+            @green-l-txt : 41%;
+
+            color:@green-txt;
+        }
+        .ico {
+            @green-s-ico : 78%;
+            @green-l-ico : 41%;
+            fill: @green-ico;
+        }
+
+    }
+    &\:red9{
+        @red-s-bor : 85%;
+        @red-l-bor : 83%;
+
+        border-color: @red-bor;
+
+        .para{
+            @red-s-txt : 58%;
+            @red-l-txt : 51%;
+
+            color:@red-txt;
+        }
+        .ico {
+            @red-s-ico : 58%;
+            @red-l-ico : 51%;
+            fill:@red-ico;
+        }
+    }
+    &\:yellow9{
+        @yellow-s-bor : 85%;
+        @yellow-l-bor : 83%;
+        
+        border-color: @yellow-bor;
+
+        .para{
+            @yellow-l-txt : 34%;
+            color:@yellow-txt;
+        }
+        .ico {
+            @yellow-l-ico : 34%;
+            fill:@yellow-ico;
+        }
+    }
+    &\:blue9{
+        @blue-s-bor : 85%;
+        @blue-l-bor : 83%;
+
+        border-color: @blue-bor;
+        .para{
+            @blue-s-txt : 85%;
+            @blue-l-txt : 60%;
+
+            color:@blue-txt;
+        }
+        .ico {
+            @blue-s-ico : 85%;
+            @blue-l-ico : 60%;
+            fill:@blue-ico;
+        }
+    }
+    &\:grey9{
+        @grey-l-bor : 92%;
+        
+        border-color: @grey-bor;
+        .para{
+            @grey-s-txt : 1%;
+            @grey-l-txt : 64%;
+
+            color:@grey-txt;
+        }
+        .ico {
+            @grey-s-ico : 1%;
+            @grey-l-ico : 64%;
+            fill:@grey-ico;
+        }
+    }
+}
+

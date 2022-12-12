@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#access-icon").load("svg-icons.html")
+        })
+    </script>
+</head>
+
+<body class="theme:light">
+    <div id="access-icon"></div>
+    <div class="container bg-c:grey8 dis:flex pad-tb:40 pad-lr:65 gap:20">
+        <div class="wrapper dis-flex:col gap:20">
+            <div class="division bor-radius:8 pad:25">
+                <div class="location-container dis-flex:col pad-b:20  gap:12">
+                    <div class="location-dv dis:flex  pad-r:50 gap:10">
+                        <div class="location font-w:600 font-s:18 dis:flex gap:8">
+                            <span>Moscow</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico arrow" width="16"
+                                height="16" stroke-width="0.5">
+                                <use xlink:href="#location-ico"></use>
+                            </svg>
+                            <span>London</span>
+                        </div>
+                        <button class="flight-editbtn dis:flex pad-tb:4 pad-l:5 pad-r:7 bg-c:trans bor-solid:1 bor-c:grey8 bor-radius:6 gap:4 white-s:rap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="12"
+                                height="12">
+                                <use xlink:href="#edit-ico"></use>
+                            </svg>
+                            <span class="btn-content font-s:11 font-w:600">Change Flight</span>
+                        </button>
+                    </div>
+                    <div class="detail-dv dis:flex white-s:rap">
+                        <div class="common pad-r:12 font-s:13 pos:re">
+                            <span class="font-c:grey9">Your ltinerary:</span>
+                            <span class="font-c:grey2">1 Adult</span>
+                        </div>
+                        <span class="pad-l:12 font-s:13 font-c:grey9">All departure/arrival are in local time</span>
+                    </div>
+                </div>
+                <div class="timeline-container bor-dashed-t:1 bor-c:grey8 pad-t:20 pad-b:30">
+                    <div class="dis:flex gap:14">
+                        <div class="label bor-solid:1 dis:flex pad-tb:3 pad-l:4 pad-r:3 bor-radius:5 bg-c:green9 gap:5">
+                            <span class="para font-s:11 font-w:700">Depart</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="13" height="13" stroke-width="0.5">
+                                <use xlink:href="#r-arrow-ico"></use>
+                            </svg>
+                        </div>
+                        <div class="departure-detail dis:flex font-w:600 white-s:rap">
+                            <span class="common flight-detail pad-r:12 pos:re font-s:15">Thu, Jul 8</span>
+                            <span class="common flight-detail pad-lr:12 pos:re font-s:15">Moscow - London</span>
+                            <span class="dis:flex align:center pad-lr:12 font-s:15 gap:5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#clock-ico"></use>
+                                </svg>
+                                <span>10h</span>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="timeline-dv pad-l:60 mar-t:20 pos:re dis-flex:col gap:10">
+                        <li class="pos:re pad-l:15 dis-flex:col gap:16 list-s:none">
+                            <span class="line pos:ab bor-solid:1 bor-c:grey9"></span>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">DME Moscow Domodedovo Airport</span>
+                            <label class="details-pannel pad:10 dis:flex align:center gap:10 font-s:13 bor-solid:1 bor-c:grey8 bor-radius:8">
+                                <img src="../images/lufthansha.png" alt="lufthansha-flight" width="20" height="20">
+                                <div class="detail-content dis-flex:col gap:4">
+                                    <span class="font-c:grey2"><b>Lufthansa LH1445</b></span>
+                                    <span class="dis:flex font-c:grey9">
+                                        <span class="flight-name pad-r:13 pos:re">Airbus A320-212</span>
+                                        <span class="pad-l:13">Economy</span>
+                                    </span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </label>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">FRA Frankfurt Airport T1</span>
+                            <span class="time font-s:13 pos:ab font-w:700">14:10</span>
+                            <span class="duration font-s:13 pos:ab font-c:grey9">3h 25m</span>
+                            <span class="time font-s:13 pos:ab font-w:700">16:35</span>
+                        </li>
+                        <li class="pos:re pad-l:15 list-s:none">
+                            <div class="pad:10 bg-c:grey9 bor-radius:10 bg-c:grey3">
+                                <span class="font-s:13 font-w:700 font-c:orange">Transfer in Frankfurt</span>
+                                <ul class="pad-l:15 font-s:13 pad-t:4">
+                                    <li class="line-h:22 font-c:grey9">A transit visa may be required for this journey, please ensure you have all necessary documents before booking.</li>
+                                    <li class="line-h:22 font-c:grey9">For flight transfers in Frankfurt,baggage cn be checked through.</li>
+                                </ul>
+                            </div>
+                            <span class="duration period font-s:12 pos:ab font-c:grey9">4h 55m</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico load-icon pad-l:5 pos:ab" width="18" height="18" stroke-width="3" stroke="currentcolor">
+                                <use xlink:href="#load-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="duration-list pos:re pad-l:15 dis-flex:col gap:16 list-s:none">
+                            <span class="line pos:ab bor-solid:1 bor-c:grey9"></span>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">FRA Frankfurt Airport T1</span>
+                            <label class="details-pannel pad:10 dis:flex align:center gap:10 font-s:13 bor-solid:1 bor-c:grey8 bor-radius:8">
+                                <img src="../images/lufthansha.png" alt="lufthansha-flight" width="20" height="20">
+                                <div class="detail-content dis-flex:col gap:4">
+                                    <span class="font-c:grey2"><b>Lufthansa LH1445</b></span>
+                                    <span class="dis:flex font-c:grey9">
+                                        <span class="flight-name pad-r:13 pos:re">Airbus A320-212</span>
+                                        <span class="pad-l:13">Economy</span>
+                                    </span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </label>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">LHR London Heathrow Airport T2</span>
+                            <span class="time font-s:13 pos:ab font-w:700">21:30</span>
+                            <span class="duration font-s:13 pos:ab font-c:grey9">1h 40m</span>
+                            <span class="time font-s:13 pos:ab font-w:700">22:10</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline-container bor-dashed-t:1 bor-c:grey8 pad-t:20 pad-b:30">
+                    <div class="dis:flex gap:14">
+                        <div class="label bor-solid:1 dis:flex pad-tb:3 pad-l:3 pad-r:4 bor-radius:5 bg-c:blue9 gap:5">  
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="13" height="13" stroke-width="0.5">
+                                <use xlink:href="#l-arrow-ico"></use>
+                            </svg>
+                            <span class="para font-s:11 font-w:700">Return</span>
+                        </div>
+                        <div class="departure-detail dis:flex font-w:600 white-s:rap">
+                            <span class="common flight-detail pad-r:12 pos:re font-s:15">Wed, Jul 21</span>
+                            <span class="common flight-detail pad-lr:12 pos:re font-s:15">London - Moscow</span>
+                            <span class="dis:flex align:center pad-lr:12 font-s:15 gap:5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#clock-ico"></use>
+                                </svg>
+                                <span>27h 35m</span>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="timeline-dv pad-l:60 mar-t:20 pos:re dis-flex:col gap:10">
+                        <li class="pos:re pad-l:15 dis-flex:col gap:16 list-s:none">
+                            <span class="line pos:ab bor-solid:1 bor-c:grey9"></span>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">LHR London Heathrow Airport T2</span>
+                            <label class="details-pannel pad:10 dis:flex align:center gap:8 font-s:13 bor-solid:1 bor-c:grey8 bor-radius:8">
+                                <img src="../images/Austrian.png" alt="lufthansha-flight" width="30" height="30">
+                                <div class="detail-content dis-flex:col gap:4">
+                                    <span class="font-c:grey2"><b>Lufthansa LH1445</b></span>
+                                    <span class="dis:flex font-c:grey9">
+                                        <span class="flight-name pad-r:13 pos:re">Airbus A320-212</span>
+                                        <span class="pad-l:13">Economy</span>
+                                    </span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </label>
+                            <span class="font-s:13 font-w:700 line-h:13 white-s:rap">VIE Vienna International Airport T3</span>
+                            <span class="time font-s:13 pos:ab font-w:700">19:40</span>
+                            <span class="duration font-s:13 pos:ab font-c:grey9">2h 15m</span>
+                            <span class="time font-s:13 pos:ab font-w:700">22:55</span>
+                        </li>
+                        <li class="pos:re pad-l:15 list-s:none">
+                            <div class="pad:10 bg-c:grey9 bor-radius:10 bg-c:grey3">
+                                <span class="font-s:13 font-w:700 font-c:orange">Transfer in Vienna</span>
+                                <ul class="pad-l:15 font-s:13 pad-t:4">
+                                    <li class="line-h:22 font-c:grey9">A transit visa may be required for this journey, please ensure you have all necessary documents before booking.</li>
+                                    <li class="line-h:22 font-c:grey9">For flight transfers in Frankfurt,baggage cn be checked through.</li>
+                                </ul>
+                            </div>
+                            <span class="duration period font-s:12 pos:ab font-c:grey9">22h 35m</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico load-icon pad-l:5 pos:ab" width="18" height="18" stroke-width="3" stroke="currentcolor">
+                                <use xlink:href="#load-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="duration-list term log pos:re pad-l:15 dis-flex:col gap:16 list-s:none">
+                            <span class="line pos:ab bor-solid:1 bor-c:grey9"></span>
+                            <span class="font-s:13 font-w:700 line-h:13">VIE Vienna International Airport T3</span>
+                            <label class="details-pannel pad:10 dis:flex align:center gap:8 font-s:13 bor-solid:1 bor-c:grey8 bor-radius:8">
+                                <img src="../images/Austrian.png" alt="lufthansha-flight" width="30" height="30">
+                                <div class="detail-content dis-flex:col gap:4">
+                                    <span class="font-c:grey2"><b>Lufthansa LH1445</b></span>
+                                    <span class="dis:flex font-c:grey9">
+                                        <span class="flight-name pad-r:13 pos:re">Airbus A320-212</span>
+                                        <span class="pad-l:13">Economy</span>
+                                    </span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </label>
+                            <span class="font-s:13 font-w:700 line-h:13">DME Moscow Domodedovo Airport</span>
+                            <span class="time pos:ab dis-flex:col gap:5">
+                                <span class="font-s:14 font-w:700 font-c:orange">Jul 22</span>
+                                <span class="font-s:13 font-w:700">21:30</span>
+                            </span>
+                            <span class="duration font-s:13 pos:ab font-c:grey9">2h 45m</span>
+                            <span class="time pos:ab dis-flex:col gap:5">
+                                <span class="font-s:14 font-w:700 font-c:orange">Jul 23</span>
+                                <span class="font-s:13 font-w:700">22:10</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="division bor-radius:8 dis-flex:col gap:10">
+                <div class="checkout-bill pad:25">
+                    <p>
+                        <span class="pad-r:5 font-w:600 font-s:26">Checkout</span>
+                        <sup class="code font-c:grey9">#40950</sup>
+                    </p>
+                    <p class="line-h:22 font-c:grey2 pad-t:8">Diverse and rich experience,the existing structure of the organization contributes to the preparation.</p>
+                    <div class="bill-calculation mar-t:20 bor-solid-t:1 bor-c:grey9">
+                        <div class="dis-flex:col bor-dashed-b:1 gap:12 pad-tb:20 bor-c:grey9">
+                            <div class="dis:flex justify:space-bet font-s:15">
+                                <span class="font-c:grey9">Plan Without Tax</span>
+                                <span class="font-w:700">$68.00</span>
+                            </div>
+                            <div class="dis:flex justify:space-bet font-s:15">
+                                <span class="font-c:grey9">VAT (20%)</span>
+                                <span class="font-w:700">$13.60</span>
+                            </div>
+                        </div>
+                        <div class="dis:flex justify:space-bet font-s:15 pad-t:20 ">
+                            <span class="font-c:grey9">Total</span>
+                            <span class="font-w:700 font-c:green2">$81.60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper dis-flex:col gap:20">
+            <div class="division bor-radius:8 dis-flex:col gap:10 pad:25">
+                <div class="dis:flex gap:10 pad-b:12 justify:space-bet">
+                    <div>
+                        <span class="font-w:600 font-s:20">Comments</span>
+                        <sup class="bg-c:grey3 font-s:10 bor-radius:10 pad-tb:2 pad-l:3 pad-r:4">12</sup>
+                     </div>
+                     <div class="article-btn dis:flex bg-c:grey8 pad:1 bor-radius:8 gap:1">
+                        <button class="article font-w:600 bor:none font-s:11 bg-c:grey9 bor-radius-tl:7 bor-radius-bl:7 cursor:poi">Latest</button>
+                        <button class="article font-w:600 bor:none font-s:11 bg-c:grey10 bor-radius-tr:7 bor-radius-br:7 cursor:poi">Popular</button>
+                     </div>
+                </div>
+                <div class="comment-section pad:8 pos:re bor-radius:5">
+                    <div tabindex="0" contenteditable="true" class="comment-iput dis:flex align:center pos:re pad-b:15 gap:5 bor-solid-b:1 bor-c:grey8"> 
+                        <span class="font-s:14">Hi</span>    
+                        <div contenteditable="false" class="bg-c:blue9 pad-lr:8 pad-t:3 pad-b:4 font-s:14 bor-radius:15">
+                            <span class="para">@Jo</span>
+                        </div>
+                    </div>
+                    <div class="pad-t:20 dis:flex align:center gap:10 justify:space-bet">
+                        <span class="font-w:700 font-s:14 font-c:grey9 cursor:poi">B</span>
+                        <div class="dis:flex gap:15 align:center">
+                            <span class="font-w:600 font-c:grey9 cursor:poi">@</span>
+                            <button class="send-btn font-s:14 bor:none pad-tb:7 pad-lr:12 bor-radius:7 bg-c:blue1 font-c:grey10 cursor:poi">Send</button>
+                        </div>
+                    </div>
+                    <ul class="dropdown-list bg-c:grey4 pad:5 bor-radius:5 pos:ab bg-c:grey10">
+                        <li class="dis:flex pad-tb:5 pad-lr:10 align:center bg-c:blue9 gap:11 bor-radius:5 cursor:poi pos:re list-s:none">
+                            <div class="status pad:3 bg-c:green2 pos:ab bor-radius:12 bor-solid:2 bor-c:grey10"></div>
+                            <img src="../images/avathar.png" alt="userprofile" width="23" height="23">
+                            <span class="font-s:14 font-w:700 pad-b:2">Johanna Fox</span>
+                        </li>
+                        <li class="dis:flex pad-tb:5 pad-lr:10 align:center gap:11 bor-radius:5 cursor:poi pos:re list-s:none">
+                            <div class="status pad:3 bg-c:grey7 pos:ab bor-radius:12 bor-solid:2 bor-c:grey10"></div>
+                            <img src="../images/avathar.png" alt="userprofile" width="23" height="23">
+                            <span class="font-s:14 font-w:700 pad-b:2">John Wilson</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="pad-l:0">
+                    <li class="list-s:none dis-flex:col pad-tb:15 bor-solid-b:1 bor-c:grey8 gap:13">
+                        <label class="dis:flex align:center justify:space-bet">
+                            <span class="dis:flex align:center gap:8 pos:re">
+                                <img src="../images/avathar.png" alt="userprofile" width="26" height="26">
+                                <span class="font-s:14 font-w:600">Floyd Miles</span>
+                                <div class="status1 pad:3 bg-c:grey7 pos:ab bor-radius:12 bor-solid:2 bor-c:grey10"></div>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="1" stroke="currentcolor">
+                                <use xlink:href="#ellipsis-ico"></use>
+                            </svg>
+                        </label>
+                        <span class="font-s:14 line-h:20 font-c:grey3">Actually, now that I try out the links on my message, above, none of them take me secure site. Only my shortcut on my desktop,which I created years above.</span>
+                        <label class="dis:flex gap:10px align:center gap:10">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#smile-ico"></use>
+                            </svg>
+                            <div class="dis:flex gap:5">
+                                <div class=" dis:flex pad-t:2 pad-b:1 pad-l:3 pad-r:4 bg-c:grey9 bor-solid:1 bor-c:grey8 align:center gap:5 bor-radius:6">
+                                    <span>&#128077;</span>
+                                    <span class="font-w:600 font-s:14">1</span>
+                                </div>
+                                <div class=" dis:flex pad-t:2 pad-b:1 pad-l:3 pad-r:4 bg-c:grey9 bor-solid:1 bor-c:grey8 align:center gap:5 bor-radius:6">
+                                    <span>&#128520;</span>
+                                    <span class="font-w:600 font-s:14">1</span>
+                                </div>
+                            </div>
+                            <span class="comment-reply font-w:600 font-s:14 pad-lr:15 pos:re">Reply</span>
+                            <span class="font-w:600 font-s:14 font-c:grey9">6 hours</span>
+                        </label>
+                    </li>
+                    <li class="list-s:none dis-flex:col pad-tb:15 bor-solid-b:1 bor-c:grey8 gap:13">
+                        <label class="dis:flex align:center justify:space-bet">
+                            <span class="dis:flex align:center gap:8 pos:re">
+                                <img src="../images/avathar.png" alt="userprofile" width="26" height="26">
+                                <span class="font-s:14 font-w:600">Albert Flores</span>
+                                <div class="status1 pad:3 bg-c:green2 pos:ab bor-radius:12 bor-solid:2 bor-c:grey10"></div>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="1" stroke="currentcolor">
+                                <use xlink:href="#ellipsis-ico"></use>
+                            </svg>
+                        </label>
+                        <span class="font-s:14 line-h:20 font-c:grey3">Before installing this plugin please put back again your wordpress and site url back to http.</span>
+                        <label class="dis:flex gap:10px align:center gap:10">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#smile-ico"></use>
+                            </svg>
+                            <span class="comment-reply font-w:600 font-s:14 pad-lr:15 pos:re">Reply</span>
+                            <span class="font-w:600 font-s:14 font-c:grey9">2 min</span>
+                        </label>
+                        <ul>
+                            <li class="list-s:none dis-flex:col pad-t:15 pad-b:6 gap:13">
+                                <label class="dis:flex align:center justify:space-bet">
+                                    <span class="dis:flex align:center gap:8 pos:re">
+                                        <img src="../images/avathar.png" alt="userprofile" width="26" height="26">
+                                        <span class="font-s:14 font-w:600">Bessie Cooper</span>
+                                        <div class="status1 pad:3 bg-c:green2 pos:ab bor-radius:12 bor-solid:2 bor-c:grey10"></div>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="1" stroke="currentcolor">
+                                        <use xlink:href="#ellipsis-ico"></use>
+                                    </svg>
+                                </label>
+                                <span class="dis:flex align:center font-s:14 line-h:20 font-c:grey3 gap:5">
+                                    <span>Hi</span>
+                                    <div class="bg-c:blue9 pad-lr:8 pad-t:3 pad-b:4 font-s:14 bor-radius:15">
+                                        <span class="para">@Albert Flores</span>
+                                    </div>
+                                    <span>. Thanks for your reply.</span>
+                                </span>
+                                <label class="dis:flex gap:10px align:center gap:10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="18" height="18" stroke-width="2" stroke="currentcolor">
+                                        <use xlink:href="#smile-ico"></use>
+                                    </svg>
+                                    <div class=" dis:flex pad-t:2 pad-b:1 pad-l:3 pad-r:4 bg-c:grey9 bor-solid:1 bor-c:grey8 align:center gap:5 bor-radius:6">
+                                        <span>&#128525;</span>
+                                        <span class="font-w:600 font-s:14">1</span>
+                                    </div>
+                                    <span class="comment-reply font-w:600 font-s:14 pad-lr:15 pos:re">Reply</span>
+                                    <span class="font-w:600 font-s:14 font-c:grey9">18 sec</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-s:none dis:flex align:center justify:center pad-t:15">
+                        <svg class="round">
+                            <circle cx="13" cy="13" r="6" stroke-width="2.5" fill="none" stroke-dasharray="26" stroke-dashoffset="0"></circle>
+                        </svg>
+                        <span class="font-s:14 font-c:grey9">Loading...</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="division bor-radius:8 dis-flex:col">
+                <div class="pad-tb:20 pad-lr:25 font-w:600 font-s:22 bor-solid-b:1 bor-c:grey8">Edit Task</div>
+                <div class="pad-lr:20 pad-tb:15 dis:flex align:center justify:space-bet bor-solid-b:1 bor-c:grey8">
+                    <div class="dis-flex:col line-h:22">
+                        <span class="font-s:14 font-w:700">Website Redesign - Review the restaurant</span>
+                        <span class="font-s:13 font-c:grey9">
+                            for 
+                            <span class="font-c:blue2 font-w:600">Ted Smithers</span>
+                        </span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="20" height="20" stroke-width="2" stroke="currentcolor">
+                        <use xlink:href="#close-ico"></use>
+                    </svg>
+                </div>
+                <ul class="pad-tb:15 pad-lr:25 bor-solid-b:1 bor-c:grey8">
+                    <li class="list-s:none">
+                        <label class="dis:flex align:center justify:space-bet cursor:poi">
+                            <input type="checkbox" class="dis:none">
+                            <span class="dis:flex gap:10 font-s:14 align:center">
+                                <span class="font-w:700">Checklist</span>
+                                <span class="font-c:grey9">1/4</span>
+                                <span class="font-w:600 font-c:blue2">Add Item</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="14" height="14" stroke-width="3" stroke="currentcolor">
+                                <use xlink:href="#uparrow-ico"></use>
+                            </svg>
+                        </label>
+                        <ul class="pad-t:13 dis-flex:col gap:10">
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi">
+                                <span class="font-s:14">Landing Pages</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#close-ico"></use>
+                                </svg>
+                            </li>
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi" checked>
+                                <span class="font-s:14">CTAs</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#close-ico"></use>
+                                </svg>
+                            </li>
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi">
+                                <span class="font-s:14">Content & Style</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#close-ico"></use>
+                                </svg>
+                            </li>
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi">
+                                <span class="font-s:14">Technology Stack</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#close-ico"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="pad-tb:15 pad-lr:25 bor-solid-b:1 bor-c:grey8">
+                    <li class="list-s:none">
+                        <label class="dis:flex gap:10 align:center justify:space-bet">
+                            <span class="font-s:14 dis:flex gap:9">
+                                <span class="font-w:700">Attachment</span>
+                                <span class="font-c:grey9">2 files (34MB)</span>
+                                <span class="font-w:600 font-c:blue2">Browse</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="14" height="14" stroke-width="3" stroke="currentcolor">
+                                <use xlink:href="#downarrow-ico"></use>
+                            </svg>
+                        </label>
+                    </li>
+                </ul>
+                <div class="pad-tb:15 pad-lr:25">
+                    <div>
+                        <p class="font-w:700 font-s:14 pad-b:8">Task Time</p>
+                        <input type="time" class="time-iput pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8 font-c:grey3" value="01:30">
+                    </div>
+                    <div class="pad-t:5">
+                        <p class="font-s:12 pad-b:10 font-c:grey3">Estimate of time to complete</p>
+                        <div class="dis:flex gap:15">
+                            <div class="date-container dis-flex:col gap:8">
+                                <p class="font-s:14 font-w:700">Start Date</p>
+                                <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8">
+                                    <input type="date" value="2021-09-20" class="bor:none font-c:grey3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                        <use xlink:href="#calendar-ico"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="date-container dis-flex:col gap:8">
+                                <p class="font-s:14 font-w:700">Due Date</p>
+                                <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8">
+                                    <input type="date" value="2021-09-20" class="bor:none font-c:grey3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                        <use xlink:href="#calendar-ico"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper dis-flex:col gap:20">
+            <div class="division bor-radius:8 dis-flex:col pad:25">
+                <div class="eventdv-head pad-b:20 font-w:600 font-s:20 bor-solid-b:1 bor-c:grey8">Create Event</div>
+                <div class="pad-t:15">
+                    <p class="font-w:600 font-s:14 pad-b:8 font-c:grey2">Title</p>
+                    <div class="event-iputdv dis:flex align:center pad-lr:5 pad-tb:4 bor-radius:5 bor-solid:1 bor-c:grey8 bg-c:grey9">
+                        <input type="text" placeholder="Event title" class="title-iput bor:none bg-c:trans">
+                        <div class="dis:flex align:center pad-lr:6 pad-tb:4 bg-c:grey10 white-s:rap bor-radius:5 gap:4 bor-solid:1 bor-c:grey8">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="12" height="12" stroke-width="2.5" stroke="currentcolor">
+                                <use xlink:href="#plus-ico"></use>
+                            </svg>
+                            <p class="font-s:10 font-w:600">Add description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dis:flex pad-t:15 gap:10">
+                    <div>
+                        <p class="font-s:14 font-w:600 pad-b:8 font-c:grey2">Date</p>
+                        <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8 font-c:grey3">
+                            <input type="date" value="2021-09-20" class="bor:none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#calendar-ico"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-s:14 font-w:600 pad-b:8 font-c:grey2">Time</p>
+                        <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8 font-c:grey3">
+                            <input type="time" value="14:00" class="bor:none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#clock-ico"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-s:14 font-w:600 pad-b:8 font-c:grey2">Duration</p>
+                        <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8 font-c:grey3 gap:15">
+                            <select id="duration" class="mar:0">
+                                <option value="1h 15m">1h 15m</option>
+                                <option value="1h 30m">1h 30m</option>
+                                <option value="1h 45m">1h 45m</option>
+                            </select>
+                            <div class="dis-flex:col">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="10" height="10" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#uparrow-ico"></use>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="10" height="10" stroke-width="3" stroke="currentcolor">
+                                    <use xlink:href="#downarrow-ico"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dis:flex align:center white-s:rap gap:2 pad-t:10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico tic" width="16" height="16" stroke-width="1" stroke="white">
+                        <use xlink:href="#check-cir-ico"></use>
+                    </svg>
+                    <span class="font-s:11 font-c:grey3">This event will take place on July 14, 2021 from 02:00 PM until 03:45 PM </span>
+                </div>
+                <div class="pad-tb:15 bor-dashed-b:1 bor-c:grey9">
+                    <p class="font-w:600 font-s:14 pad-b:8 font-c:grey2">Location</p>
+                    <div class="event-iputdv dis:flex align:center pad-lr:5 pad-tb:4 bor-radius:5 bor-solid:1 bor-c:grey8 bg-c:grey9">
+                        <input type="text" placeholder="Location" class="title-iput bor:none bg-c:trans">
+                        <div class="dis:flex align:center pad-lr:6 pad-tb:4 bg-c:grey10 white-s:rap bor-radius:5 gap:4 bor-solid:1 bor-c:grey8">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="12" height="12" stroke-width="2.5" stroke="currentcolor">
+                                <use xlink:href="#plus-ico"></use>
+                            </svg>
+                            <p class="font-s:10 font-w:600">Set meeting room</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pad-b:20 bor-dashed-b:1 bor-c:grey9">
+                    <div class="pad-t:15">
+                        <p class="font-w:600 font-s:14 pad-b:8 font-c:grey2">Add guests</p>
+                        <div class="event-iputdv dis:flex align:center pad-l:5 bor-radius:5 bor-solid:1 bor-c:grey8 bg-c:grey9">
+                            <input type="text" placeholder="Guest email" class="title-iput bor:none bg-c:trans flex-grow:1">
+                            <div class="dis:flex align:center pad-lr:10 pad-tb:4 bg-c:grey10 white-s:rap bor-radius:5 gap:4 bor-solid:1 bor-c:grey8 font-s:13 font-w:600">Add</div>
+                        </div>
+                    </div>
+                    <ul class="dis:flex gap:6 pad-t:10 align:center">
+                        <li class="list-s:none pos:re">
+                            <img src="../images/avathar.png" alt="profile" width="32" height="32">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico close-profile pos:ab" width="14" height="14" stroke-width="1" stroke="white">
+                                <use xlink:href="#close-cir-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="list-s:none pos:re">
+                            <img src="../images/avathar.png" alt="profile" width="32" height="32">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico close-profile pos:ab" width="14" height="14" stroke-width="1" stroke="white">
+                                <use xlink:href="#close-cir-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="list-s:none pos:re">
+                            <img src="../images/avathar.png" alt="profile" width="32" height="32">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico close-profile pos:ab" width="14" height="14" stroke-width="1" stroke="white">
+                                <use xlink:href="#close-cir-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="list-s:none pos:re">
+                            <img src="../images/avathar.png" alt="profile" width="32" height="32">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico close-profile pos:ab" width="14" height="14" stroke-width="1" stroke="white">
+                                <use xlink:href="#close-cir-ico"></use>
+                            </svg>
+                        </li>
+                        <li class="list-s:none pad:6 font-s:11 bor-radius:20 bg-c:grey9 font-c:grey3">
+                            <span>+3</span>
+                        </li>
+                    </ul>
+                    <div class="pad-tb:15 dis:flex gap:15">
+                        <div class="dis-flex:col gap:10">
+                            <span class="font-w:600 font-s:15 font-c:grey3">Notification</span>
+                            <div class="bg-c:grey9 dis:flex align:center pad:2 bor-radius:6">
+                                <button class="notify-btn pad-tb:7 pad-lr:11 bor-radius:6" autofocus>Email</button>
+                                <button class="notify-btn pad-tb:7 pad-lr:11 bor-radius:6">Slack</button>
+                            </div>
+                        </div>
+                        <div class="dis-flex:col gap:10">
+                            <span class="font-w:600 font-s:15 font-c:grey3">Set reminder</span>
+                            <div class="dis:flex align:center pad-lr:7 pad-tb:6 bor-radius:5 bor-solid:1 bor-c:grey8 font-c:grey3 gap:15">
+                                <select id="duration" class="mar:0 font-c:grey3">
+                                    <option value="1 hour before even">1 hour before event</option>
+                                    <option value="45 minutes before event">45 minutes before event</option>
+                                    <option value="30 minutes before event">30 minutes before event</option>
+                                </select>
+                                <div class="dis-flex:col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="10" height="10" stroke-width="3" stroke="currentcolor">
+                                        <use xlink:href="#uparrow-ico"></use>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock pad-l:5" width="10" height="10" stroke-width="3" stroke="currentcolor">
+                                        <use xlink:href="#downarrow-ico"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dis-flex:col gap:10">
+                        <span class="font-w:600 font-s:15 font-c:grey3">Guests can</span>
+                        <ul class="dis-flex:col gap:10">
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi">
+                                <span class="font-s:14 font-c:grey3">Modify event</span>
+                            </li>
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi" checked>
+                                <span class="font-s:14 font-c:grey3">Invite others</span>
+                            </li>
+                            <li class="list-s:none dis:flex align:center gap:8">
+                                <input type="checkbox" class="check-iput cursor:poi">
+                                <span class="font-s:14 font-c:grey3">See guest list</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pad-t:15 dis-flex:col gap:10">
+                    <p class="font-s:15 font-w:600 font-c:grey3">Upload attachments</p>
+                    <div class="bg-c:grey9 pad:15 bor-radius:8 bor-dashed:1 bor-c:grey8">
+                        <div class="dis:flex align:center gap:10 pad-b:15 bor-solid-b:1 bor-c:grey8">
+                            <button class="bg-c:grey10 bor-solid:1 bor-c:grey8 bor-radius:5 pad-tb:8 pad-lr:15 font-w:700 font-s:15">Select Files</button>
+                            <div class="dis:flex align:center gap:6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico pad-l:5" width="23" height="23" stroke-width="1" stroke="white">
+                                    <use xlink:href="#clous-arrow-ico"></use>
+                                </svg>
+                                <span class="font-s:15 font-c:grey3">Drop files here...</span>
+                            </div>
+                        </div>
+                        <div class="pad-tb:20 dis:flex align:center justify:space-bet">
+                            <div class="dis:flex align:center gap:10">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico tick" width="18" height="18" stroke-width="2" stroke="currentcolor">
+                                    <use xlink:href="#check-ico"></use>
+                                </svg>
+                                <span class="font-c:grey3">
+                                    Presentation.ppts
+                                    <span class="bite font-s:11 font-w:700 pad-l:5">1.2MB</span>
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico1 clock" width="16" height="16" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#trash-ico"></use>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="dis:flex align:center justify:space-bet pad-b:8">
+                                <div class="dis:flex align:center gap:4">
+                                    <svg class="loader">
+                                        <circle cx="13" cy="13" r="6" stroke-width="2.5" fill="none" stroke-dasharray="26" stroke-dashoffset="0"></circle>
+                                    </svg>
+                                    <span class="font-c:grey3">
+                                        Documents.pdf
+                                        <span class="bite font-s:11 font-w:700 pad-l:5">43.5MB</span>
+                                    </span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="20" height="20" stroke-width="1" stroke="white">
+                                    <use xlink:href="#close-cir-ico"></use>
+                                </svg>
+                            </div>
+                            <div class="load-wrapper bg-c:blue9 bor-radius:10">
+                                <div class="loader-bar bor-radius:10 bg-c:blue1"></div>
+                            </div>
+                            <div class="font-s:14 font-c:grey9 pad-t:10">
+                                <span>50%</span>
+                                <span>/</span>
+                                <span>34 sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="generate-event bor:none pad-tb:11 font-s:17 bor-radius:5 bg-c:blue1 font-w:600 font-c:grey10">Create Event</button>
+                </div>
+            </div>
+            <div class="division bor-radius:8 dis-flex:col">
+                <div class="dis:flex justify:space-bet pad-lr:25 pad-tb:15 bor-dashed-b:1 bor-c:grey8">
+                    <div class="dis:flex align:center gap:8">
+                        <div class="bor-solid:1 bor-c:grey8 pad-tb:2 pad-lr:6 bor-radius:7">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="13" height="13" stroke-width="2" stroke="currentcolor">
+                                <use xlink:href="#bag-ico"></use>
+                            </svg>
+                            <span class="font-w:600 font-s:15">8</span>
+                        </div>
+                        <div class="bor-solid:1 bor-c:grey8 pad-tb:2 pad-l:6 pad-r:10 bor-radius:7">
+                            <svg class="ico clock" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve" width="15" height="15" stroke-width="2" stroke="currentcolor">
+                                <path d="M307.199,238.931v8.056h0.001c0,14.379-11.699,26.078-26.078,26.078h-49.536c-14.387,0-26.086-11.699-26.086-26.078
+                                v-8.055H128v170.667h42.667c4.719,0,8.533,3.823,8.533,8.533c0,4.71-3.814,8.533-8.533,8.533H128v17.067h42.667
+                                c4.719,0,8.533,3.823,8.533,8.533c0,4.71-3.814,8.533-8.533,8.533H128v8.533c0,14.114,11.486,25.6,25.6,25.6h25.6v8.533
+                                c0,4.71,3.814,8.533,8.533,8.533c4.719,0,8.533-3.823,8.533-8.533v-8.533h119.467v8.533c0,4.71,3.814,8.533,8.533,8.533
+                                s8.533-3.823,8.533-8.533v-8.533h25.6c14.114,0,25.6-11.486,25.6-25.6v-230.4H307.199z"/>
+                                <path d="M231.58,256h49.545c4.966,0,9.011-4.045,9.011-9.011v-8.055h-67.567v8.055C222.569,251.955,226.605,256,231.58,256z"/>
+                                <path d="M298.664,221.867h85.333v-25.6c-0.001-14.114-11.478-25.6-25.601-25.6h-17.067c0-4.71-3.814-8.533-8.533-8.533
+                                c-4.71,0-8.533,3.823-8.533,8.533h-17.067V49.63c9.916-3.533,17.067-12.919,17.067-24.03c0-14.114-11.477-25.6-25.6-25.6H213.33
+                                c-14.114,0-25.6,11.486-25.6,25.6c0,11.11,7.159,20.497,17.067,24.03v121.037H187.73c0-4.71-3.814-8.533-8.533-8.533
+                                c-4.71,0-8.533,3.823-8.533,8.533h-17.067c-14.114,0-25.6,11.486-25.6,25.6v25.6h86.033H298.664z M290.13,170.667h-68.267V51.2
+                                h68.267V170.667z M204.797,25.6c0-4.702,3.831-8.533,8.533-8.533h85.333c4.71,0,8.533,3.831,8.533,8.533
+                                c0,4.702-3.822,8.533-8.533,8.533H213.33C208.628,34.133,204.797,30.302,204.797,25.6z"/>
+                            </svg>
+                            <span class="font-w:600 font-s:15">23</span>
+                        </div>
+                        <span class="font-s:14 font-c:grey9">Baggage Included</span>
+                    </div>
+                    <div class="dis:flex align:center gap:10">
+                        <button class="pad:10 font-w:600 bor:none bor-radius:8 bg-c:blue1 font-c:grey10">$577.00</button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock" width="25" height="25" stroke-width="2" stroke="currentcolor">
+                            <use xlink:href="#upload-ico"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pad-lr:25">
+                    <div class="dis:flex align:center pad-tb:15 gap:10 justify:space-bet bor-solid-b:1 bor-c:grey8">
+                        <div class="dis:flex gap:10">
+                            <img src="../images/lufthansha.png" alt="lufthansha-flight" width="32" height="32">
+                            <img src="../images/turkish.png" alt="turkish-flight" width="32" height="32">
+                        </div>
+                        <div class="dis:flex gap:10">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico clock moon bor-solid:1 bor-c:grey8 pad:4 bor-radius:20" width="18" height="18" stroke-width="1" stroke="currentcolor">
+                                <use xlink:href="#moon-ico"></use>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico bor-solid:1 bor-c:grey8 pad:4 bor-radius:20" width="18" height="18" stroke-width="1" stroke="white">
+                                <use xlink:href="#clock-fill-ico"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dis:flex align:center justify:space-bet pad-tb:15">
+                        <div class="dis:flex gap:15">
+                            <h3 class="font-s:28 font-w:600">06:05</h3>
+                            <img src="../images/takeoff.png" alt="flight takeoff" width="20" height="20" class="flight-icon">
+                        </div>
+                        <div class="font-s:15 font-w:600 font-c:grey9">
+                            <span>Duration:</span>
+                            <span>10h 35m</span>
+                        </div>
+                        <div class="dis:flex gap:15">
+                            <img src="../images/depature.png" alt="flight takeoff" width="20" height="20" class="flight-icon">
+                            <h3 class="font-s:28 font-w:600">14:40</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
+
