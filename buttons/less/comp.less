@@ -1,0 +1,392 @@
+@import "var.less";
+
+/*----- background color style starts here -----*/
+.bg-c {
+    &\:trans{
+        background-color: transparent;
+    }
+    &\:red {
+        &1 {
+            background-color: @red-bg;
+        }
+        &9 {
+            @red-s-bg: 87%;
+            @red-l-bg: 97%;
+            background-color: @red-bg;
+        }
+    }
+
+    &\:green {
+        &1 {
+            background-color: @green-bg;
+        }
+        &2 {
+            @green-s : 78%;
+            @green-l : 41%;
+
+            background-color: @green-bg;
+        }
+        &9 {
+            @green-s:78%;
+            @green-l:96%;
+            background-color: @green-bg;
+        }
+    }
+
+    &\:blue {
+        &1 {
+            background-color: @blue-bg;
+        }
+        &8 {
+            @blue-s:84%;
+            @blue-l:61%;
+            background-color: @blue-bg;
+        }
+        &9 {
+            @blue-s: 100%;
+            @blue-l: 93%;
+            background-color: @blue-bg;
+        }
+    }
+
+    &\:grey {
+        &0 {
+            background-color: @grey-bg0;
+        }
+        &1 {
+            background-color: @grey-bg1;
+        }
+        &2 {
+            background-color: @grey-bg2;
+        }
+        &3 {
+            background-color: @grey-bg3;
+        }
+        &4 {
+            background-color: @grey-bg4;
+        }
+        &5 {
+            background-color: @grey-bg5;
+        }
+        &6 {
+            background-color: @grey-bg6;
+        }
+        &7 {
+            background-color: @grey-bg7;
+        }
+        &8 {
+            background-color: @grey-bg8;
+        }
+        &9 {
+            background-color: @grey-bg9;
+        }
+        &10 {
+            background-color: @grey-bg10;
+        }
+    }
+    &\:orange {
+        &1 {
+            background-color: @orange-bg;
+        }
+    }
+    &\:prime-tone{
+        &1{
+          background-color: @tone-bg;
+        }
+    }
+}
+
+.bor {
+    &-c {
+        &\:red {
+            & {
+                border-color: @red-bor;
+            }
+        }
+
+        &\:green {
+            &1 {
+                border-color: @green-bor;
+            }
+            &2 {
+                @green-s-bor : 86%;
+                @green-l-bor : 75%;
+                border-color: @green-bor;
+            }
+            
+        }
+        &\:blue {
+            @blue-l-bor : 83%;
+
+            & {
+                border-color: @blue-bor;
+            }
+        }
+
+        &\:grey {
+
+            &0 {
+                border-color: @grey-bor0;
+            }
+            &1 {
+                border-color: @grey-bor1;
+            }
+            &2 {
+                border-color: @grey-bor2;
+            }
+            &3 {
+                border-color: @grey-bor3;
+            }
+            &4 {
+                border-color: @grey-bor4;
+            }
+            &5 {
+                border-color: @grey-bor5;
+            }
+            &6 {
+                border-color: @grey-bor6;
+            }
+            &7 {
+                border-color: @grey-bor7;
+            }
+            &8 {
+                border-color: @grey-bor8;
+            }
+            &9 {
+                border-color: @grey-bor9;
+            }
+            &10 {
+                border-color: @grey-bor10;
+            }
+        }
+        &\:prime-tone{
+            &1{
+              border-color: @tone-bor;
+            }
+        }
+    }
+}
+
+.font {
+    &-c {
+        &\:red {
+            & {
+                color: @red-txt;
+            }
+        }
+
+        &\:green {
+            &1 {
+                color: @green-txt;
+            }
+            &2 {
+                @green-s-txt : 78%;
+                @green-l-txt : 41%;
+
+                color: @green-txt;
+            }
+        }
+
+        &\:blue {
+            &1 {
+                color: @blue-txt;
+            }
+            &2{
+                @blue-s-txt : 85%;
+                @blue-l-txt : 60%;
+
+                color:@blue-txt;
+            }
+        }
+
+        &\:grey {
+
+            &0 {
+                color: @grey-txt0;
+            }
+            &1 {
+                color: @grey-txt1;
+            }
+            &2 {
+                color: @grey-txt2;
+            }
+            &3{
+                color: @grey-txt3;
+            }
+            &4{
+                color: @grey-txt4;
+            }
+            &5{
+                color: @grey-txt5;
+            }
+            &6{
+                color: @grey-txt6;
+            }
+            &7{
+                color: @grey-txt7;
+            }
+            &8{
+                color: @grey-txt8;
+            }
+            &9 {
+                color: @grey-txt9;
+            }
+            &10 {
+                color: @grey-txt10;
+            }
+        }
+        &\:orange{
+            &{
+                color:@orange-txt;
+            }
+        }
+        &\:prime-tone{
+            &1{
+              color: @tone-txt;
+            }
+        }
+    }
+}
+
+
+/*----- background color style ends here -----*/
+
+/*----- font style starts here ----- */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*----- font style ends here ----- */
+
+/*---- display style starts here ----*/
+
+.dis {
+    &\:flex {
+        display: flex;
+    }
+
+    &-flex\:col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &\:grid {
+        display: grid;
+    }
+
+    &\:none {
+        display: none;
+    }
+}
+
+/*---- display style starts here ----*/
+
+/*---- flex grow style starts here ----*/
+
+.flex-grow{
+    &\:1{
+        flex-grow: 1;
+    }
+}
+
+/*---- flex grow style starts here ----*/
+
+/*----- position style starts here -----*/
+
+.pos {
+    &\:re {
+        position: relative;
+    }
+
+    &\:ab {
+        position: absolute;
+    }
+}
+
+/*----- position style ends here -----*/
+
+/*----- flex align item style starts here ----*/
+
+.align{
+    &\:center{
+        align-items: center;
+    }
+    &\:start{
+        align-items: flex-start;
+    }
+    &\:end{
+        align-items: flex-end;
+    }
+}
+
+/*----- flex align item style ends here ----*/
+
+/*----- flex  justify content style starts here ----*/
+
+.justify{
+    &\:center{
+       justify-content: center;
+    }
+    &\:start{
+       justify-content: flex-start;
+    }
+    &\:end{
+        justify-content: flex-end;
+    }
+    &\:space-bet{
+        justify-content: space-between;
+    }
+}
+
+/*----- flex justify content style ends here ----*/
+
+/*---- list style starts here ----*/
+
+.list-s{
+    &\:none{
+        list-style: none;
+    }
+}
+
+/*---- list style ends here ----*/
+
+/*---- cursor style starts here ----*/
+
+.cursor{
+    &\:poi{
+        cursor: pointer;
+    }
+    &\:not_allow{
+        cursor: not-allowed;
+    }
+}
+
+/*---- cursor style starts here ----*/
+
+/*---- white space style starts here ----*/
+
+.white-s{
+    &\:rap{
+        white-space: nowrap;
+    }
+}
+
+/*---- primary color ----*/
+:root{
+    --tone-h : 247;
+    --tone-s : 100%;
+    --tone-l : 66%;
+    --tone-a : 1;
+
+    --accent-color:hsl(var(--tone-h),var(--tone-s),var(--tone-l),var(--tone-a));
+}
+
+@accentcolor:var(--accent-color);
+
+@tone-bg : hsl(var(--tone-h),var(--tone-s),var(--tone-l),var(--tone-a));
+@tone-txt : hsl(var(--tone-h),var(--tone-s),var(--tone-l),var(--tone-a));
+@tone-bor : hsl(var(--tone-h),var(--tone-s),var(--tone-l),var(--tone-a));
+@tone-ico : hsl(var(--tone-h),var(--tone-s),var(--tone-l),var(--tone-a));
+
+/*---- primary color ----*/

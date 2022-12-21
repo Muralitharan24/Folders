@@ -1,0 +1,446 @@
+/*---- success color style ----*/
+
+@green-h : 141;
+@green-s : 92%;
+@green-l : 39%;
+
+/*---- success color style ----*/
+
+/*---- error color style ----*/
+
+@red-h : 355;
+@red-s : 93%;
+@red-l : 58%;
+
+/*---- error color style ----*/
+
+/*---- warning color style ----*/
+
+@orange-h : 55;
+@orange-s : 100%;
+@orange-l : 54%;
+
+/*---- warning color style ----*/
+
+/*---- info color style ----*/
+
+@blue-h : 212;
+@blue-s : 95%;
+@blue-l : 53%;
+
+/*---- info color style ----*/
+
+/*---- disable color style ----*/
+
+@grey0:hsl(227,30%,25%);
+@grey1:hsl(227,15%,40%);
+@grey2:hsl(227,10%,55%);
+@grey3:hsl(227,10%,70%);
+@grey4:hsl(227,10%,80%);
+@grey5:hsl(227,10%,90%);
+@grey6:hsl(227,10%,93%);
+@grey7:hsl(227,10%,95%);
+@grey8: hsl(227,10%,97%);
+@grey9:hsl(227,10%,98%);
+@grey10: hsl(227,10%,99%);
+
+/*---- disable color style ----*/
+
+
+@blue-bg : hsl(@blue-h,@blue-s,@blue-l);
+@blue-txt : hsl(@blue-h,@blue-s,@blue-l);
+@blue-bor : hsl(@blue-h,@blue-s,@blue-l);
+@blue-ico : hsl(@blue-h,@blue-s,@blue-l);
+
+@red-bg : hsl(@red-h,@red-s,@red-l);
+@red-txt : hsl(@red-h,@red-s,@red-l);
+@red-bor : hsl(@red-h,@red-s,@red-l);
+@red-ico : hsl(@red-h,@red-s,@red-l);
+
+@orange-bg : hsl(@orange-h,@orange-s,@orange-l);
+@orange-txt : hsl(@orange-h,@orange-s,@orange-l);
+@orange-bor : hsl(@orange-h,@orange-s,@orange-l);
+@orange-ico : hsl(@orange-h,@orange-s,@orange-l);
+
+@green-bg : hsl(@green-h,@green-s,@green-l);
+@green-txt : hsl(@green-h,@green-s,@green-l);
+@green-bor : hsl(@green-h,@green-s,@green-l);
+@green-ico : hsl(@green-h,@green-s,@green-l);
+
+@grey-bg0 : @grey0;
+@grey-bg1 : @grey1;
+@grey-bg2 : @grey2;
+@grey-bg3 : @grey3;
+@grey-bg4 : @grey4;
+@grey-bg5 : @grey5;
+@grey-bg6 : @grey6;
+@grey-bg7 : @grey7;
+@grey-bg8 : @grey8;
+@grey-bg9 : @grey9;
+@grey-bg10 : @grey10;
+
+@grey-txt0 : @grey0;
+@grey-txt1 : @grey1;
+@grey-txt2 : @grey2;
+@grey-txt3 : @grey3;
+@grey-txt4 : @grey4;
+@grey-txt5 : @grey5;
+@grey-txt6 : @grey6;
+@grey-txt7 : @grey7;
+@grey-txt8 : @grey8;
+@grey-txt9 : @grey9;
+@grey-txt10 : @grey10;
+
+@grey-bor0 : @grey0;
+@grey-bor1 : @grey1;
+@grey-bor2 : @grey2;
+@grey-bor3 : @grey3;
+@grey-bor4 : @grey4;
+@grey-bor5 : @grey5;
+@grey-bor6 : @grey6;
+@grey-bor7 : @grey7;
+@grey-bor8 : @grey8;
+@grey-bor9 : @grey9;
+@grey-bor10 : @grey10;
+
+@grey-ico0 : @grey0;
+@grey-ico1: @grey1;
+@grey-ico2 : @grey2;
+@grey-ico3 : @grey3;
+@grey-ico4 : @grey4;
+@grey-ico5 : @grey5;
+@grey-ico6 : @grey6;
+@grey-ico7 : @grey7;
+@grey-ico8 : @grey8;
+@grey-ico9 : @grey9;
+@grey-ico10 : @grey10;
+
+
+
+/*--- Less Loop function starts here ----*/
+
+/*---- padding loop starts here (1px - 20px) ----*/
+
+each(range(1, 20, 1), {
+    
+    .pad\:@{value} {
+        
+        padding: ~"@{value}px";
+    }
+    .pad-t\:@{value} {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad-r\:@{value} {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad-b\:@{value} {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-l\:@{value} {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad-tb\:@{value} {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-lr\:@{value} {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+});
+
+/*---- padding loop ends here (1px - 20px) ----*/
+
+/*---- padding loop ends here (25px - 70px) ----*/
+
+each(range(25, 70, 5), {
+    
+    .pad\:@{value} {
+        
+        padding: ~"@{value}px";
+    }
+    .pad-t\:@{value} {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad-r\:@{value} {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad-b\:@{value} {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-l\:@{value} {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad-tb\:@{value} {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-lr\:@{value} {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+});
+
+.pad{
+    &\:0{
+        padding:0;
+    }
+}
+/*---- padding loop ends here (25px - 70px) ----*/
+
+/*---- margin loop starts here (1px - 20px) ----*/
+
+each(range(1, 20, 1), {
+    
+    .mar\:@{value} {
+        
+        margin: ~"@{value}px";
+    }
+    .mar-t\:@{value} {
+        
+        margin-top: ~"@{value}px";
+    }
+    .mar-r\:@{value} {
+        
+        margin-right: ~"@{value}px";
+    }
+    .mar-b\:@{value} {
+        
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-l\:@{value} {
+        
+        margin-left: ~"@{value}px";
+    }
+    .mar-tb\:@{value} {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-lr\:@{value} {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+});
+  
+/*---- margin loop ends here (1px - 20px) ----*/
+
+/*---- margin loop ends here (25px - 70px) ----*/
+
+each(range(25, 70, 5), {
+    
+    .mar\:@{value} {
+        margin: ~"@{value}px";
+    }
+    .mar-t\:@{value} {
+        margin-top: ~"@{value}px";
+    }
+    .mar-r\:@{value} {
+        margin-right: ~"@{value}px";
+    }
+    .mar-b\:@{value} {
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-l\:@{value} {
+        margin-left: ~"@{value}px";
+    }
+    .mar-tb\:@{value} {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-lr\:@{value} {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+});
+
+.mar{
+    &\:0{
+        margin:0;
+    }
+}
+/*---- margin loop ends here (25px - 70px) ----*/
+
+/*---- Font size style starts here ----*/
+
+each(range(10, 30, 1), {
+    
+    .font-s\:@{value} {
+        
+       font-size: ~"@{value}px";
+    }
+    
+});
+
+/*---- Font size style ends here ----*/
+
+/*---- Font weight style starts here ----*/
+
+each(range(100, 800, 100), {
+    
+    .font-w\:@{value} {
+        
+       font-weight: ~"@{value}";
+    }
+    
+});
+
+/*---- Font weight style ends here ----*/
+
+/*---- border radius style starts here ----*/
+
+each(range(2, 20, 1), {
+    
+    .bor-radius\:@{value} {   
+       border-radius: ~"@{value}px";
+    }
+    .bor-radius-tl\:@{value} {   
+      border-top-left-radius: ~"@{value}px";
+    }
+    .bor-radius-tr\:@{value} {   
+      border-top-right-radius: ~"@{value}px";
+    }
+    .bor-radius-br\:@{value} {   
+     border-bottom-right-radius: ~"@{value}px";
+    }
+    .bor-radius-bl\:@{value} {   
+     border-bottom-left-radius: ~"@{value}px";
+    }
+    
+});
+
+.bor{
+    &\:none{
+        border:none;
+    }
+}
+
+/*---- border radius style ends here ----*/
+
+/*---- gap style starts here ----*/
+
+each(range(1, 20, 1), {
+    
+    .gap\:@{value} {   
+       gap: ~"@{value}px";
+    }
+    
+});
+/*---- gap style ends here ----*/
+
+/*---- line height starts here ----*/
+
+each(range(10, 20, 1), {
+    
+    .line-h\:@{value} {   
+       line-height: ~"@{value}px";
+    }
+    
+});
+
+each(range(22, 40, 2), {
+    
+    .line-h\:@{value} {   
+       line-height: ~"@{value}px";
+    }
+    
+});
+
+/*---- line height ends here ----*/
+
+/*---- border style starts here ----*/
+
+each(range(1, 5, 1), {
+    
+    .bor-solid\:@{value} {   
+       border: ~"@{value}px solid";
+    }
+    .bor-solid-t\:@{value} {   
+       border-top: ~"@{value}px solid";
+    }
+    .bor-solid-r\:@{value} {   
+       border-right: ~"@{value}px solid";
+    }
+    .bor-solid-b\:@{value} {   
+       border-bottom: ~"@{value}px solid";
+    }
+    .bor-solid-l\:@{value} {   
+       border-left: ~"@{value}px solid";
+    }
+    
+});
+
+each(range(1, 5, 1), {
+    
+    .bor-dotted\:@{value} {   
+       border: ~"@{value}px dotted";
+    }
+    .bor-dotted-t\:@{value} {   
+       border-top: ~"@{value}px dotted";
+    }
+    .bor-dotted-r\:@{value} {   
+       border-right: ~"@{value}px dotted";
+    }
+    .bor-dotted-b\:@{value} {   
+       border-bottom: ~"@{value}px dotted";
+    }
+    .bor-dotted-l\:@{value} {   
+       border-left: ~"@{value}px dotted";
+    }
+    
+});
+
+
+each(range(1, 5, 1), {
+    
+    .bor-dashed\:@{value} {   
+       border: ~"@{value}px dashed";
+    }
+    .bor-dashed-t\:@{value} {   
+       border-top: ~"@{value}px dashed";
+    }
+    .bor-dashed-r\:@{value} {   
+       border-right: ~"@{value}px dashed";
+    }
+    .bor-dashed-b\:@{value} {   
+       border-bottom: ~"@{value}px dashed";
+    }
+    .bor-dashed-l\:@{value} {   
+       border-left: ~"@{value}px dashed";
+    }
+    
+});
+
+
+
+each(range(1, 5, 1), {
+    
+    .bor-double\:@{value} {   
+       border: ~"@{value}px double";
+    }
+    .bor-double-t\:@{value} {   
+       border-top: ~"@{value}px double";
+    }
+    .bor-double-r\:@{value} {   
+       border-right: ~"@{value}px double";
+    }
+    .bor-double-b\:@{value} {   
+       border-bottom: ~"@{value}px double";
+    }
+    .bor-double-l\:@{value} {   
+       border-left: ~"@{value}px double";
+    }
+    
+});
+
+
+/*---- border style starts here ----*/
+
+/*--- Less Loop function ends here ----*/

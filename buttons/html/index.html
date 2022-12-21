@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $("#icon-dispayer").load("svg-icons.html")
+        })
+    </script>
+
+    <style>
+    </style>
+
+</head>
+<body class="mar:0 pad:0">
+    <div class="container pad:25 dis-flex:col gap:10">
+        <div id="icon-dispayer"></div>
+        <div class="dis-flex:col gap:10">
+            <div class="dis:flex gap:10 align:center">
+                <p class="mar:0 font-w:600 font-s:18">Button</p>
+                <input type="color" class="cursor:poi" id="tone-iput">
+            </div>
+            <div class="dis:flex gap:10 bor-solid:1 bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                <button class="btn">Button Text</button>
+                <button class="btn secontary-btn bor:none">Button Text</button>
+                <button class="outline-btn bg-c:trans">Button Text</button>
+                <button class="btn bor-radius:20 pad-lr:18">Button Text</button>
+                <button class="btn dis:flex gap:6">
+                    Button Text
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="16" height="16" stroke-width="1.5" stroke="white">
+                        <use xlink:href="#envelope-ico"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="dis-flex:col gap:10">
+            <div class="dis:flex gap:10 bor-solid:1 bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                <button class="btn" disabled>Button Text</button>
+                <button class="btn secontary-btn bor:none" disabled>Button Text</button>
+                <button class="outline-btn bg-c:trans" disabled>Button Text</button>
+                <button class="btn bor-radius:20 pad-lr:18" disabled>Button Text</button>
+                <button class="btn dis:flex gap:6" disabled>
+                    Button Text
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico" width="16" height="16" stroke-width="1.5" stroke="white">
+                        <use xlink:href="#envelope-ico"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="dis-flex:col gap:10">
+            <p class="mar:0 font-w:600 font-s:18">Checkbox</p>
+            <div class="dis-flex:col gap:10 bor-solid:1 bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                <label>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Unchecked
+                </label>
+                <label>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Checked
+                </label>
+                <label>
+                    <input type="checkbox" disabled>
+                    <span class="checkmark"></span>
+                    Disabled
+                </label>
+                <label>
+                    <input type="checkbox" checked disabled>
+                    <span class="checkmark"></span>
+                    Disabled checked
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

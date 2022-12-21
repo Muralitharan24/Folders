@@ -1,0 +1,108 @@
+@import "comp.less";
+
+.container{
+    font-family: sans-serif;
+}
+
+:where(button){
+    cursor: pointer;
+    padding:6px 12px;
+    border-radius: 3px;
+    border:1px solid @accentcolor;
+    color:@grey10;
+    text-align:center;
+}
+
+.btn{
+    background-color: @tone-bg;
+
+    &:hover{
+        --tone-s:70%;
+        --tone-l:55%;
+    }
+}
+.secontary-btn{
+    --tone-l:95%;
+    color:@accentcolor;
+
+    &:hover{
+        --tone-l:91%;
+    }
+ }
+:where(.outline-btn){
+    color:@accentcolor;
+
+    &:hover{
+        --tone-l:97%;
+        background-color: @tone-bg;
+    }
+}
+button{
+
+   &:disabled{
+        background-color: @grey-bg6;
+        color:@grey3;
+        cursor: default;
+        border-color:@grey-bg6;
+        
+        & .ico{
+            stroke:@grey-txt3;
+        }
+   }
+}
+
+/* checkbox style */
+
+:where(label){
+    position: relative;
+    display: flex;
+    gap:5px;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+     
+    input[type="checkbox"]{
+        position: absolute;
+        width: 0;
+        height: 0;
+        
+        &:checked ~ .checkmark{
+            background-color: @tone-bg;
+
+            &::after{
+                display: block;
+            }
+        }
+        &:disabled ~ .checkmark{
+            background-color: @grey-bg6;
+            color:@grey3;
+            cursor: default;
+            border-color:@grey-bg6;
+
+            &::after{
+                border-color:@grey-bor3;
+            }
+       }
+    }
+    .checkmark{
+        width: 13px;
+        height: 13px;
+        border: 1px solid @accentcolor;
+        border-radius: 2px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            display: none;
+            width: 3px;
+            height: 7px;
+            border: solid @grey10;
+            border-width: 0px 2px 2px 0px;
+            transform: rotate(45deg);
+            left: 5px;
+            top: 3px;
+        }
+    }
+}
+
+/* checkbox style */
