@@ -1,0 +1,1040 @@
+@import "master.less";
+
+/*----- background color style starts here -----*/
+.bg {
+   &-c{
+        &\:trans{
+            background-color: transparent;
+        }
+        &\:red {
+            &1 {
+                background-color: @red-bg;
+            }
+            &9 {
+                @red-s-bg: 87%;
+                @red-l-bg: 97%;
+                background-color: @red-bg;
+            }
+        }
+
+        &\:green {
+            &1 {
+                background-color: @green-bg;
+            }
+            &2 {
+                @green-s : 78%;
+                @green-l : 41%;
+
+                background-color: @green-bg;
+            }
+            &9 {
+                @green-s:78%;
+                @green-l:96%;
+                background-color: @green-bg;
+            }
+        }
+
+        &\:blue {
+            &1 {
+                background-color: @blue-bg;
+            }
+            &8 {
+                @blue-s:84%;
+                @blue-l:61%;
+                background-color: @blue-bg;
+            }
+            &9 {
+                @blue-s: 100%;
+                @blue-l: 93%;
+                background-color: @blue-bg;
+            }
+        }
+        &\:orange {
+            &1 {
+                background-color: @orange-bg;
+            }
+        }
+        &\:yellow {
+            &1 {
+                background-color: @yellow-bg;
+            }
+        }
+        &\:white {
+            &1 {
+                background-color: @white-bg;
+            }
+        }
+        &\:accentcolor{
+
+            background-color: @accent-theme;
+        
+        }
+        &\:grey {
+            &0 {
+                background-color: @grey-bg0;
+            }
+            &1 {
+                background-color: @grey-bg1;
+            }
+            &-child2 > *:hover,
+            &2 {
+                background-color: @grey-bg2;
+            }
+            &3 {
+                background-color: @grey-bg3;
+            }
+            &4 {
+                background-color: @grey-bg4;
+            }
+            &5 {
+                background-color: @grey-bg5;
+            }
+            &6 {
+                background-color: @grey-bg6;
+            }
+            &7 {
+                background-color: @grey-bg7;
+            }
+            &8 {
+                background-color: @grey-bg8;
+            }
+            &9 {
+                background-color: @grey-bg9;
+            }
+            &10 {
+                background-color: @grey-bg10;
+            }
+        }
+    }
+    &\[child\]-hover-c\:grey {
+        &0 > *:hover {
+            background-color: @grey-bg0;
+        }
+        &1 > *:hover {
+            background-color: @grey-bg1;
+        }
+        &2 > *:hover {
+            background-color: @grey-bg2;
+        }
+        &3 > *:hover {
+            background-color: @grey-bg3;
+        }
+        &4 > *:hover {
+            background-color: @grey-bg4;
+        }
+        &5 > *:hover {
+            background-color: @grey-bg5;
+        }
+        &6 > *:hover {
+            background-color: @grey-bg6;
+        }
+        &7 > *:hover {
+            background-color: @grey-bg7;
+        }
+        &8 > *:hover {
+            background-color: @grey-bg8;
+        }
+        &9 > *:hover {
+            background-color: @grey-bg9;
+        }
+        &10 > *:hover {
+            background-color: @grey-bg10;
+        }
+    } 
+}
+
+.bor {
+    &-c {
+        &\:red {
+            & {
+                border-color: @red-bor;
+            }
+        }
+
+        &\:green {
+            &1 {
+                border-color: @green-bor;
+            }
+            &2 {
+                @green-s-bor : 86%;
+                @green-l-bor : 75%;
+                border-color: @green-bor;
+            }
+            
+        }
+        &\:blue {
+            @blue-l-bor : 83%;
+
+            & {
+                border-color: @blue-bor;
+            }
+        }
+
+        &\:accentcolor{
+              border-color: @accentcolor;        
+        }
+        &\:grey {
+            
+            &0 {
+                border-color: @grey-bor0;
+            }
+            &1 {
+                border-color: @grey-bor1;
+            }
+            &2 {
+                border-color: @grey-bor2;
+            }
+            &3 {
+                border-color: @grey-bor3;
+            }
+            &4 {
+                border-color: @grey-bor4;
+            }
+            &5 {
+                border-color: @grey-bor5;
+            }
+            &6 {
+                border-color: @grey-bor6;
+            }
+            &7 {
+                border-color: @grey-bor7;
+            }
+            &8 {
+                border-color: @grey-bor8;
+            }
+            &9 {
+                border-color: @grey-bor9;
+            }
+            &10 {
+                border-color: @grey-bor10;
+            }
+        }
+        
+    }
+
+    &\[child\]-c\:grey {
+        &0 > * {
+            border-color: @grey-bor0;
+        }
+        &1 > * {
+            border-color: @grey-bor1;
+        }
+        &2 > * {
+            border-color: @grey-bor2;
+        }
+        &3 > * {
+            border-color: @grey-bor3;
+        }
+        &4 > * {
+            border-color: @grey-bor4;
+        }
+        &5 > * {
+            border-color: @grey-bor5;
+        }
+        &6 > * {
+            border-color: @grey-bor6;
+        }
+        &7 > * {
+            border-color: @grey-bor7;
+        }
+        &8 > * {
+            border-color: @grey-bor8;
+        }
+        &9 > * {
+            border-color: @grey-bor9;
+        }
+        &10 > * {
+            border-color: @grey-bor10;
+        }
+    }
+}
+
+.font {
+    &-c {
+        &\:red {
+            & {
+                color: @red-txt;
+            }
+        }
+
+        &\:green {
+            &1 {
+                color: @green-txt;
+            }
+            &2 {
+                @green-s-txt : 78%;
+                @green-l-txt : 41%;
+
+                color: @green-txt;
+            }
+        }
+
+        &\:blue {
+            &1 {
+                color: @blue-txt;
+            }
+            &2{
+                @blue-s-txt : 85%;
+                @blue-l-txt : 60%;
+
+                color:@blue-txt;
+            }
+        }
+        &\:orange{
+            &{
+                color:@orange-txt;
+            }
+        }
+        &\:white{
+            &{
+                color:@white-txt;
+            }
+        }
+        &\:accentcolor{
+              color: @accentcolor;
+        }
+        &\:grey {
+
+            &0 {
+                color: @grey-txt0;
+            }
+            &1 {
+                color: @grey-txt1;
+            }
+            &2 {
+                color: @grey-txt2;
+            }
+            &3{
+                color: @grey-txt3;
+            }
+            &4{
+                color: @grey-txt4;
+            }
+            &5{
+                color: @grey-txt5;
+            }
+            &6{
+                color: @grey-txt6;
+            }
+            &7{
+                color: @grey-txt7;
+            }
+            &8{
+                color: @grey-txt8;
+            }
+            &9 {
+                color: @grey-txt9;
+            }
+            &10 {
+                color: @grey-txt10;
+            }
+        }
+    }
+}
+
+
+/*----- background color style ends here -----*/
+
+/*----- font style starts here ----- */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*----- font style ends here ----- */
+
+/*---- display style starts here ----*/
+
+.dis {
+    &\:flex {
+        display: flex;
+    }
+
+    &\:flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &\:grid {
+        display: grid;
+    }
+
+    &\:none {
+        display: none;
+    }
+    &\:block {
+        display: block;
+    }
+}
+
+/*---- display style starts here ----*/
+
+/*---- flex grow style starts here ----*/
+
+.flex-grow{
+   &{
+        flex-grow: 1;
+    }
+}
+
+/*---- flex grow style starts here ----*/
+
+/*----- position style starts here -----*/
+
+.pos {
+    &\:re {
+        position: relative;
+    }
+
+    &\:ab {
+        position: absolute;
+    }
+}
+
+/*----- position style ends here -----*/
+
+/*----- flex align item style starts here ----*/
+
+.flex-align{
+    &\:normal{
+        align-items: normal;
+    }
+    &\:start{
+        align-items: flex-start;
+    }
+    &\:end{
+        align-items: flex-end;
+    }
+    &\:center{
+        align-items: center;
+    }
+}
+
+/*----- flex align item style ends here ----*/
+
+/*----- flex  justify content style starts here ----*/
+
+.flex-justify{
+    &\:start{
+       justify-content: flex-start;
+    }
+    &\:end{
+        justify-content: flex-end;
+    }
+    &\:center{
+        justify-content: center;
+     }
+    &\:space-bet{
+        justify-content: space-between;
+    }
+}
+
+/*----- flex justify content style ends here ----*/
+
+/*---- list style starts here ----*/
+
+.list-s{
+    &\:none{
+        list-style: none;
+    }
+}
+
+/*---- list style ends here ----*/
+
+/*---- cursor style starts here ----*/
+
+.cursor{
+    &\:poi{
+        cursor: pointer;
+    }
+    &\:not_allow{
+        cursor: not-allowed;
+    }
+}
+
+/*---- cursor style starts here ----*/
+
+/*---- white space style starts here ----*/
+
+.white-s{
+    &\:rap{
+        white-space: nowrap;
+    }
+}
+
+.appearance\:none{
+    appearance: none;
+}
+
+.flex-wrap\[wrap\]{
+    flex-wrap: wrap;
+}
+
+.user-select\:none{
+    user-select: none;
+}
+
+.input\:hidden{
+    display: none;
+}
+/*--- Less Loop function starts here ----*/
+
+/*---- padding loop starts here (1px - 20px) ----*/
+
+each(range(0, 20, 1), {
+    
+/* padding normal */
+
+    .pad\:@{value} {
+            
+        padding: ~"@{value}px";
+    }
+    .pad-t\:@{value} {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad-r\:@{value} {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad-b\:@{value} {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-l\:@{value} {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad-tb\:@{value} {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-lr\:@{value} {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+
+/* padding normal */
+
+/*  padding for child   */
+    
+    .pad\[child\]\:@{value} > * + * {
+        
+        padding: ~"@{value}px";
+    }
+    .pad\[child\]-t\:@{value} > * + *  {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad\[child\]-b\:@{value} > * + *  {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad\[child\]-r\:@{value} > * + *  {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad\[child\]-l\:@{value} > * + *  {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad\[child\]-tb\:@{value} > * + *  {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad\[child\]-lr\:@{value} > * + *  {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+
+/*  padding for child   */
+
+});
+
+/*---- padding loop ends here (1px - 20px) ----*/
+
+/*---- padding loop ends here (25px - 70px) ----*/
+
+each(range(25, 70, 5), {
+    
+/* padding normal */
+
+    .pad\:@{value} {
+            
+        padding: ~"@{value}px";
+    }
+    .pad-t\:@{value} {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad-r\:@{value} {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad-b\:@{value} {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-l\:@{value} {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad-tb\:@{value} {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad-lr\:@{value} {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+
+/* padding normal */
+
+/*  padding for child   */
+    
+    .pad\[child\]\:@{value} > * + *  {
+        
+        padding: ~"@{value}px";
+    }
+    .pad\[child\]-t\:@{value} > * + *  {
+        
+        padding-top: ~"@{value}px";
+    }
+    .pad\[child\]-b\:@{value} > * + *  {
+        
+        padding-bottom: ~"@{value}px";
+    }
+    .pad\[child\]-r\:@{value} > * + *  {
+        
+        padding-right: ~"@{value}px";
+    }
+    .pad\[child\]-l\:@{value} > * + *  {
+        
+        padding-left: ~"@{value}px";
+    }
+    .pad\[child\]-tb\:@{value} > * + *  {   
+        padding-top: ~"@{value}px";
+        padding-bottom: ~"@{value}px";
+    }
+    .pad\[child\]-lr\:@{value} > * + *  {
+        padding-left: ~"@{value}px";
+        padding-right: ~"@{value}px";
+    }
+
+/*  padding for child   */
+
+});
+
+.pad{
+    &\:0{
+        padding:0;
+    }
+}
+/*---- padding loop ends here (25px - 70px) ----*/
+
+/*---- margin loop starts here (1px - 20px) ----*/
+
+each(range(0, 20, 1), {
+    
+/* margin normal */
+
+    .mar\:@{value} {
+            
+        margin: ~"@{value}px";
+    }
+    .mar-t\:@{value} {
+        
+        margin-top: ~"@{value}px";
+    }
+    .mar-r\:@{value} {
+        
+        margin-right: ~"@{value}px";
+    }
+    .mar-b\:@{value} {
+        
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-l\:@{value} {
+        
+        margin-left: ~"@{value}px";
+    }
+    .mar-tb\:@{value} {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-lr\:@{value} {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+
+/* margin normal */
+
+/* margin for child */
+
+    .mar\[child\]\:@{value} > * + * {
+            
+        margin: ~"@{value}px";
+    }
+    .mar\[child\]-t\:@{value} > * + *  {
+        
+        margin-top: ~"@{value}px";
+    }
+    .mar\[child\]-r\:@{value} > * + *  {
+        
+        margin-right: ~"@{value}px";
+    }
+    .mar\[child\]-b\:@{value} > * + *  {
+        
+        margin-bottom: ~"@{value}px";
+    }
+    .mar\[child\]-l\:@{value} > * + *  {
+        
+        margin-left: ~"@{value}px";
+    }
+    .mar\[child\]-tb\:@{value} > * + *  {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar\[child\]-lr\:@{value} > * + *  {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+
+/* margin for child */
+
+});
+  
+/*---- margin loop ends here (1px - 20px) ----*/
+
+/*---- margin loop ends here (25px - 70px) ----*/
+
+each(range(25, 70, 5), {
+    
+/* margin normal */
+
+    .mar\:@{value} {
+            
+        margin: ~"@{value}px";
+    }
+    .mar-t\:@{value} {
+        
+        margin-top: ~"@{value}px";
+    }
+    .mar-r\:@{value} {
+        
+        margin-right: ~"@{value}px";
+    }
+    .mar-b\:@{value} {
+        
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-l\:@{value} {
+        
+        margin-left: ~"@{value}px";
+    }
+    .mar-tb\:@{value} {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar-lr\:@{value} {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+
+/* margin normal */
+
+/* margin for child */
+
+    .mar\[child\]\:@{value} > * + * {
+            
+        margin: ~"@{value}px";
+    }
+    .mar\[child\]-t\:@{value} > * + *  {
+        
+        margin-top: ~"@{value}px";
+    }
+    .mar\[child\]-r\:@{value} > * + *  {
+        
+        margin-right: ~"@{value}px";
+    }
+    .mar\[child\]-b\:@{value} > * + *  {
+        
+        margin-bottom: ~"@{value}px";
+    }
+    .mar\[child\]-l\:@{value} > * + *  {
+        
+        margin-left: ~"@{value}px";
+    }
+    .mar\[child\]-tb\:@{value} > * + *  {   
+        margin-top: ~"@{value}px";
+        margin-bottom: ~"@{value}px";
+    }
+    .mar\[child\]-lr\:@{value} > * + *  {
+        margin-left: ~"@{value}px";
+        margin-right: ~"@{value}px";
+    }
+
+/* margin for child */
+
+});
+
+.mar{
+    &\:0{
+        margin:0;
+    }
+    &\:auto{
+        margin: auto;
+    }
+}
+/*---- margin loop ends here (25px - 70px) ----*/
+
+/*---- Font size style starts here ----*/
+
+each(range(10, 30, 1), {
+    
+    .font-s\:@{value} {
+        
+       font-size: ~"@{value}px";
+    }
+    
+});
+
+/*---- Font size style ends here ----*/
+
+/*---- Font weight style starts here ----*/
+
+each(range(100, 800, 100), {
+    
+    .font-w\:@{value} {
+        
+       font-weight: ~"@{value}";
+    }
+    
+});
+
+/*---- Font weight style ends here ----*/
+
+/*---- border radius style starts here ----*/
+
+each(range(0, 20, 1), {
+    
+    .bor-radius\:@{value} {   
+       border-radius: ~"@{value}px";
+    }
+    .bor-radius-tl\:@{value} {   
+      border-top-left-radius: ~"@{value}px";
+    }
+    .bor-radius-tr\:@{value} {   
+      border-top-right-radius: ~"@{value}px";
+    }
+    .bor-radius-br\:@{value} {   
+     border-bottom-right-radius: ~"@{value}px";
+    }
+    .bor-radius-bl\:@{value} {   
+     border-bottom-left-radius: ~"@{value}px";
+    }
+    
+});
+
+
+/*---- border radius style ends here ----*/
+
+/*---- gap style starts here ----*/
+
+each(range(1, 30, 1), {
+    
+    .gap\:@{value} {   
+       gap: ~"@{value}px";
+    }
+    
+});
+/*---- gap style ends here ----*/
+
+/*---- line height starts here ----*/
+
+each(range(10, 20, 1), {
+    
+    .line-h\:@{value} {   
+       line-height: ~"@{value}px";
+    }
+    
+});
+
+each(range(22, 40, 2), {
+    
+    .line-h\:@{value} {   
+       line-height: ~"@{value}px";
+    }
+    
+});
+
+/*---- line height ends here ----*/
+
+/*---- border style starts here ----*/
+
+.bor{
+    &\:none{
+        border:none;
+    }
+    &-style{
+
+        &\:solid{
+            border-width:0;
+            border-style: solid;
+        }
+        
+        &\:dashed{
+            border-width:0;
+            border-style: dashed;
+        }
+    }
+    &\[child\]-style{
+
+        &\:solid > *{
+            border-width:0;
+            border-style: solid;
+        }
+        
+        &\:dashed > *{
+            border-width:0;
+            border-style: dashed;
+        }
+    }
+}
+
+.divide{
+    &\:last{
+        & > *{
+            border-bottom-width:1px;
+        }
+    }
+
+   & > * + *{
+        border-top-width:1px;
+    }
+}
+
+each(range(0, 2, 1), {
+
+    .bor{
+        &\:@{value}{
+            border-width: ~"@{value}px";
+        }
+        
+        &\[child\]-w{
+            &\:@{value} > *{
+                border-width: ~"@{value}px"; ;
+            }
+        }
+    
+        &-t{
+            &\:@{value}{
+                border-top-width: ~"@{value}px";
+            }
+        }
+    
+        &-l{
+            &\:@{value}{
+                border-left-width: ~"@{value}px";
+            }
+        }
+    
+        &-r{
+            &\:@{value}{
+                border-right-width: ~"@{value}px";
+            }
+        }
+    
+        &-b{
+            &\:@{value}{
+                border-bottom-width: ~"@{value}px";
+            }
+        }
+    
+        &-tb{
+            &\:@{value}{
+                border-top-width: ~"@{value}px";
+                border-bottom-width: ~"@{value}px";
+            }
+        }
+    
+        &-lr{
+            &\:@{value}{
+                border-left-width: ~"@{value}px";
+                border-right-width: ~"@{value}px";
+            }
+        }
+    }
+    
+});
+
+/*---- border style starts here ----*/
+
+each(range(100, 1000, 100), {
+
+    .width\:@{value}{
+        width:~"@{value}px";
+    }
+
+});
+
+each(range(10, 100, 10), {
+
+    .width\[\%\]\:@{value}{
+        width:~"@{value}%";
+    }
+
+});
+
+each(range(100, 1000, 50), {
+
+    .width\[min\]\:@{value}{
+        min-width:~"@{value}px";
+    }
+
+});
+
+each(range(100, 1000, 50), {
+
+    .width\[max\]\:@{value}{
+        max-width:~"@{value}px";
+    }
+
+});
+
+/*--- Less Loop function ends here ----*/
+
+:where(.title){
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+:where(.select-option){
+    position: relative;
+    display: flex;
+    gap:10px;
+    align-items: flex-start;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+
+    &.type\:row{
+        padding: 15px 10px;
+    }
+    &.type\:column{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
+
+
+// @grey-bg1:#09f;
+
+// @grey-bg:--grey;
+// each(range(0, 10, 1), {
+//     .bg-c\: {
+//         &@{value}{
+//             background-color: ~"@{grey-bg}@{value}";
+//         }
+//     }
+// })

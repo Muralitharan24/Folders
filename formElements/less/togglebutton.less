@@ -1,0 +1,286 @@
+:where(.toggle){
+    position: relative;
+
+    input{
+        display: none;
+
+        &:checked{
+            & ~ .toggle-btn{
+                left: calc(100% - 18px);  
+                box-shadow: 0px 0px 1px 1px @accentcolor-dark1;  
+            }
+            
+            & ~ .toggle-state{
+                box-shadow: 0px 0px 0px 1px @accentcolor-dark1;
+                background-color:@accentcolor;
+            }
+        }
+        &:disabled ~ .onstate,&:disabled ~ .offstate,&:disabled ~ .toggle-btn{
+            cursor: default;
+        }
+    }
+}
+:where(.toggle-state){
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px @grey-bor4;
+    padding-left:40px;
+    background-color: @grey-bg5;
+}
+:where(.toggle-btn){
+    position: absolute;
+    padding: 8px;
+    top:50%;
+    left: 2px;
+    background-color: @white-bg;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .4s;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 0px 1px @grey-bor4;
+}
+.type\:outline {
+    .toggle-state{
+        background-color: transparent;
+    }
+    .toggle-btn{
+        background-color: @grey-bg5;
+    }
+    input:checked {
+        & ~ .toggle-btn{
+            background-color: @accent-theme;
+        }
+        & ~ .toggle-state{
+            background-color: transparent;
+        }
+    }
+}
+.short-toggle {
+    .toggle-state{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .toggle-btn{
+        padding: 12px;
+        left: -2px;
+    }
+}
+.toggle\:icon{
+    .toggle-btn{
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='grey' stroke-width='2.5' viewBox='-4 -4 32 32' xmlns='http://www.w3.org/2000/svg' aria-toggle-input='true'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    input:checked ~ .toggle-btn{
+        background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='hsl(247,100%,66%)' stroke-width='2.5' viewBox='-4 -4 32 32' xmlns='http://www.w3.org/2000/svg' aria-toggle-input='true'%3E%3Cpath fill='none' stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'%3E%3C/path%3E%3C/svg%3E");
+    }
+    &.type\:outline{
+        input:checked ~ .toggle-btn{
+            background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='white' stroke-width='2.5' viewBox='-4 -4 32 32' xmlns='http://www.w3.org/2000/svg' aria-toggle-input='true'%3E%3Cpath fill='none' stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'%3E%3C/path%3E%3C/svg%3E");
+        }
+    }
+}
+:where(.toggle\:small){
+    .toggle-state{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 34px;
+    }
+    input:checked ~ .toggle-btn {
+        left: calc(100% - 14px);
+    }
+    .toggle-btn{
+        padding: 6px;
+        left:2px
+    }
+    &.toggle\:text{
+        .toggle-state{
+            font-size: 13px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 24px;
+        }
+        .toggle-btn{
+            padding: 8px;
+            left:2px
+        }
+        input:checked{
+            & ~ .toggle-state{
+                padding-left: 8px;
+                padding-right: 24px;
+            }
+            & ~ .toggle-btn {
+                left: calc(100% - 18px);
+            }
+        } 
+    }
+}
+:where(.toggle\:medium){
+    .toggle-state{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 42px;
+    }
+    input:checked ~ .toggle-btn {
+        left: calc(100% - 22px);
+    }
+    .toggle-btn{
+        padding: 10px;
+        left:2px
+    }
+    &.toggle\:text{
+        .toggle-state{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 34px;
+        }
+        .toggle-btn{
+            padding: 12px;
+            left:3px
+        }
+        input:checked{
+            & ~ .toggle-state{
+                padding-left: 8px;
+                padding-right: 34px;
+            }
+            & ~ .toggle-btn {
+                left: calc(100% - 26px);
+            }
+        } 
+    }
+}
+:where(.toggle\:large){
+    .toggle-state{
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 48px;
+    }
+    input:checked ~ .toggle-btn {
+        left: calc(100% - 26px);
+    }
+    .toggle-btn{
+        padding: 12px;
+        left:2px
+    }
+    &.toggle\:text{
+        .toggle-state{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 38px;
+        }
+        .toggle-btn{
+            padding: 14px;
+            left:3px
+        }
+        input:checked{
+            & ~ .toggle-state{
+                padding-left: 10px;
+                padding-right: 42px;
+            }
+            & ~ .toggle-btn {
+                left: calc(100% - 31px);
+            }
+        } 
+    }
+}
+:where(.toggle-theme\:sucess){
+    input:checked ~ .toggle-state{
+        @green-s : 78%;
+        @green-l : 41%;
+        background-color: @green-bg;
+        box-shadow: 0px 0px 0px 1px @green-bor;
+    }
+    input:checked ~ .toggle-btn{
+        @green-s : 78%;
+        @green-l : 41%;
+        box-shadow: 0px 0px 1px 1px @green-bor; 
+    }
+}
+:where(.toggle-theme\:failed){
+    input:checked ~ .toggle-state{
+        @red-s-bg: 87%;
+        @red-l-bg: 97%;
+        background-color: @red-bg;
+        box-shadow: 0px 0px 0px 1px @red-bor;
+    }
+    input:checked ~ .toggle-btn{
+        @red-s-bg: 87%;
+        @red-l-bg: 97%;
+        box-shadow: 0px 0px 1px 1px @red-bor; 
+    }
+}
+:where(.toggle-theme\:warning){
+    input:checked ~ .toggle-state{
+        background-color: @yellow-bg;
+        box-shadow: 0px 0px 0px 1px @yellow-bor;
+    }
+    input:checked ~ .toggle-btn{
+        box-shadow: 0px 0px 1px 1px @yellow-bor; 
+    }
+}
+:where(.toggle-theme\:info){
+    input:checked ~ .toggle-state{
+        @blue-s:84%;
+        @blue-l:61%;
+        background-color: @blue-bg;
+        box-shadow: 0px 0px 0px 1px @blue-bor;
+    }
+    input:checked ~ .toggle-btn{
+        @blue-s:84%;
+        @blue-l:61%;
+        box-shadow: 0px 0px 1px 1px @blue-bor; 
+    }
+}
+:where(.toggle\:text){
+    .toggle-state{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 14px;
+        padding-left: 28px;
+        padding-right: 10px;
+    }
+    .toggle-state::after{
+        content: attr(off-data);
+    }
+    input:checked {
+        & ~ .toggle-btn {
+            left: calc(100% - 23px);
+        }
+        & ~ .toggle-state{
+            padding-left: 10px;
+            padding-right: 30px;
+
+            &::before{
+                content: attr(on-data);
+                color:#fff;
+            }
+            &::after{
+                content: "";
+            }
+        }
+    }
+    .toggle-btn{
+        padding: 10px;
+        left:3px
+    }
+    &.type\:outline{
+        .toggle-state{
+            background-color: transparent;
+        }
+        .toggle-btn{
+            background-color: @grey-bg5;
+        }
+        input:checked{
+            & ~ .toggle-state::before{
+                color:@accentcolor;
+            }
+            & ~ .toggle-btn{
+                background-color: @accent-theme;
+            }
+        }
+    }
+}

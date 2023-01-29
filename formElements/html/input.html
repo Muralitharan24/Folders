@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <ul class="reset:ul list-gap:25">
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Test input</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <input type="text" size="30" class="text-field" placeholder="Text here...." size="30">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Input Text</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="input-container dis:flex flex-align:center pos:re width[max]:250">
+                        <input type="text" class="text-input pad-tb:7 pad-lr:10" placeholder="0.00"/>
+                        <select class="dropdown pad-tb:7 pad-l:8 pad-r:25 appearance:none">
+                            <option value="USD">USD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
+                            <use xlink:href="#downarrow-ico"></use>
+                        </svg>
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Email</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <input type="email" size="30" class="text-field" placeholder="you@example.com">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Disabled input</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <input type="text" size="30" class="text-field" placeholder="Text here..."  disabled>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Input with required attribute</p>
+                <form class="dis:flex gap:10">
+                    <input type="text" size="30" class="text-field" placeholder="Text here..." required>
+                    <input type="submit" class="btn pad-lr:12 cursor:poi">
+                </form>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Website</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="dis:flex pos:re bor-radius:5">
+                        <div class="port bor-r:0 pad-tb:5 pad-lr:10 font-s:15 bor-radius-tl:5 bor-radius-bl:5">http://</div>
+                        <input type="url" class="text-field bor-radius-tl:0 bor-radius-bl:0" placeholder="www.example.com" />
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Search Candidates</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="dis:flex bor-radius:5 bor-solid:1 bor-c:grey4">
+                        <div class="input-container dis:flex flex-align:center gap:5 pad-l:10 bor-radius-tr:0 bor-radius-br:0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="user-icon" width="20" height="20">
+                                <use xlink:href="#user-ico"></use>
+                            </svg>
+                            <input type="text" class="text-input pad-tb:7 pad-lr:5 bor:none">
+                        </div>
+                        <div class="port dis:flex gap:5 bor-l:0 pad-tb:7 pad-lr:10 bor-radius-tr:5 bor-radius-br:5 mar-l:2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="input-ico ico" width="20" height="20">
+                                <use xlink:href="#bars-arrow-ico"></use>
+                            </svg>
+                            <p class="mar:0 font-w:600 font-s:15">Sort</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Input with overlapping label</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form>
+                        <fieldset class="input-container dis:flex pad-tb:4 pad-lr:5 bor-radius:5 width[max]:250">
+                            <legend class="pad-lr:4 bg-c:grey10 font-s:14 font-c:grey0">Name</legend>
+                            <input type="text" class="text-input pad-lr:5" size="30" value="Vignesh">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Input with curve border</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="dis:flex-col gap:5 width[max]:250">
+                        <label class="font-w:600 font-s:15 pad-l:18">Name</label>
+                        <input type="text" class="curve-input pad-tb:8 pad-lr:18 bor-radius:20" size="30" value="Vignesh">
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Input with keyboard shortcuts</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="input-container dis:flex pad:5 width[max]:250">
+                        <input type="text" class="text-input pad-r:6" size="28">
+                        <input type="button" value="⌘K" class="text-field pad-lr:7 pad-tb:3 font-c:grey2 cursor:poi">
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="list-gap:10">
+                <p class="title">Billing address</p>
+                <div class="bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6">
+                    <form class="dis:flex-col bor-radius:5 width[max]:250">
+                        <div class="pos:re dis:flex flex-align:center pad-lr:8 bor-t:1 bor-lr:1 bor-b:0 bor-style:solid bor-c:grey4 bor-radius-tl:5 bor-radius-tr:5">
+                            <select name="countries" id="countries" class="dropdown1 pad-tb:8 pad-r:30 bor:none appearance:none">
+                                <option value="India">India</option>
+                                <option value="United states">United states</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
+                                <use xlink:href="#downarrow-ico"></use>
+                            </svg>
+                        </div>
+                       <input type="number" size="30" class="text-field pad-tb:8 pad-lr:8 bor-radius-tl:0 bor-radius-tr:0" placeholder="ZIP / Postal Code" max="6">
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

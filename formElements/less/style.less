@@ -1,0 +1,64 @@
+@import "master.less";
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    height: 100vh;
+    padding:0;
+    margin: 0;
+    color:@grey-txt0;
+    background-color: @grey-bg10;
+}
+
+
+/* Reset styles */
+
+:where(.reset\:ul){
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+
+/* Reset styles */
+
+:is(.container,.main-page,.menu-wrapper,.content-wrapper,.frame){
+    flex:1;
+}
+:is(.container,.main-page){
+    overflow-y: hidden;
+}
+.menu-wrapper{
+    max-width: 300px;
+}
+:where(.menu-list){
+    li{
+        padding: 8px 15px;
+    }
+    a{
+        text-decoration: none;
+        color:@grey-txt0;
+    }
+}
+:where(.ico){
+    stroke-width: 1.5;
+}
+.content-wrapper{
+    overflow-y: auto;
+}
+.theme-ico{
+    fill: none;
+    stroke: currentColor;
+    cursor: pointer;
+}
+
+each(range(10, 30, 5), {
+    
+    .list-gap\:@{value} {   
+        >  * + *{
+            margin-top: ~"@{value}px";
+        }
+        
+    }  
+});

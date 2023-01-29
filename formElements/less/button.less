@@ -1,0 +1,133 @@
+@import "master.less";
+
+/*---- button style ----*/
+
+
+.flex\:wrap {
+    flex-wrap: wrap;
+}
+:where(.btn,.outline-btn){
+    display: flex;
+    cursor: pointer;
+    padding:6px 12px;
+    border-radius: 3px;
+    border:1px solid @accentcolor;
+    color:@white-txt;
+    align-items: center;
+    margin: 0;
+}
+:where(.btn){
+    background-color: @accent-theme;
+    font-weight: 600;
+
+    &\:reset{
+        border: none;
+        background: transparent;
+        padding: 0;
+    }
+    &:hover{
+        .hover-dark1;
+    }
+    .ico{
+        stroke:@white-ico;
+    }
+}
+.secontary-btn{
+    --accent-l:95%;
+    color:@accentcolor;
+    border: none;
+
+    &:hover{
+       .hover-light1;
+    }
+ }
+:where(.outline-btn){
+    color:@accentcolor;
+    font-weight: 600;
+    background-color: transparent;
+
+    &:hover{
+        .hover-light2;
+    }
+    .ico{
+        stroke:@accentcolor;
+    }
+}
+.btn,.outline-btn{
+
+   &:disabled{
+        background-color: @grey-bg6;
+        color:@grey3;
+        cursor: default;
+        border-color:@grey-bg6;
+        
+        & .ico{
+            stroke:@grey-txt3;
+        }
+   }
+}
+:where(.type\:fill){
+    .btn-type1{
+        border-radius: 3px 0px 0px 3px;
+        border:1px solid @accentcolor;
+        border-right:none;
+    }
+    .btn-type2{
+        border-radius: 0px 3px 3px 0px;
+        border-left:1px solid hsla(0%,0%,100%,0.22);
+    }
+}
+.type\:disabled{
+    .btn{
+        background-color: @grey-bg6;
+        color:@grey3;
+        cursor: default;
+        border-color:@grey-bg6;
+    }
+    
+    .btn-type1{
+        border-radius: 3px 0px 0px 3px;
+    }
+    .btn-type2{
+        border-left-color: @grey-bor5;
+        border-radius: 0px 3px 3px 0px;
+    }
+    & .ico{
+        stroke:@grey-bg3;
+    }
+}
+:where(.type\:outline){
+    & .btn{
+        color:@accentcolor;
+        font-weight: 600;
+        background-color: transparent;    
+
+        &:hover{
+            background-color: @accentcolor-light2;
+        }
+        .ico{
+            stroke:@accentcolor;
+        }
+    }
+    .btn-type1{
+        border-radius: 3px 0px 0px 3px;
+        border:1px solid @accentcolor;
+        border-right:none;
+    }
+    .btn-type2{
+        border-radius: 0px 3px 3px 0px;
+        border-left:1px solid @accentcolor;
+    }
+}
+:where(.reset-btn){
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    .ico{
+        stroke: @grey-txt0;
+    }
+}
+
+/*---- button style ----*/

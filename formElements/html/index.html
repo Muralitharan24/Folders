@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn UI/UX</title>
+    <link rel="stylesheet/less" type="text/css" href="../less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        
+   </script>
+</head>
+<body class="dis:flex-col" theme-type = "light">
+    <div id="icon-dispayer"></div>
+    <div class="container dis:flex-col">
+        <div class="header dis:flex gap:20 pad:15 bor-b:1 bor-style:solid bor-c:grey6">
+            <h3 class="mar:0 font-c:grey0">Learn UI/UX</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico theme-ico" width="25" height="25" onclick="changetheme()">
+                <use xlink:href="#moon-ico"></use>
+            </svg>
+        </div>
+        <div class="main-page dis:flex">
+            <ul class="reset:ul menu-wrapper bor-r:1 bor-style:solid bor-c:grey6">
+                <li>
+                    <h4 class="mar:0 pad-tb:15 pad-lr:15 font-c:grey0">Forms</h4>
+                    <ul class="reset:ul menu-list bg[child]-hover-c:grey6">
+                        <li class="dis:flex">
+                            <a class="button-html flex-grow" href="javascript:void(0)">Button</a>
+                        </li>
+                        <li class="dis:flex">
+                            <a class="input-html flex-grow" href="javascript:void(0)">Input Field</a>
+                        </li>
+                        <li class="dis:flex">
+                            <a class="checkbox-html flex-grow" href="javascript:void(0)">Checkbox</a>
+                        </li>
+                        <li class="dis:flex">
+                            <a class="radio-html flex-grow" href="javascript:void(0)">Radio</a>
+                        </li>
+                        <li class="dis:flex">
+                            <a class="toggle-html flex-grow" href="javascript:void(0)">Toggle Button</a>
+                        </li>
+                        <li class="dis:flex">
+                            <a class="selectoption-html flex-grow" href="javascript:void(0)">Select Options</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="content-wrapper pad-lr:25 pad-tb:25 dis:flex-col gap:25" id="loadHtml"></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+           $("#icon-dispayer").load("svg-icons.html");
+           $("#loadHtml").load("selectoption.html");
+
+           $(".radio-html").click(function(){
+                $("#loadHtml").load("radio.html");
+            });
+
+            $(".checkbox-html").click(function(){
+                $("#loadHtml").load("checkbox.html");
+            });
+
+            $(".button-html").click(function(){
+                $("#loadHtml").load("button.html");
+            });
+
+            $(".input-html").click(function(){
+                $("#loadHtml").load("input.html");
+            });
+            $(".toggle-html").click(function(){
+                $("#loadHtml").load("togglebutton.html");
+            });
+            $(".selectoption-html").click(function(){
+                $("#loadHtml").load("selectoption.html");
+            });
+       })
+
+        var themebtn = document.querySelector("body");
+        var icon = document.querySelector(".theme-ico");
+
+        function changetheme(){
+            if(themebtn.getAttribute("theme-type")=="light"){
+                themebtn.setAttribute("theme-type","dark");
+                icon.style.fill = "currentcolor";
+                icon.style.stroke="white";
+            }else{
+                themebtn.setAttribute("theme-type","light");
+                icon.style.fill = "none";
+                icon.style.stroke="currentcolor"
+            }
+        }
+    </script>
+</body>
+</html>

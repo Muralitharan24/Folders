@@ -1,0 +1,32 @@
+@import "master.less";
+
+/* checkbox style */
+
+:where(.checkbox){
+    border-radius: 4px;
+    padding: 7px;
+    border: 1px solid @grey-bor4;
+    cursor: pointer;
+    margin:1px;
+
+    &:checked {
+        background-color: @accentcolor;
+        border-color:@accentcolor;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' %3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:disabled {
+        cursor: default;
+
+        &:not(:checked){
+            background-color:@grey-bg6;
+        } 
+   }
+   &:focus{
+    outline: 2px solid @accentcolor;
+    outline-offset: 2px;
+   }
+}
+/* checkbox style */

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="reset:ul list-gap:25">
+        <li>
+            <p class="title">Default select option</p>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
+                <form class="select-container dis:flex flex-align:center">
+                    <select name="languages" class="select-box">
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Telugu">Telugu</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
+                        <use xlink:href="#downarrow-ico"></use>
+                    </svg>
+                </form>
+            </div>
+        </li>
+        <li>
+            <p class="title">Custom select option</p>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
+                <label class="select-container">
+                    <input type="checkbox" class="selectbox-input">
+                    <span class="select-box selectbox:custom">
+                        <span>Tamil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                            <use xlink:href="#downarrow-ico"></use>
+                        </svg>
+                    </span>
+                    <ul class="reset:ul dropdown-list pad:5">
+                        <li>Tamil</li>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Malayalam</li>
+                        <li>Telugu</li>
+                    </ul>
+                </label>
+            </div>
+        </li>
+        <li>
+            <p class="title">Custom select option with avathar</p>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
+                <label class="select-container">
+                    <input type="checkbox" class="selectbox-input">
+                    <span class="select-box selectbox:custom">
+                        <span class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Vignesh</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                            <use xlink:href="#downarrow-ico"></use>
+                        </svg>
+                    </span>
+                    <ul class="reset:ul dropdown-list pad:5">
+                        <li class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Vimal</span>
+                        </li>
+                        <li class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Priya</span>
+                        </li>
+                        <li class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Vignesh</span>
+                        </li>
+                        <li class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Diviya</span>
+                        </li>
+                        <li class="user-profile">
+                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                            <span class="user-name">Riyenth</span>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </li>
+        <li>
+            <p class="title">Custom select option with status indicator</p>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
+                <label class="select-container">
+                    <input type="checkbox" class="selectbox-input">
+                    <span class="select-box selectbox:custom">
+                        <span class="user-profile">
+                            <span class="status-indicator state:online">&#9679</span>
+                            <span class="user-name">Vimal</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                            <use xlink:href="#downarrow-ico"></use>
+                        </svg>
+                    </span>
+                    <ul class="reset:ul dropdown-list pad:5">
+                        <li class="user-profile">
+                            <span class="status-indicator state:online">&#9679</span>
+                            <span class="user-name">Vimal</span>
+                        </li>
+                        <li class="user-profile">
+                            <span class="status-indicator state:online">&#9679</span>
+                            <span class="user-name">Priya</span>
+                        </li>
+                        <li class="user-profile">
+                            <span class="status-indicator">&#9679</span>
+                            <span class="user-name">Vignesh</span>
+                        </li>
+                        <li class="user-profile">
+                            <span class="status-indicator">&#9679</span>
+                            <span class="user-name">Diviya</span>
+                        </li>
+                        <li class="user-profile">
+                            <span class="status-indicator state:online">&#9679</span>
+                            <span class="user-name">Riyenth</span>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </li>
+        <li>
+            <p></p>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
+                <div class="dis:flex flex-grow">
+                    <label class="select-container">
+                        <input type="checkbox" class="selectbox-input">
+                        <span class="select-box selectbox:custom bor-r:0 bor-radius-tr:0 bor-radius-br:0">
+                            <span class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Vignesh</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                                <use xlink:href="#downarrow-ico"></use>
+                            </svg>
+                        </span>
+                        <ul class="reset:ul dropdown-list pad:5">
+                            <li class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Vimal</span>
+                            </li>
+                            <li class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Priya</span>
+                            </li>
+                            <li class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Vignesh</span>
+                            </li>
+                            <li class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Diviya</span>
+                            </li>
+                            <li class="user-profile">
+                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
+                                <span class="user-name">Riyenth</span>
+                            </li>
+                        </ul>
+                    </label>
+                    <form class="select-container dis:flex flex-grow mar-b:5">
+                        <select name="languages" class="select-box flex-grow bor-radius-tl:0 bor-radius-bl:0">
+                            <option value="Tamil">Tamil</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Malayalam">Malayalam</option>
+                            <option value="Telugu">Telugu</option>
+                        </select>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
+                            <use xlink:href="#downarrow-ico"></use>
+                        </svg>
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

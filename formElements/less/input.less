@@ -1,0 +1,68 @@
+@import "master.less";
+
+/*---- input text style ----*/
+
+:where(.input-container,.text-field,.curve-input){
+    border:1px solid @grey-bor4;
+    background-color: transparent;
+    color:@grey-txt2;
+    border-radius: 5px;
+    outline: none;
+
+    &:focus-within{
+        border-color: transparent;
+        border-radius: 5px;
+        box-shadow:0px 0px 0px 2px @accentcolor;
+    }
+}
+:where(.text-field){
+    padding: 7px 10px;
+}
+.curve-input{
+    &:focus{
+        border-radius: 20px;
+    }
+}
+:where(.text-input,.dropdown,.dropdown1){
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:@grey-txt2;
+}
+:where(.downarrow-ico){
+    right: 7px;
+    stroke: @grey-bg2;
+
+    &.pos\:ab{
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.dropdown1{
+    flex-grow: 1;
+    color:@grey-txt0;
+}
+.text-field{
+    &:disabled{
+        border-color:@grey-bor5;
+        color:@grey4;
+
+        &::placeholder{
+            color:@grey-txt4
+        }
+    }
+
+}
+:where(.port){
+    color: @grey-txt2;
+    background-color: @grey-bg8;
+    border:1px solid @grey-bor4;
+}
+:where(.input-ico){
+    stroke: @grey-txt2;
+}
+:where(.user-icon){
+    fill:@grey-bg2;
+    stroke-width: 2.5;
+}
+/*---- input text style ----*/

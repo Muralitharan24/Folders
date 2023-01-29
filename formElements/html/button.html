@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list-gap:10">
+        <p class="mar:0 font-w:600 font-s:18">Button</p>
+        <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 flex-wrap[wrap] gap:10">
+            <button class="btn">Button Text</button>
+            <button class="btn secontary-btn">Button Text</button>
+            <button class="outline-btn">Button Text</button>
+            <button class="btn bor-radius:20 pad-lr:18">Button Text</button>
+            <button class="btn dis:flex gap:6">
+                Button Text
+                <svg viewBox="0 0 24 24" class="ico" width="16" height="16">
+                    <use xlink:href="#envelope-ico"></use>
+                </svg>
+            </button>
+            <div class="dis:flex type:fill">
+                <button class="btn btn-type1">Save Changes</button>
+                <button class="btn btn-type2">
+                    <svg viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                        <use xlink:href="#downarrow-ico"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="dis:flex type:outline">
+                <button class="btn btn-type1">Save Changes</button>
+                <button class="btn btn-type2">
+                    <svg viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
+                        <use xlink:href="#downarrow-ico"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="dis:flex type:fill">
+                <button class="btn btn-type1">Yes</button>
+                <button class="btn btn-type2">NO</button>
+            </div>
+            <div class="dis:flex type:outline">
+                <button class="btn btn-type1">Yes</button>
+                <button class="btn btn-type2">NO</button>
+            </div>
+            <button class="reset-btn">
+                <svg viewBox="0 0 24 24" class="ico setting-ico" width="21" height="21">
+                    <use xlink:href="#setting-ico"></use>
+                </svg>
+            </button>
+        </div>
+        <div>
+            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 flex-wrap[wrap] gap:10">
+                <button class="btn" disabled>Button Text</button>
+                <button class="btn secontary-btn" disabled>Button Text</button>
+                <button class="outline-btn bg-c:trans" disabled>Button Text</button>
+                <button class="btn bor-radius:20 pad-lr:18" disabled>Button Text</button>
+                <button class="btn dis:flex gap:6" disabled>
+                    Button Text
+                    <svg viewBox="0 0 24 24" class="ico envelope-ico" width="16" height="16">
+                        <use xlink:href="#envelope-ico"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
