@@ -1,106 +1,82 @@
-:where(.select-container){
-    position: relative;
-
-    // .select-box{
-    //     min-width:200px;
-    //     padding:8px;
-    //     border-radius: 4px;
-    //     border:1px solid @grey4;
-    //     color: @grey2;
-    //     appearance: none;
-    //     font-size: 14px;
-    //     background-color: transparent;
+:where(.@{pre}-selectbox){
+    padding:8px;
+    border-radius: 4px;
+    border:1px solid @grey4;
+    color: @grey-txt1;
+    background-color: @grey-bg10;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
     
-    //     &:focus{
-    //         border-color: transparent;
-    //         box-shadow: 0px 0px 0px 2px @accentcolor;
-    //         outline: none;
-    //     }
-    // }
-    .selectbox-input{
-        display: none;
-     
-        &:checked{
-            & ~ .dropdown-list{
-                display: block;
+    &.@{pre}-select\:default{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='hsl(227,10%,55%)' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-position: calc(100% - 6px) center;
+
+        &:not(:only-child){
+            box-shadow:none;
+
+            &:focus{
+                outline:none;
             }
-            & ~ .selectbox\:custom{
-                .downarrow-ico{
-                    transform: rotate(270deg);
+        }
+    }
+
+    &.@{pre}-open{
+        & + .@{pre}-dropdown{
+            .@{pre}-loop\:list{
+                *{
+                    a{
+                        color:@grey-txt0;
+                        text-decoration:none;
+                    }
+                }
+                &.@{pre}-loop-list\[tickicon\]{
+                    *{
+                        justify-content:space-between;
+    
+                        .@{z}-ico{
+                            display:none;
+                        }
+                    }
+                }
+
+                .@{pre}-active-option{
+                    background-color:@grey-bg6;
+
+                    .@{z}-ico{
+                        display:block;
+                    }
+                }
+
+                &.@{z}-bg-child[hover]{
+                    &\:accent{
+                        .@{pre}-active-option{
+                            background-color:@accentcolor;
+                            color:@white-txt1;
+
+                            .@{z}-ico{
+                                stroke:@white-ico1;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
-:where(.select-box){
-    min-width:200px;
-    padding:8px;
-    border-radius: 4px;
-    border:1px solid @grey4;
-    color: @grey2;
-    appearance: none;
-    font-size: 14px;
-    background-color: transparent;
 
-    &:focus{
-        border-color: transparent;
-        box-shadow: 0px 0px 0px 2px @accentcolor;
-        outline: none;
+.@{pre}-status-dot{
+    width: 6px;
+    height: 6px;
+    background-color:@grey-bg3;
+    border-radius: 100%;
+
+    &\:online{
+        @green-s-bg : 70%;
+        @green-l-bg : 45%;
+
+        background-color:@green-bg;
     }
 }
-
-:where(.selectbox\:custom){
-    display: flex;
-    user-select: none;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-
-    &:focus{
-        border-color: transparent;
-        box-shadow: 0px 0px 0px 2px @accentcolor;
-        outline: none;
-    }
-}
-:where(.dropdown-list){
-    position: absolute;
-    display: none;
-    background-color: var(--grey6);
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px 1px var(--grey4);
-    min-width: 100%;
-    z-index: 1;
-
-    > *{
-        padding:8px;
-        color: @grey2;
-        font-size: 14px;
-        user-select: none;
-        border-radius: 4px;
-        cursor: pointer;
-
-        &:hover{
-            background-color: @accentcolor;
-            color:@white-txt;
-            font-weight: 600;
-        }
-    }
-}
-:where(.user-profile){
-    display: flex;
-    align-items: center;
-
-    .user-name{
-        margin-left: 10px;
-    }
-}
-.status-indicator{
-    color:@grey-txt4
-}
-.state\:online{
-    @green-s : 78%;
-    @green-l : 41%;
-
-    color:@green-txt;
-}
-

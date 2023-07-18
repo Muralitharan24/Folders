@@ -8,386 +8,310 @@
     <script src="../js/script.js"></script>
 </head>
 <body>
-    <ul class="reset:ul list-gap:30">
-        <li class="list-gap:10">
-            <p class="title">Radio Button</p>
-            <ul class="reset:ul divide:last bor[child]-style:solid bor[child]-c:grey6 bg[child]-hover-c:grey7 width[max]:550 mar:auto">
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio" class="radio-option appearance:none" />
-                        <span>Unchecked</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio" class="radio-option appearance:none" checked />
-                        <span>Checked</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" class="radio-option appearance:none" disabled />
-                        <span>Disabled</span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" class="radio-option appearance:none" checked disabled />
-                        <span>Disabled checked</span>
-                    </label>
-                </li>
-            </ul>
-        </li>
-        <li class="list-gap:10">
-            <p class="title">Simple inline list</p>
-            <ul class="reset:ul width[min]:550 width[max]:550 mar:auto">
-                <li>
-                    <p class="mar:0 font-w:600 font-s:17">Notifications</p>
-                    <p class="mar:0 font-s:15 pad-t:5 font-c:grey2">How do you prefer to receive notifications?</p>
-                    <ul class="reset:ul dis:flex gap:25 pad-t:10">
-                        <li>
-                            <label class="select-option type:column pad-l:0">
-                                <input type="radio" name="radio1" class="radio-option appearance:none"  checked/>
-                                <span>Email</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="select-option type:column">
-                                <input type="radio" name="radio1" class="radio-option appearance:none"/>
-                                <span>Phone (SMS)</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="select-option type:column">
-                                <input type="radio" name="radio1" class="radio-option appearance:none"/>
-                                <span>Push notification</span>
-                            </label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li class="list-gap:10">
-            <p class="title">List with description</p>
-            <ul class="reset:ul divide:last bor[child]-style:solid bor[child]-c:grey6 bg[child]-hover-c:grey7 width[max]:550 mar:auto">
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none" checked/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Small</span>
-                            <span class="font-c:grey2 font-s:14">4 GB RAM / 2 CUPS / 80 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none"/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Medium</span>
-                            <span class="font-c:grey2 font-s:14">8 GB RAM / 4 CUPS / 160 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none"/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Large</span>
-                            <span class="font-c:grey2 font-s:14">16 GB RAM / 8 CUPS / 320 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-            </ul>
-        </li>
-        <li class="list-gap:10">
-            <p class="title">List with description</p>
-            <ul class="reset:ul divide:last bor[child]-style:solid bor[child]-c:grey6 bg[child]-hover-c:grey7 width[max]:550 mar:auto">
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio3" class="radio-option appearance:none" checked/>
-                        <span>
-                            <span class="font-w:600">Small</span>
-                            <span class="font-c:grey2 font-s:14">4 GB RAM / 2 CUPS / 80 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio3" class="radio-option appearance:none"/>
-                        <span>
-                            <span class="font-w:600">Medium</span>
-                            <span class="font-c:grey2 font-s:14">8 GB RAM / 4 CUPS / 160 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio3" class="radio-option appearance:none"/>
-                        <span>
-                            <span class="font-w:600">Large</span>
-                            <span class="font-c:grey2 font-s:14">16 GB RAM / 8 CUPS / 320 GB SSD Storage</span>
-                        </span>
-                    </label>
-                </li>
-            </ul>
-        </li>
-        <li class="list-gap:10">
-            <p class="title">Simple inline list</p>
-            <ul class="reset:ul width[min]:550 width[max]:550 mar:auto">
-                <li>
-                    <p class="mar:0 font-w:600 font-s:17">Transfer funds</p>
-                    <p class="mar:0 font-s:15 pad-t:5 font-c:grey2">Transfer your balance to your bank account.</p>
-                    <ul class="reset:ul divide:last bor[child]-style:solid bor[child]-c:grey6 bg[child]-hover-c:grey7 pad-t:10">
-                        <li>
-                            <label class="select-option type:row flex-justify:space-bet">
-                                <span class="dis:flex-col gap:5">
-                                    <span class="font-w:600">Checking</span>
-                                    <span class="font-c:grey2 font-s:14">CIBC &#8226; &#8226; &#8226; &#8226; 6610</span>
-                                </span>
-                                <input type="radio" name="radio4" class="radio-option appearance:none" checked/>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="select-option type:row flex-justify:space-bet">
-                                <span class="dis:flex-col gap:5">
-                                    <span class="font-w:600">Savings</span>
-                                    <span class="font-c:grey2 font-s:14">Bank of America &#8226; &#8226; &#8226; &#8226; 0149</span>
-                                </span>
-                                <input type="radio" name="radio4" class="radio-option appearance:none"/>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="select-option type:row flex-justify:space-bet">
-                                <span class="dis:flex-col gap:5">
-                                    <span class="font-w:600">Mastercard</span>
-                                    <span class="font-c:grey2 font-s:14">Capital One &#8226; &#8226; &#8226; &#8226; 7877</span>
-                                </span>
-                                <input type="radio" name="radio4" class="radio-option appearance:none"/>
-                            </label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    <ul class="reset:ul z-list-gap:30">
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Radio Button</div>
+            <div class="z-dis:flex-col z-mar-t:10 z-flex:grow z-divide:last z-bg-child[hover]:grey7 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                <label class="zln-select-option">
+                    <input type="radio" name="radio" class="z-input:radio" />
+                    <span>Unchecked</span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio" class="z-input:radio" checked />
+                    <span>Checked</span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" class="z-input:radio" disabled />
+                    <span>Disabled</span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" class="z-input:radio" checked disabled />
+                    <span>Disabled checked</span>
+                </label>
+            </div>
         </li>
         <li>
-            <p class="title">Simple list with radio on right</p>
-            <ul class="reset:ul divide:last bor[child]-style:solid bor[child]-c:grey6 bg[child]-hover-c:grey7 width[max]:550 mar:auto">
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>None</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none" checked/>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple inline list</div>
+            <div class="z-dis:flex-col z-pad-tb:20 z-pad-lr:15 z-mar-t:10">
+                <div class="z-font-w:500 z-font-s:17">Notifications</div>
+                <span class="z-dis:block z-font-s:15 z-pad-t:5 z-txt:grey2">How do you prefer to receive notifications?</span>
+                <div class="z-dis:flex z-gap:25 z-pad-t:10 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                    <label class="zln-select-option  z-pad-l:0">
+                        <input type="radio" name="radio1" class="z-input:radio"  checked/>
+                        <span>Email</span>
                     </label>
-                </li>
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>Baked beans</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none"/>
+                    <label class="zln-select-option">
+                        <input type="radio" name="radio1" class="z-input:radio"/>
+                        <span>Phone (SMS)</span>
                     </label>
-                </li>
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>Coleslaw</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none"/>
+                    <label class="zln-select-option">
+                        <input type="radio" name="radio1" class="z-input:radio"/>
+                        <span>Push notification</span>
                     </label>
-                </li>
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>French fries</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none"/>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>Garden salad</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none"/>
-                    </label>
-                </li>
-                <li>
-                    <label class="select-option type:row flex-justify:space-bet">
-                        <span>Mashed potatoes</span>
-                        <input type="radio" name="radio5" class="radio-option appearance:none"/>
-                    </label>
-                </li>
-            </ul>
-        </li>
-        <li class="list-gap:10">
-            <p class="title">Cards</p>
-            <ul class="reset:ul width[min]:800 width[max]:800 mar:auto">
-                <li>
-                    <p class="font-w:600">Select a mailing list</p>
-                    <ul class="reset:ul dis:flex gap:15 bor[child]-w:1 bor[child]-style:solid bor[child]-c:grey6">
-                        <li class="select:focus  width[max]:260 bor-radius:8">
-                            <label class="select-option type:row dis:flex-col flex-justify:space-bet gap:30">
-                                <span class="dis:flex flex-justify:space-bet flex-align:start width[%]:100">
-                                    <span class="dis:flex-col">
-                                        <span class="font-w:600">Newsletter</span>
-                                        <span class="font-c:grey2 font-s:14 pad-t:5">Last message sent an hours ago</span>
-                                    </span>
-                                    <input type="radio" name="radio6" class="radio-option appearance:none mark:check bor:0" checked autofocus/> 
-                                </span>
-                                <span class="font-w:600">621 users</span>
-                            </label>
-                        </li>
-                        <li class="select:focus width[max]:260 bor-radius:8">
-                            <label class="select-option type:row dis:flex-col flex-justify:space-bet gap:30">
-                                <span class="dis:flex flex-justify:space-bet flex-align:start width[%]:100">
-                                    <span class="dis:flex-col">
-                                        <span class="font-w:600">Existing Customers</span>
-                                        <span class="font-c:grey2 font-s:14 pad-t:5">Last message sent 2 weeks ago</span>
-                                    </span>
-                                    <input type="radio" name="radio6" class="radio-option appearance:none mark:check bor:0"/> 
-                                </span>
-                                <span class="font-w:600">1200 users</span>
-                            </label>
-                        </li>
-                        <li class="select:focus width[max]:260 bor-radius:8">
-                            <label class="select-option type:row dis:flex-col flex-justify:space-bet gap:30">
-                                <span class="dis:flex flex-justify:space-bet flex-align:start width[%]:100">
-                                    <span class="dis:flex-col">
-                                        <span class="font-w:600">Trail Users</span>
-                                        <span class="font-c:grey2 font-s:14 pad-t:5">Last message sent 4 days ago</span>
-                                    </span>
-                                    <input type="radio" name="radio6" class="radio-option appearance:none mark:check bor:0"/> 
-                                </span>
-                                <span class="font-w:600">621 users</span>
-                            </label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </li>
         <li>
-            <p class="title">Stacked cards</p>
-            <ul class="reset:ul width[min]:550 width[max]:550 mar:auto bor[child]-w:1 bor[child]-c:grey6 bor[child]-style:solid pad-t:20 list-gap:15">
-                <li class="select:focus bor-radius:8">
-                    <label class="select-option type:row dis:flex-col flex-align:normal">
-                        <input type="radio" name="stack-cards" class="invisible-option" autofocus checked/>
-                        <span class="dis:flex flex-justify:space-bet flex-grow font-w:600 font-s:15">
-                            <span>Hobby</span>
-                            <span>$40</span>
-                        </span>
-                        <span class="dis:flex flex-justify:space-bet font-s:15 font-c:grey2 flex-grow">
-                            <span>8GB / 4 CPUs . 160 GB SSD disk</span>
-                            <span>/mo</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="select:focus bor-radius:8">
-                    <label class="select-option type:row dis:flex-col flex-align:normal">
-                        <input type="radio" name="stack-cards" class="invisible-option"/>
-                        <span class="dis:flex flex-justify:space-bet flex-grow font-w:600 font-s:15">
-                            <span>Startup</span>
-                            <span>$80</span>
-                        </span>
-                        <span class="dis:flex flex-justify:space-bet font-s:15 font-c:grey2 flex-grow">
-                            <span>12GB / 6 CPUs . 256 GB SSD disk</span>
-                            <span>/mo</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="select:focus bor-radius:8">
-                    <label class="select-option type:row dis:flex-col flex-align:normal">
-                        <input type="radio" name="stack-cards" class="invisible-option"/>
-                        <span class="dis:flex flex-justify:space-bet flex-grow font-w:600 font-s:15">
-                            <span>Business</span>
-                            <span>$160</span>
-                        </span>
-                        <span class="dis:flex flex-justify:space-bet font-s:15 font-c:grey2 flex-grow">
-                            <span>16GB / 8 CPUs . 512 GB SSD disk</span>
-                            <span>/mo</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="select:focus bor-radius:8">
-                    <label class="select-option type:row dis:flex-col flex-align:normal">
-                        <input type="radio" name="stack-cards" class="invisible-option"/>
-                        <span class="dis:flex flex-justify:space-bet flex-grow font-w:600 font-s:15">
-                            <span>Enterprise</span>
-                            <span>$240</span>
-                        </span>
-                        <span class="dis:flex flex-justify:space-bet font-s:15 font-c:grey2 flex-grow">
-                            <span>32GB / 12 CPUs . 1024 GB SSD disk</span>
-                            <span>/mo</span>
-                        </span>
-                    </label>
-                </li>
-            </ul>
+            <div class="zln-title z-font-s:18 z-font-w:500">List with description</div>
+            <div class="z-dis:flex-col z-mar-t:10 z-divide:last z-bg-child[hover]:grey7 z-pad[child]-lr:10 z-pad[child]-tb:15"> 
+                <label class="zln-select-option">
+                    <input type="radio" name="radio2" class="z-input:radio" checked>
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Small</span>
+                        <span class="z-txt:grey2 z-font-s:14">4 GB RAM / 2 CUPS / 80 GB SSD Storage</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio2" class="z-input:radio">
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Medium</span>
+                        <span class="z-txt:grey2 z-font-s:14">8 GB RAM / 4 CUPS / 160 GB SSD Storage</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio2" class="z-input:radio"/>
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Large</span>
+                        <span class="z-txt:grey2 z-font-s:14">16 GB RAM / 8 CUPS / 320 GB SSD Storage</span>
+                    </span>
+                </label>
+            </div>
         </li>
         <li>
-            <p class="title">Simple tabel</p>
-            <ul class="option-wrapper reset:ul width[min]:700 width[max]:700 mar:auto bor[child]-w:1 bor[child]-style:solid bor[child]-c:grey6 pad-t:20">
-                <li class="option-focus option-active">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio-btn" class="radio-option appearance:none" checked/>
-                        <span class="dis:flex flex-justify:space-bet flex-grow">
-                            <span class="font-w:600">Startup</span>
-                            <span>
-                                <span class="font-w:600">$29 / mo</span>
-                                <span class="text-tone">($290 / yr)</span>
-                            </span>
-                            <span class="text-tone">Up to 5 active job postings</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="option-focus">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio-btn" class="radio-option appearance:none" />
-                        <span class="dis:flex flex-justify:space-bet flex-grow">
-                            <span class="font-w:600">Business</span>
-                            <span>
-                                <span class="font-w:600">$99 / mo</span>
-                                <span class="text-tone">($990 / yr)</span>
-                            </span>
-                            <span class="text-tone">Up to 25 active job postings</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="option-focus">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio-btn" class="radio-option appearance:none" />
-                        <span class="dis:flex flex-justify:space-bet flex-grow">
-                            <span class="font-w:600">Enterprise</span>
-                            <span>
-                                <span class="font-w:600">$249 / mo</span>
-                                <span class="text-tone">($2490 / yr)</span>
-                            </span>
-                            <span class="text-tone">Unlimited active job postings</span>
-                        </span>
-                    </label>
-                </li>
-            </ul>
+            <div class="zln-title z-font-s:18 z-font-w:500">List with inline description</div>
+            <div class="z-dis:flex-col z-mar-t:10 z-divide:last z-bg-child[hover]:grey7 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                <label class="zln-select-option">
+                    <input type="radio" name="radio3" class="z-input:radio" checked/>
+                    <span>
+                        <span class="z-font-w:500">Small</span>
+                        <span class="z-txt:grey2 z-font-s:14">4 GB RAM / 2 CUPS / 80 GB SSD Storage</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio3" class="z-input:radio"/>
+                    <span>
+                        <span class="z-font-w:500">Medium</span>
+                        <span class="z-txt:grey2 z-font-s:14">8 GB RAM / 4 CUPS / 160 GB SSD Storage</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio3" class="z-input:radio"/>
+                    <span>
+                        <span class="z-font-w:500">Large</span>
+                        <span class="z-txt:grey2 z-font-s:14">16 GB RAM / 8 CUPS / 320 GB SSD Storage</span>
+                    </span>
+                </label>
+            </div>
         </li>
-        <li class="list-gap:10">
-            <p class="title">List with descriptions in panel</p>
-            <ul class="option-wrapper reset:ul bor[child]-w:1 bor[child]-style:solid bor[child]-c:grey6 width[max]:700 mar:auto pad-t:20">
-                <li class="option-focus option-active">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none" checked/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Public access</span>
-                            <span class="text-tone font-s:14">This project would be available for anyone who has the link</span>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple inline list</div>
+            <div class="z-dis:flex-col z-pad-tb:20 z-pad-lr:15 z-mar-t:10">
+                <div class="z-font-w:500 z-font-s:17 z-pad-l:10">Transfer funds</div>
+                <span class="z-dis:block z-font-s:15 z-pad-t:5 z-txt:grey2 z-pad-l:10">Transfer your balance to your bank account.</span>
+                <div class="z-dis:flex-col z-divide:last z-bg-child[hover]:grey7 z-pad-t:10 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                    <label class="zln-select-option z-flex-j:sb">
+                        <span class="z-dis:flex-col z-gap:5">
+                            <span class="z-font-w:500">Checking</span>
+                            <span class="z-txt:grey2 z-font-s:14">CIBC &#8226; &#8226; &#8226; &#8226; 6610</span>
                         </span>
+                        <input type="radio" name="radio4" class="z-input:radio" checked/>
                     </label>
-                </li>
-                <li class="option-focus">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none"/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Private to Project Members</span>
-                            <span class="text-tone font-s:14">Only members of this project would be able to access</span>
+                    <label class="zln-select-option z-flex-j:sb">
+                        <span class="z-dis:flex-col z-gap:5">
+                            <span class="z-font-w:500">Savings</span>
+                            <span class="z-txt:grey2 z-font-s:14">Bank of America &#8226; &#8226; &#8226; &#8226; 0149</span>
                         </span>
+                        <input type="radio" name="radio4" class="z-input:radio"/>
                     </label>
-                </li>
-                <li class="option-focus">
-                    <label class="select-option type:row">
-                        <input type="radio" name="radio2" class="radio-option appearance:none"/>
-                        <span class="dis:flex-col gap:5">
-                            <span class="font-w:600">Private to you</span>
-                            <span class="text-tone font-s:14">You are the only one able to access this project</span>
+                    <label class="zln-select-option z-flex-j:sb">
+                        <span class="z-dis:flex-col z-gap:5">
+                            <span class="z-font-w:500">Mastercard</span>
+                            <span class="z-txt:grey2 z-font-s:14">Capital One &#8226; &#8226; &#8226; &#8226; 7877</span>
                         </span>
+                        <input type="radio" name="radio4" class="z-input:radio"/>
                     </label>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple list with radio on right</div>
+            <div class="z-dis:flex-col z-mar-t:10 z-divide:last z-bg-child[hover]:grey7 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">None</span>
+                    <input type="radio" name="radio5" class="z-input:radio" checked/>
+                </label>
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">Baked beans</span>
+                    <input type="radio" name="radio5" class="z-input:radio"/>
+                </label>
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">Coleslaw</span>
+                    <input type="radio" name="radio5" class="z-input:radio"/>
+                </label>
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">French fries</span>
+                    <input type="radio" name="radio5" class="z-input:radio"/>
+                </label>
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">Garden salad</span>
+                    <input type="radio" name="radio5" class="z-input:radio"/>
+                </label>
+                <label class="zln-select-option z-flex-j:sb">
+                    <span class="z-font-w:500">Mashed potatoes</span>
+                    <input type="radio" name="radio5" class="z-input:radio"/>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Cards</div>
+            <div class="z-dis:flex-col z-pad-tb:20 z-pad-lr:15 z-mar-t:10">
+                <div class="z-font-w:500 z-font-s:16">Select a mailing list</div>
+                <div class="zln-option-wrapper z-dis:flex z-gap:15 z-bor[child]-w:1 z-bor[child]-style:solid z-bor[child]-c:grey6 z-bor-radius[child]:5 z-mar-t:15 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                    <label class="zln-select-option zln-focus-within z-dis:flex-col z-gap:30">
+                        <span class="z-dis:flex-j-sb z-flex-al:start z-width[%]:100">
+                            <span class="z-dis:flex-col">
+                                <span class="z-font-w:500">Newsletter</span>
+                                <span class="z-txt:grey2 z-font-s:14 z-pad-t:5">Last message sent an hours ago</span>
+                            </span>
+                            <input type="radio" name="radio6" class="z-input:radio mark:check z-bor:none" checked autofocus/> 
+                        </span>
+                        <span class="z-font-w:500">621 users</span>
+                    </label>
+                    <label class="zln-select-option z-dis:flex-col z-gap:30">
+                        <span class="z-dis:flex-j-sb z-flex-al:start z-width[%]:100">
+                            <span class="z-dis:flex-col">
+                                <span class="z-font-w:500">Existing Customers</span>
+                                <span class="z-txt:grey2 z-font-s:14 z-pad-t:5">Last message sent 2 weeks ago</span>
+                            </span>
+                            <input type="radio" name="radio6" class="z-input:radio mark:check z-bor:none"/> 
+                        </span>
+                        <span class="z-font-w:500">1200 users</span>
+                    </label>
+                    <label class="zln-select-option z-dis:flex-col z-gap:30">
+                        <span class="z-dis:flex-j-sb z-flex-al:start z-width[%]:100">
+                            <span class="z-dis:flex-col">
+                                <span class="z-font-w:500">Trail Users</span>
+                                <span class="z-txt:grey2 z-font-s:14 z-pad-t:5">Last message sent 4 days ago</span>
+                            </span>
+                            <input type="radio" name="radio6" class="z-input:radio mark:check z-bor:none"/> 
+                        </span>
+                        <span class="z-font-w:500">621 users</span>
+                    </label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Stacked cards</div>
+            <div class="zln-option-wrapper z-dis:flex-col z-mar-t:10 z-bor[child]-w:1 z-bor[child]-c:grey6 z-bor[child]-style:solid z-pad-t:20 z-list-gap:15 z-pad[child]-lr:10 z-pad[child]-tb:15 z-bor-radius[child]:5">
+                <label class="zln-select-option zln-focus-within z-dis:flex-col z-pos:re">
+                    <input type="radio" name="stack-cards" class="z-input:invisible" checked/>
+                    <span class="z-dis:flex-j-sb z-flex:grow z-font-w:500 z-font-s:15">
+                        <span>Hobby</span>
+                        <span>$40</span>
+                    </span>
+                    <span class="z-dis:flex-j-sb z-font-s:15 z-txt:grey2 z-flex:grow">
+                        <span>8GB / 4 CPUs . 160 GB SSD disk</span>
+                        <span>/mo</span>
+                    </span>
+                </label>
+                <label class="zln-select-option z-dis:flex-col z-pos:re">
+                    <input type="radio" name="stack-cards" class="z-input:invisible"/>
+                    <span class="z-dis:flex-j-sb z-flex:grow z-font-w:500 z-font-s:15">
+                        <span>Startup</span>
+                        <span>$80</span>
+                    </span>
+                    <span class="z-dis:flex-j-sb z-font-s:15 z-txt:grey2 z-flex:grow">
+                        <span>12GB / 6 CPUs . 256 GB SSD disk</span>
+                        <span>/mo</span>
+                    </span>
+                </label>
+                <label class="zln-select-option z-dis:flex-col z-pos:re">
+                    <input type="radio" name="stack-cards" class="z-input:invisible"/>
+                    <span class="z-dis:flex-j-sb z-flex:grow z-font-w:500 z-font-s:15">
+                        <span>Business</span>
+                        <span>$160</span>
+                    </span>
+                    <span class="z-dis:flex-j-sb z-font-s:15 z-txt:grey2 z-flex:grow">
+                        <span>16GB / 8 CPUs . 512 GB SSD disk</span>
+                        <span>/mo</span>
+                    </span>
+                </label>
+                <label class="zln-select-option z-dis:flex-col z-pos:re">
+                    <input type="radio" name="stack-cards" class="z-input:invisible"/>
+                    <span class="z-dis:flex-j-sb z-flex:grow z-font-w:500 z-font-s:15">
+                        <span>Enterprise</span>
+                        <span>$240</span>
+                    </span>
+                    <span class="z-dis:flex-j-sb z-font-s:15 z-txt:grey2 z-flex:grow">
+                        <span>32GB / 12 CPUs . 1024 GB SSD disk</span>
+                        <span>/mo</span>
+                    </span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple tabel</div>
+            <div class="zln-option-wrapper zln-group-option z-dis:flex-col z-bor[child]-w:1 z-bor[child]-style:solid z-bor[child]-c:grey6 z-pad-t:20 z-pad[child]-lr:10 z-pad[child]-tb:15 z-mar-t:10">
+                <label class="zln-select-option zln-focus-within">
+                    <input type="radio" name="radio-btn" class="z-input:radio" checked/>
+                    <span class="z-dis:flex-j-sb z-flex:grow">
+                        <span class="z-font-w:500">Startup</span>
+                        <span>
+                            <span class="z-font-w:500">$29 / mo</span>
+                            <span class="z-txt:grey2">($290 / yr)</span>
+                        </span>
+                        <span class="z-txt:grey2">Up to 5 active job postings</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio-btn" class="z-input:radio" />
+                    <span class="z-dis:flex-j-sb z-flex:grow">
+                        <span class="z-font-w:500">Business</span>
+                        <span>
+                            <span class="z-font-w:500">$99 / mo</span>
+                            <span class="z-txt:grey2">($990 / yr)</span>
+                        </span>
+                        <span class="z-txt:grey2">Up to 25 active job postings</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio-btn" class="z-input:radio" />
+                    <span class="z-dis:flex-j-sb z-flex:grow">
+                        <span class="z-font-w:500">Enterprise</span>
+                        <span>
+                            <span class="z-font-w:500">$249 / mo</span>
+                            <span class="z-txt:grey2">($2490 / yr)</span>
+                        </span>
+                        <span class="z-txt:grey2">Unlimited active job postings</span>
+                    </span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">List with descriptions in panel</div>
+            <div class="zln-option-wrapper zln-group-option z-dis:flex-col z-mar-t:10 z-bor[child]-w:1 z-bor[child]-style:solid z-bor[child]-c:grey6 z-width[min]:700 z-pad-t:20 z-pad[child]-lr:10 z-pad[child]-tb:15">
+                <label class="zln-select-option zln-focus-within">
+                    <input type="radio" name="radio7" class="z-input:radio" checked/>
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Public access</span>
+                        <span class="z-txt:grey2 z-font-s:14">This project would be available for anyone who has the link</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio7" class="z-input:radio"/>
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Private to Project Members</span>
+                        <span class="z-txt:grey2 z-font-s:14">Only members of this project would be able to access</span>
+                    </span>
+                </label>
+                <label class="zln-select-option">
+                    <input type="radio" name="radio7" class="z-input:radio"/>
+                    <span class="z-dis:flex-col z-gap:5">
+                        <span class="z-font-w:500">Private to you</span>
+                        <span class="z-txt:grey2 z-font-s:14">You are the only one able to access this project</span>
+                    </span>
+                </label>
+            </div>
         </li>
     </ul>
 </body>

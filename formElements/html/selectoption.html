@@ -3,177 +3,527 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, alphabet-scale=1.0">
     <title>Document</title>
+    <script src="../js/script.js"></script>
 </head>
 <body>
-    <ul class="reset:ul list-gap:25">
+    <ul class="reset:ul z-list-gap:25">
         <li>
-            <p class="title">Default select option</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <form class="select-container dis:flex flex-align:center">
-                    <select name="languages" class="select-box">
+            <div class="zln-title z-font-s:18 z-font-w:500">Default select option</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-flex:wrap">
+                <select name="languages" class="zln-selectbox zln-select:default z-flex:grow">
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Telugu">Telugu</option>
+                </select>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span>Tamil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list z-bg-child[hover]:accent z-height[max]:300 z-overflow[y]:auto">
+                            <li custom-select="false">Tamil</li>
+                            <li custom-select="false">English</li>
+                            <li custom-select="false">Hindi</li>
+                            <li custom-select="false">Malayalam</li>
+                            <li custom-select="false">Telugu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span>French</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox z-mar:15 z-pad:6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow" size="10">
+                        </div>
+                        <ul class="zln-loop:list">
+                            <li custom-select="false">French</li>
+                            <li custom-select="false">Hindi</li>
+                            <li custom-select="false">Arabic</li>
+                            <li custom-select="false">Chinesh</li>
+                            <li custom-select="false">Japanese</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option with avathar</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:3 z-mar-t:10 z-gap:15 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <img src="../images/profile2.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                            <span>Vimal</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list z-bg-child[hover]:accent">
+                            <li custom-select="false">
+                                <img src="../images/profile2.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Vimal</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile1.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Priya</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile6.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Vignesh</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile3.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Diviya</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile5.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Riyenth</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <img src="../images/profile2.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                            <span>Vimal</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox z-mar:15 z-pad:6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow" size="10">
+                        </div>
+                        <ul class="zln-loop:list">
+                            <li custom-select="false">
+                                <img src="../images/profile2.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Vimal</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile1.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Priya</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile6.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Vignesh</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile3.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Diviya</span>
+                            </li>
+                            <li custom-select="false">
+                                <img src="../images/profile5.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Riyenth</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option with status indicator</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:3 z-mar-t:10 z-gap:15 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <div class="zln-status-dot zln-status-dot:online"></div>
+                            <span>Keethika</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list z-bg-child[hover]:accent">
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Anbu</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Keerthika</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:offline"></div>
+                                <span>Abil</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:offline"></div>
+                                <span>Hari</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Shalini</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <div class="zln-status-dot zln-status-dot:online"></div>
+                            <span>Keethika</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox z-mar:15 z-pad:6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow" size="10">
+                        </div>
+                        <ul class="zln-loop:list">
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Anbu</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Keerthika</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:offline"></div>
+                                <span>Abil</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:offline"></div>
+                                <span>Hari</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-status-dot zln-status-dot:online"></div>
+                                <span>Shalini</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option with user intial</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <div class="zln-rounded zln-rounded:24 z-font-s:10">P</div>
+                            <span>Pradheep</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list z-bg-child[hover]:accent">
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">K</div>
+                                <span>Kavin</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">R</div>
+                                <span>Rio</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">P</div>
+                                <span>Pradheep</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">A</div>
+                                <span>Anjali</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">K</div>
+                                <span>krishna</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span class="z-dis:flex-al-c z-gap:10">
+                            <div class="zln-rounded zln-rounded:24 z-font-s:10">P</div>
+                            <span>Pradheep</span>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox z-mar:15 z-pad:6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow" size="10">
+                        </div>
+                        <ul class="zln-loop:list">
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">K</div>
+                                <span>Kavin</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">R</div>
+                                <span>Rio</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">P</div>
+                                <span>Pradheep</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">A</div>
+                                <span>Anjali</span>
+                            </li>
+                            <li custom-select="false">
+                                <div class="zln-rounded zln-rounded:24">K</div>
+                                <span>krishna</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select with dropdown</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-flex:wrap">
+                <div class="zln-dual-container">
+                    <div class="z-pos:re z-bor-r:1 z-bor-style:solid z-bor-c:grey4 z-width[min]:250">
+                        <div class="zln-selectbox z-dis:flex-ai-jc z-bor:none z-bg:trans" custom-select="true">
+                            <span class="z-dis:flex-al-c z-gap:10">
+                                <img src="../images/profile5.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                <span>Riyenth</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                                <use xlink:href="#o-ico-chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="zln-dropdown z-mar-t:8">
+                            <div class="zln-searchbox reset:search z-pad:12">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                    <use xlink:href="#o-ico-magnifying-glass"></use>
+                                </svg>
+                                <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                            </div>
+                            <ul class="zln-loop:list z-bg-child[hover]:accent">
+                                <li custom-select="false">
+                                    <img src="../images/profile2.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                    <span>Vimal</span>
+                                </li>
+                                <li custom-select="false">
+                                    <img src="../images/profile1.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                    <span>Priya</span>
+                                </li>
+                                <li custom-select="false">
+                                    <img src="../images/profile6.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                    <span>Vignesh</span>
+                                </li>
+                                <li custom-select="false">
+                                    <img src="../images/profile3.jpg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                    <span>Diviya</span>
+                                </li>
+                                <li custom-select="false">
+                                    <img src="../images/profile5.jpeg" alt="avathar" width="26" height="26" class="zln-rounded zln-rounded:24">
+                                    <span>Riyenth</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <select name="languages" class="zln-selectbox zln-select:default z-bor:none z-flex:grow z-bg:trans">
                         <option value="Tamil">Tamil</option>
                         <option value="English">English</option>
                         <option value="Hindi">Hindi</option>
                         <option value="Malayalam">Malayalam</option>
                         <option value="Telugu">Telugu</option>
                     </select>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
-                        <use xlink:href="#downarrow-ico"></use>
-                    </svg>
-                </form>
+                </div>
             </div>
         </li>
         <li>
-            <p class="title">Custom select option</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label class="select-container">
-                    <input type="checkbox" class="selectbox-input">
-                    <span class="select-box selectbox:custom">
-                        <span>Tamil</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
-                            <use xlink:href="#downarrow-ico"></use>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option with link</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span>Link1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
                         </svg>
-                    </span>
-                    <ul class="reset:ul dropdown-list pad:5">
-                        <li>Tamil</li>
-                        <li>English</li>
-                        <li>Hindi</li>
-                        <li>Malayalam</li>
-                        <li>Telugu</li>
-                    </ul>
-                </label>
-            </div>
-        </li>
-        <li>
-            <p class="title">Custom select option with avathar</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label class="select-container">
-                    <input type="checkbox" class="selectbox-input">
-                    <span class="select-box selectbox:custom">
-                        <span class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Vignesh</span>
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
-                            <use xlink:href="#downarrow-ico"></use>
-                        </svg>
-                    </span>
-                    <ul class="reset:ul dropdown-list pad:5">
-                        <li class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Vimal</span>
-                        </li>
-                        <li class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Priya</span>
-                        </li>
-                        <li class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Vignesh</span>
-                        </li>
-                        <li class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Diviya</span>
-                        </li>
-                        <li class="user-profile">
-                            <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                            <span class="user-name">Riyenth</span>
-                        </li>
-                    </ul>
-                </label>
-            </div>
-        </li>
-        <li>
-            <p class="title">Custom select option with status indicator</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label class="select-container">
-                    <input type="checkbox" class="selectbox-input">
-                    <span class="select-box selectbox:custom">
-                        <span class="user-profile">
-                            <span class="status-indicator state:online">&#9679</span>
-                            <span class="user-name">Vimal</span>
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
-                            <use xlink:href="#downarrow-ico"></use>
-                        </svg>
-                    </span>
-                    <ul class="reset:ul dropdown-list pad:5">
-                        <li class="user-profile">
-                            <span class="status-indicator state:online">&#9679</span>
-                            <span class="user-name">Vimal</span>
-                        </li>
-                        <li class="user-profile">
-                            <span class="status-indicator state:online">&#9679</span>
-                            <span class="user-name">Priya</span>
-                        </li>
-                        <li class="user-profile">
-                            <span class="status-indicator">&#9679</span>
-                            <span class="user-name">Vignesh</span>
-                        </li>
-                        <li class="user-profile">
-                            <span class="status-indicator">&#9679</span>
-                            <span class="user-name">Diviya</span>
-                        </li>
-                        <li class="user-profile">
-                            <span class="status-indicator state:online">&#9679</span>
-                            <span class="user-name">Riyenth</span>
-                        </li>
-                    </ul>
-                </label>
-            </div>
-        </li>
-        <li>
-            <p></p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <div class="dis:flex flex-grow">
-                    <label class="select-container">
-                        <input type="checkbox" class="selectbox-input">
-                        <span class="select-box selectbox:custom bor-r:0 bor-radius-tr:0 bor-radius-br:0">
-                            <span class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Vignesh</span>
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico" width="14" height="14">
-                                <use xlink:href="#downarrow-ico"></use>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
                             </svg>
-                        </span>
-                        <ul class="reset:ul dropdown-list pad:5">
-                            <li class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Vimal</span>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list z-height[max]:300 z-overflow[y]:auto">
+                            <li>
+                                <a href="#">Link1</a>
                             </li>
-                            <li class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Priya</span>
+                            <li>
+                                <a href="#">Link2</a>
                             </li>
-                            <li class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Vignesh</span>
+                            <li>
+                                <a href="#">Link3</a>
                             </li>
-                            <li class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Diviya</span>
+                            <li>
+                                <a href="#">Link4</a>
                             </li>
-                            <li class="user-profile">
-                                <img src="../images/avathar.png" alt="avathar" width="26" height="26">
-                                <span class="user-name">Riyenth</span>
+                            <li>
+                                <a href="#">Link5</a>
                             </li>
                         </ul>
-                    </label>
-                    <form class="select-container dis:flex flex-grow mar-b:5">
-                        <select name="languages" class="select-box flex-grow bor-radius-tl:0 bor-radius-bl:0">
-                            <option value="Tamil">Tamil</option>
-                            <option value="English">English</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Malayalam">Malayalam</option>
-                            <option value="Telugu">Telugu</option>
-                        </select>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ico downarrow-ico pos:ab" width="14" height="14">
-                            <use xlink:href="#downarrow-ico"></use>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="zln-title z-font-s:18 z-font-w:500">Custom select option with tick icon</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:15 z-flex:wrap">
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span>Tamil</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
                         </svg>
-                    </form>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox reset:search z-pad:12">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow"/>
+                        </div>
+                        <ul class="zln-loop:list zln-loop-list[tickicon] z-bg-child[hover]:accent">
+                            <li custom-select="false" class="zln-active-option">
+                                <span>Tamil</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>English</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Hindi</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Malayalam</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Telugu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="z-pos:re z-flex:grow">
+                    <div class="zln-selectbox z-dis:flex-ai-jc" custom-select="true">
+                        <span>French</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-chevron-down" width="14" height="14">
+                            <use xlink:href="#o-ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-dropdown z-mar-t:8">
+                        <div class="zln-searchbox z-mar:15 z-pad:6">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-magnifying-glass" width="18" height="18">
+                                <use xlink:href="#o-ico-magnifying-glass"></use>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="reset:input z-pad-lr:10 z-flex:grow" size="10">
+                        </div>
+                        <ul class="zln-loop:list zln-loop-list[tickicon]">
+                            <li custom-select="false" class="zln-active-option">
+                                <span>French</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Hindi</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Arabic</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Chinesh</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                            <li custom-select="false">
+                                <span>Japanese</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="z-ico o-ico-check" width="18" height="18">
+                                    <use xlink:href="#o-ico-check"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </li>

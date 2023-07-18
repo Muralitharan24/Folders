@@ -1,112 +1,535 @@
 @import "master.less";
 
-/*----- background color style starts here -----*/
-.bg {
-   &-c{
-        &\:trans{
-            background-color: transparent;
+/*----- input style starts here -----*/
+
+.z-input{
+    &\:checkbox{
+        border-radius: 4px;
+        padding: 7px;
+        border: 1px solid @grey-bor4;
+        cursor: pointer;
+        margin:1px;
+        align-self:flex-start;
+    
+        &:checked {
+            background-color: @accentcolor;
+            border-color:@accentcolor;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' %3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        &\:red {
-            &1 {
-                background-color: @red-bg;
-            }
-            &9 {
-                @red-s-bg: 87%;
-                @red-l-bg: 97%;
-                background-color: @red-bg;
-            }
+    
+        &:disabled {
+            cursor: default;
+    
+            &:not(:checked){
+                background-color:@grey-bg6;
+            } 
+       }
+       &:focus{
+            outline: 2px solid @accentcolor;
+            outline-offset: 2px;
+       }
+    }
+    &\:text{
+        padding: 7px 10px;
+        border:1px solid @grey-bor4;
+        background-color:@grey-bg10;
+        color:@grey-txt1;
+        border-radius: 4px;
+        transition: outline .1s;
+        box-sizing:border-box;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+
+        &:focus{
+            border-color: transparent;
+            outline: 2px solid var(--accent-color);
         }
 
-        &\:green {
-            &1 {
-                background-color: @green-bg;
-            }
-            &2 {
-                @green-s : 78%;
-                @green-l : 41%;
+        &:disabled{
+            background-color: @grey-bg8;
+            border-color:@grey-bor5;
 
-                background-color: @green-bg;
-            }
-            &9 {
-                @green-s:78%;
-                @green-l:96%;
-                background-color: @green-bg;
-            }
-        }
-
-        &\:blue {
-            &1 {
-                background-color: @blue-bg;
-            }
-            &8 {
-                @blue-s:84%;
-                @blue-l:61%;
-                background-color: @blue-bg;
-            }
-            &9 {
-                @blue-s: 100%;
-                @blue-l: 93%;
-                background-color: @blue-bg;
-            }
-        }
-        &\:orange {
-            &1 {
-                background-color: @orange-bg;
-            }
-        }
-        &\:yellow {
-            &1 {
-                background-color: @yellow-bg;
-            }
-        }
-        &\:white {
-            &1 {
-                background-color: @white-bg;
-            }
-        }
-        &\:accentcolor{
-
-            background-color: @accent-theme;
-        
-        }
-        &\:grey {
-            &0 {
-                background-color: @grey-bg0;
-            }
-            &1 {
-                background-color: @grey-bg1;
-            }
-            &-child2 > *:hover,
-            &2 {
-                background-color: @grey-bg2;
-            }
-            &3 {
-                background-color: @grey-bg3;
-            }
-            &4 {
-                background-color: @grey-bg4;
-            }
-            &5 {
-                background-color: @grey-bg5;
-            }
-            &6 {
-                background-color: @grey-bg6;
-            }
-            &7 {
-                background-color: @grey-bg7;
-            }
-            &8 {
-                background-color: @grey-bg8;
-            }
-            &9 {
-                background-color: @grey-bg9;
-            }
-            &10 {
-                background-color: @grey-bg10;
+            &::placeholder{
+                color:@grey-txt4;
             }
         }
     }
-    &\[child\]-hover-c\:grey {
+    &\:radio{
+        border: 1px solid @grey-bg4;
+        border-radius: 100%;
+        padding: 7px;
+        cursor: pointer;
+        margin:1px;
+        align-self:flex-start;
+    
+        &:checked{
+            background-color: @accentcolor;
+            border-color: @accentcolor;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 8 8' fill='none'%3E%3Ccircle cx='4' cy='4' r='4' fill='white'/%3E%3C/svg%3E");        
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+    
+        }
+        &:disabled{
+            cursor: default;
+            
+            &:not(:checked){
+                background-color:@grey-bg6;
+            }
+        }
+    
+        &:focus{
+            outline: 2px solid @accentcolor;
+            outline-offset: 2px;
+        }
+        &.mark\:check{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' %3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+            background-size: 80%;
+            padding: 10px;
+        }
+    } 
+    &\:invisible{
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+}
+:is(input,select){
+    appearance: none;
+}
+.@{pre}-rounded{
+    &\:16{
+        width:16px;
+        height:16px;
+        font-size:1rem;
+    }   
+    &\:18{
+        width:18px;
+        height:18px;
+        font-size:1rem;
+    }   
+    &\:20{
+        width:20px;
+        height:20px;
+        font-size:1rem;
+    }   
+    &\:22{
+        width:22px;
+        height:22px;
+        font-size:1rem;
+    }   
+    &\:24{
+        width:24px;
+        height:24px;
+        font-size:1rem;
+    }
+    &\:32{
+        width:32px;
+        height:32px;
+        font-size:1.3rem;
+    }
+    &\:40{
+        width:40px;
+        height:40px;
+        font-size:1.6rem;
+    }
+    &\:48{
+        width:48px;
+        height:48px;
+        font-size:1.9rem;
+    }
+    &\:56{
+        width:56px;
+        height:56px;
+        font-size:2.2rem;
+    }
+    &\:64{
+        width:64px;
+        height:64px;
+        font-size:2.5rem;
+    }
+}  
+.@{z}-dis {
+    &\:flex {
+        display: flex;
+    }
+    :where(&\:flex-al-c){
+        display: flex; 
+        align-items: center;
+    }
+    :where(&\:flex-j-c){
+        display: flex; 
+        justify-content:center;
+    }
+    :where(&\:flex-j-sb){
+        display: flex; 
+        justify-content:space-between;
+    }
+    :where(&\:flex-ai-jc){
+        display: flex; 
+        align-items:center;
+        justify-content:space-between;
+    }
+    :where(&\:flex-col){
+        display: flex;
+        flex-direction: column;
+    }
+    :where(&\:flex-inline){
+        display: inline-flex;
+    }
+    &\:grid {
+        display: grid;
+    }
+    &\:none {
+        display: none;
+    }
+    &\:block {
+        display: block;
+    }
+    &\:inline{
+        display: inline;
+    }
+    &\:in-block {
+        display: inline-block;
+    }
+    &\:table {
+        display: table;
+    }
+    &\:in-flex{
+        display: inline-flex;
+    }
+
+    &\[child\]{
+		&\:flex {
+        	> *{
+				display: flex;
+			}
+	    }
+	    
+	    &\:in-flex{
+	        > *{
+				display:inline-flex;
+			}
+	    }
+	    
+	    :where(&\:flex-al-c){
+	        > *{
+				display: flex; 
+	        	align-items: center;
+			}
+	    }
+	    
+	    :where(&\:flex-j-c){
+	        > *{
+				display: flex; 
+	        	justify-content:center;
+			}
+	    }
+	    
+	    :where(&\:flex-j-sb){
+	        > *{
+				display: flex; 
+	        	justify-content:space-between;
+			}
+	    }
+	    
+	    :where(&\:flex-col){
+	        > *{
+				display: flex;
+	        	flex-direction: column;
+			}
+	    }
+	    
+	    &\:grid {
+	        > *{
+				display: grid;
+			}
+	    }
+	    
+	    &\:block {
+	        > *{
+				display: block;
+			}
+	    }
+	    
+	    &\:table {
+	        > *{
+				display: table;
+			}
+	    }
+	}
+}
+
+/*----- flex align and justify style starts here -----*/
+
+.@{z}-flex{
+    &-al{
+        &\:normal{
+            align-items:normal;
+        }
+        &\:start{
+            align-items:flex-start;
+        }
+        &\:end{
+            align-items:flex-end;
+        }
+        &\:center{
+            align-items:center;
+        }
+        &-self\:start{
+            align-self:flex-start;
+        }
+        &-self\:end{
+            align-self:flex-end;
+        }
+    }
+    &-j{
+        &\:start{
+            justify-content:flex-start;
+        }
+        &\:end{
+            justify-content:flex-end;
+        }
+        &\:center{
+            justify-content:center;
+        }
+        &\:sb{
+            justify-content:space-between;
+        }
+        &\:sa{
+            justify-content:space-around;
+        }
+        &\:se{
+            justify-content:space-evenly;
+        }
+    }
+    &-d{
+        &\:col{
+            flex-direction:column;
+        }
+        &\:row{
+            flex-direction:row;
+        }
+    }
+    &\:wrap{
+        flex-wrap: wrap;
+    }
+    &\:no-wrap{
+        flex-wrap:nowrap;
+    }
+    &\:grow{
+        flex-grow:1;
+    }
+    &\:shrink{
+        flex-shrink:1;
+    }
+}
+
+/*----- background color style starts here -----*/
+
+.@{z}-bg {
+    &\:trans{
+        background-color: transparent;
+    }
+    &\:red {
+        &1 {
+            background-color: @red-bg;
+        }
+        &2 {
+            @red-s-bg: 87%;
+            @red-l-bg: 97%;
+            background-color: @red-bg;
+        }
+    }
+
+    &\:green {
+        &1 {
+            background-color: @green-bg;
+        }
+        &2 {
+            @green-s : 78%;
+            @green-l : 41%;
+
+            background-color: @green-bg;
+        }
+    }
+
+    &\:blue {
+        @blue-s-bg:100%;
+        @blue-l-bg:68%;
+        background-color: @blue-bg;
+    }
+    &\:orange {
+        &{
+            background-color: @orange-bg;
+        }
+    }
+    &\:yellow {
+        &{
+            background-color: @yellow-bg;
+        }
+    }
+    &\:white {
+        &1{
+            background-color: @white-bg1;
+        }
+        &2{
+            background-color: @white-bg2;
+        }
+        &3{
+            background-color: @white-bg3;
+        }
+        &4{
+            background-color: @white-bg4;
+        }
+    }
+    &\:black {
+        &1{
+            background-color: @black-bg1;
+        }
+        &2{
+            background-color: @black-bg2;
+        }
+        &3{
+            background-color: @black-bg3;
+        }
+        &4{
+            background-color: @black-bg4;
+        }
+    }
+    &\:accent{
+        &{
+            background-color: @accent-theme;
+        }
+        &-dark{
+            &1{
+                background-color: @accentcolor-dark1;
+            }
+        }
+        &-light{
+            &1{
+                background-color: @accentcolor-light1;
+            }
+            &2{
+                background-color: @accentcolor-light2;
+            }
+        }
+    }
+    &-hover\:accent{
+        &:hover {
+            background-color: @accent-theme;
+        }
+        &-dark{
+            &1:hover{
+                background-color: @accentcolor-dark1;
+            }
+        }
+        &-light{
+            &1:hover{
+                background-color: @accentcolor-light1;
+            }
+            &2:hover{
+                background-color: @accentcolor-light2;
+            }
+        }
+    }
+    &-child\[hover\]\:accent{
+        > *:hover {
+            background-color: @accent-theme;
+        }
+        &-dark{
+            &1{
+                > *:hover{
+                    background-color: @accentcolor-dark1;
+                }
+            }
+        }
+        &-light{
+            &1{
+                > *:hover{
+                    background-color: @accentcolor-light1;
+                }
+            }
+            &2{
+                > *:hover{
+                    background-color: @accentcolor-light2;
+                }
+            }
+        }
+    }
+    &\:grey {
+        &0 {
+            background-color: @grey-bg0;
+        }
+        &1 {
+            background-color: @grey-bg1;
+        }
+        &2 {
+            background-color: @grey-bg2;
+        }
+        &3 {
+            background-color: @grey-bg3;
+        }
+        &4 {
+            background-color: @grey-bg4;
+        }
+        &5 {
+            background-color: @grey-bg5;
+        }
+        &6 {
+            background-color: @grey-bg6;
+        }
+        &7 {
+            background-color: @grey-bg7;
+        }
+        &8 {
+            background-color: @grey-bg8;
+        }
+        &9 {
+            background-color: @grey-bg9;
+        }
+        &10 {
+            background-color: @grey-bg10;
+        }
+    }
+    &-hover\:grey {
+        &0:hover {
+            background-color: @grey-bg0;
+        }
+        &1:hover {
+            background-color: @grey-bg1;
+        }
+        &2:hover {
+            background-color: @grey-bg2;
+        }
+        &3:hover {
+            background-color: @grey-bg3;
+        }
+        &4:hover {
+            background-color: @grey-bg4;
+        }
+        &5:hover {
+            background-color: @grey-bg5;
+        }
+        &6:hover {
+            background-color: @grey-bg6;
+        }
+        &7:hover {
+            background-color: @grey-bg7;
+        }
+        &8:hover {
+            background-color: @grey-bg8;
+        }
+        &9:hover {
+            background-color: @grey-bg9;
+        }
+        &10:hover {
+            background-color: @grey-bg10;
+        }
+    } 
+    &-child\[hover\]\:grey {
         &0 > *:hover {
             background-color: @grey-bg0;
         }
@@ -143,10 +566,15 @@
     } 
 }
 
-.bor {
+/*----- bor color style starts here -----*/
+
+.@{z}-bor{
     &-c {
+        &\:trans{
+            border-color:transparent;
+        }
         &\:red {
-            & {
+            &{
                 border-color: @red-bor;
             }
         }
@@ -163,18 +591,57 @@
             
         }
         &\:blue {
-            @blue-l-bor : 83%;
-
-            & {
+            &{
                 border-color: @blue-bor;
             }
         }
-
-        &\:accentcolor{
-              border-color: @accentcolor;        
+        &\:white{
+            &1{
+                border-color: @white-bor1;
+            }        
+            &2{
+                border-color: @white-bor2;
+            }        
+            &3{
+                border-color: @white-bor3;
+            }        
+            &4{
+                border-color: @white-bor4;
+            }        
+        }
+        &\:black{
+            &1{
+                border-color: @black-bor1;
+            }        
+            &2{
+                border-color: @black-bor2;
+            }        
+            &3{
+                border-color: @black-bor3;
+            }        
+            &4{
+                border-color: @black-bor4;
+            }        
+        }
+        &\:accent{
+            &{
+                border-color: @accentcolor;  
+            } 
+            &-dark{
+                &1{
+                    border-color: @accentcolor-dark1;  
+                }
+            }     
+            &-light{
+                &1{
+                    border-color: @accentcolor-light1;  
+                }
+                &2{
+                    border-color: @accentcolor-light2;  
+                }
+            }     
         }
         &\:grey {
-            
             &0 {
                 border-color: @grey-bor0;
             }
@@ -208,10 +675,26 @@
             &10 {
                 border-color: @grey-bor10;
             }
-        }
-        
+        } 
     }
-
+    &\[child\]-c\:accent{
+        & > *{
+            border-color: @accentcolor;  
+        } 
+        &-dark{
+            &1 > *{
+                border-color: @accentcolor-dark1;  
+            }
+        }     
+        &-light{
+            &1 > *{
+                border-color: @accentcolor-light1;  
+            }
+            &2 > *{
+                border-color: @accentcolor-light2;  
+            }
+        }     
+    }
     &\[child\]-c\:grey {
         &0 > * {
             border-color: @grey-bor0;
@@ -249,139 +732,178 @@
     }
 }
 
-.font {
-    &-c {
-        &\:red {
-            & {
-                color: @red-txt;
+/*------ font color style starts here -----*/
+
+.@{z}-txt {
+    &\:red {
+        & {
+            color: @red-txt;
+        }
+    }
+    &\:green {
+        &1 {
+            color: @green-txt;
+        }
+        &2 {
+            @green-s-txt : 78%;
+            @green-l-txt : 41%;
+
+            color: @green-txt;
+        }
+    }
+    &\:blue {
+        &1 {
+            color: @blue-txt;
+        }
+        &2{
+            @blue-s-txt : 85%;
+            @blue-l-txt : 60%;
+
+            color:@blue-txt;
+        }
+    }
+    &\:orange{
+        &{
+            color:@orange-txt;
+        }
+    }
+    &\:white{
+        &1{
+            color:@white-txt1;
+        }
+        &2{
+            color:@white-txt2;
+        }
+        &3{
+            color:@white-txt3;
+        }
+        &4{
+            color:@white-txt4;
+        }
+    }
+    &-child\[hover\]\:white{
+        &1 > *:hover{
+            color:@white-txt1;
+        }
+        &2 > *:hover{
+            color:@white-txt2;
+        }
+        &3 > *:hover{
+            color:@white-txt3;
+        }
+        &4 > *:hover{
+            color:@white-txt4;
+        }
+        
+    }
+    &\:black{
+        &1{
+            color:@black-txt1;
+        }
+        &2{
+            color:@black-txt2;
+        }
+        &3{
+            color:@black-txt3;
+        }
+        &4{
+            color:@black-txt4;
+        }
+    }
+    &\:accent{
+        &{
+            color: @accentcolor;
+        }
+        &-dark{
+            &1{
+                color:@accentcolor-dark1;
             }
         }
-
-        &\:green {
-            &1 {
-                color: @green-txt;
-            }
-            &2 {
-                @green-s-txt : 78%;
-                @green-l-txt : 41%;
-
-                color: @green-txt;
-            }
-        }
-
-        &\:blue {
-            &1 {
-                color: @blue-txt;
+        &-light{
+            &1{
+                color:@accentcolor-light1;
             }
             &2{
-                @blue-s-txt : 85%;
-                @blue-l-txt : 60%;
-
-                color:@blue-txt;
+                color:@accentcolor-light2;
             }
         }
-        &\:orange{
-            &{
-                color:@orange-txt;
+    }
+    &-hover\:accent{
+        &:hover{
+            color: @accentcolor;
+        }
+        &-dark{
+            &1:hover{
+                color:@accentcolor-dark1;
             }
         }
-        &\:white{
-            &{
-                color:@white-txt;
+        &-light{
+            &1:hover{
+                color:@accentcolor-light1;
+            }
+            &2:hover{
+                color:@accentcolor-light2;
             }
         }
-        &\:accentcolor{
-              color: @accentcolor;
+    }
+    &-child\[hover\]\:accent{
+        & > *:hover{
+            color: @accentcolor;
         }
-        &\:grey {
-
-            &0 {
-                color: @grey-txt0;
+        &-dark{
+            &1 > *:hover{
+                color:@accentcolor-dark1;
             }
-            &1 {
-                color: @grey-txt1;
+        }
+        &-light{
+            &1 > *:hover{
+                color:@accentcolor-light1;
             }
-            &2 {
-                color: @grey-txt2;
+            &2 > *:hover{
+                color:@accentcolor-light2;
             }
-            &3{
-                color: @grey-txt3;
-            }
-            &4{
-                color: @grey-txt4;
-            }
-            &5{
-                color: @grey-txt5;
-            }
-            &6{
-                color: @grey-txt6;
-            }
-            &7{
-                color: @grey-txt7;
-            }
-            &8{
-                color: @grey-txt8;
-            }
-            &9 {
-                color: @grey-txt9;
-            }
-            &10 {
-                color: @grey-txt10;
-            }
+        }
+    }
+    &\:grey {
+        &0 {
+            color: @grey-txt0;
+        }
+        &1 {
+            color: @grey-txt1;
+        }
+        &2 {
+            color: @grey-txt2;
+        }
+        &3{
+            color: @grey-txt3;
+        }
+        &4{
+            color: @grey-txt4;
+        }
+        &5{
+            color: @grey-txt5;
+        }
+        &6{
+            color: @grey-txt6;
+        }
+        &7{
+            color: @grey-txt7;
+        }
+        &8{
+            color: @grey-txt8;
+        }
+        &9 {
+            color: @grey-txt9;
+        }
+        &10 {
+            color: @grey-txt10;
         }
     }
 }
-
-
-/*----- background color style ends here -----*/
-
-/*----- font style starts here ----- */
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-/*----- font style ends here ----- */
-
-/*---- display style starts here ----*/
-
-.dis {
-    &\:flex {
-        display: flex;
-    }
-
-    &\:flex-col {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &\:grid {
-        display: grid;
-    }
-
-    &\:none {
-        display: none;
-    }
-    &\:block {
-        display: block;
-    }
-}
-
-/*---- display style starts here ----*/
-
-/*---- flex grow style starts here ----*/
-
-.flex-grow{
-   &{
-        flex-grow: 1;
-    }
-}
-
-/*---- flex grow style starts here ----*/
 
 /*----- position style starts here -----*/
 
-.pos {
+.@{z}-pos {
     &\:re {
         position: relative;
     }
@@ -389,424 +911,540 @@
     &\:ab {
         position: absolute;
     }
-}
-
-/*----- position style ends here -----*/
-
-/*----- flex align item style starts here ----*/
-
-.flex-align{
-    &\:normal{
-        align-items: normal;
+    &\:fix {
+        position: fixed;
     }
-    &\:start{
-        align-items: flex-start;
-    }
-    &\:end{
-        align-items: flex-end;
-    }
-    &\:center{
-        align-items: center;
+    &\:sticky {
+        position:sticky;
     }
 }
 
-/*----- flex align item style ends here ----*/
-
-/*----- flex  justify content style starts here ----*/
-
-.flex-justify{
-    &\:start{
-       justify-content: flex-start;
-    }
-    &\:end{
-        justify-content: flex-end;
-    }
-    &\:center{
-        justify-content: center;
-     }
-    &\:space-bet{
-        justify-content: space-between;
-    }
-}
-
-/*----- flex justify content style ends here ----*/
 
 /*---- list style starts here ----*/
 
-.list-s{
+.@{z}-list-s{
     &\:none{
         list-style: none;
     }
 }
 
-/*---- list style ends here ----*/
-
 /*---- cursor style starts here ----*/
 
-.cursor{
+.@{z}-cursor{
     &\:poi{
         cursor: pointer;
     }
-    &\:not_allow{
+    &\[child\]\:poi{
+        > *{
+            cursor: pointer;
+        }
+    }
+    &\:not-allow{
         cursor: not-allowed;
     }
 }
 
-/*---- cursor style starts here ----*/
-
 /*---- white space style starts here ----*/
-
-.white-s{
-    &\:rap{
+.@{z}-white-s{
+    &\:no-rap{
         white-space: nowrap;
     }
 }
 
-.appearance\:none{
+.@{z}-appearance\:none{
     appearance: none;
 }
 
-.flex-wrap\[wrap\]{
-    flex-wrap: wrap;
-}
-
-.user-select\:none{
+.@{z}-user-select\:none{
     user-select: none;
 }
-
-.input\:hidden{
-    display: none;
+.@{z}-user-select\[child\]\:none{
+    > *{
+        user-select: none;
+    }
 }
+
+.@{z}-txt-d\:none{
+    text-decoration: none;
+}
+
+.@{z}-focus{
+    &\:none{
+        &:focus{
+            outline:none;
+        }
+    }
+    &\[within\]\:none{
+        &:focus-within{
+            outline:none;
+        }
+    }
+}
+
+.@{z}-overflow{
+    &\:auto{
+        overflow: auto;
+    }
+    &\[x\]\:auto{
+        overflow-x:auto;
+    }
+    &\[y\]\:auto{
+        overflow-y:auto;
+    }
+    &\:hidden{
+        overflow: hidden;
+    }
+    &\[x\]\:hidden{
+        overflow-x: hidden;
+    }
+    &\[y\]\:hidden{
+        overflow-y: hidden;
+    }
+}
+
+.z-link{
+    color:@accentcolor;
+    
+    .@{z}-ico{
+        stroke:@accentcolor;
+        fill:@accentcolor;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.z-hover{
+    &\:underline{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.@{z}-txt-al{
+    &\:c{
+        text-align: center;
+    }
+    &\:j{
+        text-align:justify;
+    }
+    &\:l{
+        text-align:left;
+    }
+    &\:r{
+        text-align:right;
+    }
+}
+
+.z-transition{
+    &\:3{
+        .z-transition;
+    }
+
+    &\:2{
+        .z-transition(@sec:.2s); 
+    }
+
+    &\:1{
+        .z-transition(@sec:.1s); 
+    }
+}
+
+.@{z}-ico{
+    stroke-width: 1.5;
+    stroke: @grey-ico1;
+    flex-shrink: 0;
+    fill: @grey-ico1;
+	vertical-align: middle;
+
+    &\:accent{
+        stroke:@accentcolor;
+        fill:@accentcolor;
+    }
+    
+    &\:grey {
+		
+        &0 {
+            stroke: @grey-ico0;
+        }
+        &1 {
+            stroke: @grey-ico1;
+        }
+        &2 {
+            stroke: @grey-ico2;
+        }
+        &3{
+            stroke: @grey-ico3;
+        }
+        &4{
+            stroke: @grey-ico4;
+        }
+        &5{
+            stroke: @grey-ico5;
+        }
+        &6{
+            stroke: @grey-ico6;
+        }
+        &7{
+            stroke: @grey-ico7;
+        }
+        &8{
+            stroke: @grey-ico8;
+        }
+        &9 {
+            stroke: @grey-ico9;
+        }
+        &10 {
+            stroke: @grey-ico10;
+        }
+    }
+    
+    &.@{z}-stroke-w{
+		&\:1 {
+  			stroke-width: 1;
+		}
+		&\:2 {
+		  	stroke-width: 2;
+		}
+		&\:2\.5 {
+		  	stroke-width: 2.5;
+		}
+		&\:3 {
+		  	stroke-width: 3;
+		}
+	}
+}
+
+
 /*--- Less Loop function starts here ----*/
 
 /*---- padding loop starts here (1px - 20px) ----*/
-
-each(range(0, 20, 1), {
+.@{z}-pad{
+    each(range(0, 20, 1), {
     
-/* padding normal */
-
-    .pad\:@{value} {
+        /* padding normal */
+        
+            &\:@{value} {
+                
+                padding: ~"@{value}px";
+            }
+            &-t\:@{value} {
+                
+                padding-top: ~"@{value}px";
+            }
+            &-r\:@{value} {
+                
+                padding-right: ~"@{value}px";
+            }
+            &-b\:@{value} {
+                
+                padding-bottom: ~"@{value}px";
+            }
+            &-l\:@{value} {
+                
+                padding-left: ~"@{value}px";
+            }
+            &-tb\:@{value} {   
+                padding-top: ~"@{value}px";
+                padding-bottom: ~"@{value}px";
+            }
+            &-lr\:@{value} {
+                padding-left: ~"@{value}px";
+                padding-right: ~"@{value}px";
+            }
             
-        padding: ~"@{value}px";
-    }
-    .pad-t\:@{value} {
+        /* padding normal */
         
-        padding-top: ~"@{value}px";
-    }
-    .pad-r\:@{value} {
+        /*  padding for child   */
         
-        padding-right: ~"@{value}px";
-    }
-    .pad-b\:@{value} {
-        
-        padding-bottom: ~"@{value}px";
-    }
-    .pad-l\:@{value} {
-        
-        padding-left: ~"@{value}px";
-    }
-    .pad-tb\:@{value} {   
-        padding-top: ~"@{value}px";
-        padding-bottom: ~"@{value}px";
-    }
-    .pad-lr\:@{value} {
-        padding-left: ~"@{value}px";
-        padding-right: ~"@{value}px";
-    }
-
-/* padding normal */
-
-/*  padding for child   */
-    
-    .pad\[child\]\:@{value} > * + * {
-        
-        padding: ~"@{value}px";
-    }
-    .pad\[child\]-t\:@{value} > * + *  {
-        
-        padding-top: ~"@{value}px";
-    }
-    .pad\[child\]-b\:@{value} > * + *  {
-        
-        padding-bottom: ~"@{value}px";
-    }
-    .pad\[child\]-r\:@{value} > * + *  {
-        
-        padding-right: ~"@{value}px";
-    }
-    .pad\[child\]-l\:@{value} > * + *  {
-        
-        padding-left: ~"@{value}px";
-    }
-    .pad\[child\]-tb\:@{value} > * + *  {   
-        padding-top: ~"@{value}px";
-        padding-bottom: ~"@{value}px";
-    }
-    .pad\[child\]-lr\:@{value} > * + *  {
-        padding-left: ~"@{value}px";
-        padding-right: ~"@{value}px";
-    }
-
-/*  padding for child   */
-
-});
-
-/*---- padding loop ends here (1px - 20px) ----*/
-
-/*---- padding loop ends here (25px - 70px) ----*/
-
-each(range(25, 70, 5), {
-    
-/* padding normal */
-
-    .pad\:@{value} {
+            &\[child\]\:@{value} > * {
             
-        padding: ~"@{value}px";
-    }
-    .pad-t\:@{value} {
+                padding: ~"@{value}px";
+            }
+            &\[child\]-t\:@{value} > *  {
+                
+                padding-top: ~"@{value}px";
+            }
+            &\[child\]-b\:@{value} > *  {
+                
+                padding-bottom: ~"@{value}px";
+            }
+            &\[child\]-r\:@{value} > *  {
+                
+                padding-right: ~"@{value}px";
+            }
+            &\[child\]-l\:@{value} > *  {
+                
+                padding-left: ~"@{value}px";
+            }
+            &\[child\]-tb\:@{value} > *  {   
+                padding-top: ~"@{value}px";
+                padding-bottom: ~"@{value}px";
+            }
+            &\[child\]-lr\:@{value} > *  {
+                padding-left: ~"@{value}px";
+                padding-right: ~"@{value}px";
+            }
         
-        padding-top: ~"@{value}px";
-    }
-    .pad-r\:@{value} {
+        /*  padding for child   */
         
-        padding-right: ~"@{value}px";
-    }
-    .pad-b\:@{value} {
+    });
         
-        padding-bottom: ~"@{value}px";
-    }
-    .pad-l\:@{value} {
+        /*---- padding loop ends here (1px - 20px) ----*/
         
-        padding-left: ~"@{value}px";
-    }
-    .pad-tb\:@{value} {   
-        padding-top: ~"@{value}px";
-        padding-bottom: ~"@{value}px";
-    }
-    .pad-lr\:@{value} {
-        padding-left: ~"@{value}px";
-        padding-right: ~"@{value}px";
-    }
-
-/* padding normal */
-
-/*  padding for child   */
-    
-    .pad\[child\]\:@{value} > * + *  {
+        /*---- padding loop ends here (25px - 70px) ----*/
         
-        padding: ~"@{value}px";
-    }
-    .pad\[child\]-t\:@{value} > * + *  {
+        each(range(25, 100, 5), {
+            
+        /* padding normal */
         
-        padding-top: ~"@{value}px";
-    }
-    .pad\[child\]-b\:@{value} > * + *  {
+            &\:@{value} {
+                
+                padding: ~"@{value}px";
+            }
+            &-t\:@{value} {
+                
+                padding-top: ~"@{value}px";
+            }
+            &-r\:@{value} {
+                
+                padding-right: ~"@{value}px";
+            }
+            &-b\:@{value} {
+                
+                padding-bottom: ~"@{value}px";
+            }
+            &-l\:@{value} {
+                
+                padding-left: ~"@{value}px";
+            }
+            &-tb\:@{value} {   
+                padding-top: ~"@{value}px";
+                padding-bottom: ~"@{value}px";
+            }
+            &-lr\:@{value} {
+                padding-left: ~"@{value}px";
+                padding-right: ~"@{value}px";
+            }
         
-        padding-bottom: ~"@{value}px";
-    }
-    .pad\[child\]-r\:@{value} > * + *  {
+        /* padding normal */
         
-        padding-right: ~"@{value}px";
-    }
-    .pad\[child\]-l\:@{value} > * + *  {
+        /*  padding for child   */
         
-        padding-left: ~"@{value}px";
-    }
-    .pad\[child\]-tb\:@{value} > * + *  {   
-        padding-top: ~"@{value}px";
-        padding-bottom: ~"@{value}px";
-    }
-    .pad\[child\]-lr\:@{value} > * + *  {
-        padding-left: ~"@{value}px";
-        padding-right: ~"@{value}px";
-    }
-
-/*  padding for child   */
-
-});
-
-.pad{
-    &\:0{
-        padding:0;
-    }
+            &\[child\]\:@{value} > *{
+            
+                padding: ~"@{value}px";
+            }
+            &\[child\]-t\:@{value} > *{
+                
+                padding-top: ~"@{value}px";
+            }
+            &\[child\]-b\:@{value} > *{
+                
+                padding-bottom: ~"@{value}px";
+            }
+            &\[child\]-r\:@{value} > *{
+                
+                padding-right: ~"@{value}px";
+            }
+            &\[child\]-l\:@{value} > *{
+                
+                padding-left: ~"@{value}px";
+            }
+            &\[child\]-tb\:@{value} > *{   
+                padding-top: ~"@{value}px";
+                padding-bottom: ~"@{value}px";
+            }
+            &\[child\]-lr\:@{value} > *{
+                padding-left: ~"@{value}px";
+                padding-right: ~"@{value}px";
+            }
+        
+        /*  padding for child   */
+        
+    });
 }
+
 /*---- padding loop ends here (25px - 70px) ----*/
 
 /*---- margin loop starts here (1px - 20px) ----*/
 
-each(range(0, 20, 1), {
+.@{z}-mar{
     
-/* margin normal */
-
-    .mar\:@{value} {
-            
-        margin: ~"@{value}px";
-    }
-    .mar-t\:@{value} {
-        
-        margin-top: ~"@{value}px";
-    }
-    .mar-r\:@{value} {
-        
-        margin-right: ~"@{value}px";
-    }
-    .mar-b\:@{value} {
-        
-        margin-bottom: ~"@{value}px";
-    }
-    .mar-l\:@{value} {
-        
-        margin-left: ~"@{value}px";
-    }
-    .mar-tb\:@{value} {   
-        margin-top: ~"@{value}px";
-        margin-bottom: ~"@{value}px";
-    }
-    .mar-lr\:@{value} {
-        margin-left: ~"@{value}px";
-        margin-right: ~"@{value}px";
-    }
-
-/* margin normal */
-
-/* margin for child */
-
-    .mar\[child\]\:@{value} > * + * {
-            
-        margin: ~"@{value}px";
-    }
-    .mar\[child\]-t\:@{value} > * + *  {
-        
-        margin-top: ~"@{value}px";
-    }
-    .mar\[child\]-r\:@{value} > * + *  {
-        
-        margin-right: ~"@{value}px";
-    }
-    .mar\[child\]-b\:@{value} > * + *  {
-        
-        margin-bottom: ~"@{value}px";
-    }
-    .mar\[child\]-l\:@{value} > * + *  {
-        
-        margin-left: ~"@{value}px";
-    }
-    .mar\[child\]-tb\:@{value} > * + *  {   
-        margin-top: ~"@{value}px";
-        margin-bottom: ~"@{value}px";
-    }
-    .mar\[child\]-lr\:@{value} > * + *  {
-        margin-left: ~"@{value}px";
-        margin-right: ~"@{value}px";
-    }
-
-/* margin for child */
-
-});
-  
-/*---- margin loop ends here (1px - 20px) ----*/
-
-/*---- margin loop ends here (25px - 70px) ----*/
-
-each(range(25, 70, 5), {
-    
-/* margin normal */
-
-    .mar\:@{value} {
-            
-        margin: ~"@{value}px";
-    }
-    .mar-t\:@{value} {
-        
-        margin-top: ~"@{value}px";
-    }
-    .mar-r\:@{value} {
-        
-        margin-right: ~"@{value}px";
-    }
-    .mar-b\:@{value} {
-        
-        margin-bottom: ~"@{value}px";
-    }
-    .mar-l\:@{value} {
-        
-        margin-left: ~"@{value}px";
-    }
-    .mar-tb\:@{value} {   
-        margin-top: ~"@{value}px";
-        margin-bottom: ~"@{value}px";
-    }
-    .mar-lr\:@{value} {
-        margin-left: ~"@{value}px";
-        margin-right: ~"@{value}px";
-    }
-
-/* margin normal */
-
-/* margin for child */
-
-    .mar\[child\]\:@{value} > * + * {
-            
-        margin: ~"@{value}px";
-    }
-    .mar\[child\]-t\:@{value} > * + *  {
-        
-        margin-top: ~"@{value}px";
-    }
-    .mar\[child\]-r\:@{value} > * + *  {
-        
-        margin-right: ~"@{value}px";
-    }
-    .mar\[child\]-b\:@{value} > * + *  {
-        
-        margin-bottom: ~"@{value}px";
-    }
-    .mar\[child\]-l\:@{value} > * + *  {
-        
-        margin-left: ~"@{value}px";
-    }
-    .mar\[child\]-tb\:@{value} > * + *  {   
-        margin-top: ~"@{value}px";
-        margin-bottom: ~"@{value}px";
-    }
-    .mar\[child\]-lr\:@{value} > * + *  {
-        margin-left: ~"@{value}px";
-        margin-right: ~"@{value}px";
-    }
-
-/* margin for child */
-
-});
-
-.mar{
-    &\:0{
-        margin:0;
-    }
     &\:auto{
-        margin: auto;
+        margin:auto;
     }
+    
+    each(range(0, 20, 1), {
+    
+        /* margin normal */
+        
+        &\:@{value} {
+            
+            margin: ~"@{value}px";
+        }
+        &-t\:@{value} {
+            
+            margin-top: ~"@{value}px";
+        }
+        &-r\:@{value} {
+            
+            margin-right: ~"@{value}px";
+        }
+        &-b\:@{value} {
+            
+            margin-bottom: ~"@{value}px";
+        }
+        &-l\:@{value} {
+            
+            margin-left: ~"@{value}px";
+        }
+        &-tb\:@{value} {   
+            margin-top: ~"@{value}px";
+            margin-bottom: ~"@{value}px";
+        }
+        &-lr\:@{value} {
+            margin-left: ~"@{value}px";
+            margin-right: ~"@{value}px";
+        }
+            
+        /* margin normal */
+        
+        /* margin for child */
+        
+        &\[child\]\:@{value} > * {
+            
+            margin: ~"@{value}px";
+        }
+        &\[child\]-t\:@{value} > * {
+            
+            margin-top: ~"@{value}px";
+        }
+        &\[child\]-r\:@{value} > * {
+            
+            margin-right: ~"@{value}px";
+        }
+        &\[child\]-b\:@{value} > * {
+            
+            margin-bottom: ~"@{value}px";
+        }
+        &\[child\]-l\:@{value} > * {
+            
+            margin-left: ~"@{value}px";
+        }
+        &\[child\]-tb\:@{value} > * {   
+            margin-top: ~"@{value}px";
+            margin-bottom: ~"@{value}px";
+        }
+        &\[child\]-lr\:@{value} > * {
+            margin-left: ~"@{value}px";
+            margin-right: ~"@{value}px";
+        }
+        
+        /* margin for child */
+        
+    });
+          
+    /*---- margin loop ends here (1px - 20px) ----*/
+    
+    /*---- margin loop ends here (25px - 70px) ----*/
+        
+    each(range(25, 70, 5), {
+            
+        /* margin normal */
+        
+        &\:@{value} {
+            
+            margin: ~"@{value}px";
+        }
+        &-t\:@{value} {
+            
+            margin-top: ~"@{value}px";
+        }
+        &-r\:@{value} {
+            
+            margin-right: ~"@{value}px";
+        }
+        &-b\:@{value} {
+            
+            margin-bottom: ~"@{value}px";
+        }
+        &-l\:@{value} {
+            
+            margin-left: ~"@{value}px";
+        }
+        &-tb\:@{value} {   
+            margin-top: ~"@{value}px";
+            margin-bottom: ~"@{value}px";
+        }
+        &-lr\:@{value} {
+            margin-left: ~"@{value}px";
+            margin-right: ~"@{value}px";
+        }
+    
+        /* margin normal */
+        
+        /* margin for child */
+            
+        &\[child\]\:@{value} > * {
+            
+            margin: ~"@{value}px";
+        }
+        &\[child\]-t\:@{value} > * {
+            
+            margin-top: ~"@{value}px";
+        }
+        &\[child\]-r\:@{value} > * {
+            
+            margin-right: ~"@{value}px";
+        }
+        &\[child\]-b\:@{value} > * {
+            
+            margin-bottom: ~"@{value}px";
+        }
+        &\[child\]-l\:@{value} > * {
+            
+            margin-left: ~"@{value}px";
+        }
+        &\[child\]-tb\:@{value} > * {   
+            margin-top: ~"@{value}px";
+            margin-bottom: ~"@{value}px";
+        }
+        &\[child\]-lr\:@{value} > * {
+            margin-left: ~"@{value}px";
+            margin-right: ~"@{value}px";
+        } 
+        
+        /* margin for child */
+        
+    });
 }
+
 /*---- margin loop ends here (25px - 70px) ----*/
 
 /*---- Font size style starts here ----*/
 
-each(range(10, 30, 1), {
-    
-    .font-s\:@{value} {
-        
-       font-size: ~"@{value}px";
+.generate-fontsize(@n, @i: 1) when (@i =< @n) {
+    .@{z}-font-s\:@{i} {
+      font-size: (@i * 3rem / @n);
     }
-    
-});
+    .@{z}-font\[child\]-s\:@{i}{
+        > *{
+          font-size: (@i * 3rem / @n);
+        }
+    }
+    .generate-fontsize(@n, (@i + 1));
+  }
+  .generate-fontsize(30);
 
 /*---- Font size style ends here ----*/
 
 /*---- Font weight style starts here ----*/
 
-each(range(100, 800, 100), {
+each(range(100, 900, 100), {
     
-    .font-w\:@{value} {
-        
+    .@{z}-font-w\:@{value} {
        font-weight: ~"@{value}";
     }
     
@@ -815,64 +1453,8 @@ each(range(100, 800, 100), {
 /*---- Font weight style ends here ----*/
 
 /*---- border radius style starts here ----*/
+.@{z}-bor{
 
-each(range(0, 20, 1), {
-    
-    .bor-radius\:@{value} {   
-       border-radius: ~"@{value}px";
-    }
-    .bor-radius-tl\:@{value} {   
-      border-top-left-radius: ~"@{value}px";
-    }
-    .bor-radius-tr\:@{value} {   
-      border-top-right-radius: ~"@{value}px";
-    }
-    .bor-radius-br\:@{value} {   
-     border-bottom-right-radius: ~"@{value}px";
-    }
-    .bor-radius-bl\:@{value} {   
-     border-bottom-left-radius: ~"@{value}px";
-    }
-    
-});
-
-
-/*---- border radius style ends here ----*/
-
-/*---- gap style starts here ----*/
-
-each(range(1, 30, 1), {
-    
-    .gap\:@{value} {   
-       gap: ~"@{value}px";
-    }
-    
-});
-/*---- gap style ends here ----*/
-
-/*---- line height starts here ----*/
-
-each(range(10, 20, 1), {
-    
-    .line-h\:@{value} {   
-       line-height: ~"@{value}px";
-    }
-    
-});
-
-each(range(22, 40, 2), {
-    
-    .line-h\:@{value} {   
-       line-height: ~"@{value}px";
-    }
-    
-});
-
-/*---- line height ends here ----*/
-
-/*---- border style starts here ----*/
-
-.bor{
     &\:none{
         border:none;
     }
@@ -900,23 +1482,37 @@ each(range(22, 40, 2), {
             border-style: dashed;
         }
     }
-}
+    &-radius{
+        each(range(0, 10, 1), {
+            &\:@{value} {   
+               border-radius: ~"@{value}px";
+            }
+            
+            &\[child\]\:@{value} {   
+                > *{
+                    border-radius: ~"@{value}px";
+                }
+            }
+        }); 
+        
+        each(range(15, 30, 5), {
+            &\:@{value}{
+                border-radius: ~"@{value}px";
+            }
+            &\[child\]\:@{value} {   
+                > *{
+                    border-radius: ~"@{value}px";
+                }
+            }
+        })
 
-.divide{
-    &\:last{
-        & > *{
-            border-bottom-width:1px;
+        &\[\%\]\:100{
+            border-radius:100%;
         }
     }
 
-   & > * + *{
-        border-top-width:1px;
-    }
-}
+    each(range(0, 2, 1), {
 
-each(range(0, 2, 1), {
-
-    .bor{
         &\:@{value}{
             border-width: ~"@{value}px";
         }
@@ -931,23 +1527,43 @@ each(range(0, 2, 1), {
             &\:@{value}{
                 border-top-width: ~"@{value}px";
             }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-top-width: ~"@{value}px"; ;
+                }
+            }
         }
     
         &-l{
             &\:@{value}{
                 border-left-width: ~"@{value}px";
             }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-left-width: ~"@{value}px";
+                }
+            }    
         }
     
         &-r{
             &\:@{value}{
                 border-right-width: ~"@{value}px";
             }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-right-width: ~"@{value}px";
+                }
+            }
         }
     
         &-b{
             &\:@{value}{
                 border-bottom-width: ~"@{value}px";
+            }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-bottom-width: ~"@{value}px";
+                }
             }
         }
     
@@ -956,6 +1572,12 @@ each(range(0, 2, 1), {
                 border-top-width: ~"@{value}px";
                 border-bottom-width: ~"@{value}px";
             }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-top-width: ~"@{value}px";
+                    border-bottom-width: ~"@{value}px";
+                }
+            }
         }
     
         &-lr{
@@ -963,78 +1585,157 @@ each(range(0, 2, 1), {
                 border-left-width: ~"@{value}px";
                 border-right-width: ~"@{value}px";
             }
+            &\[child\]-w{
+                &\:@{value} > *{
+                    border-left-width: ~"@{value}px";
+                    border-right-width: ~"@{value}px";
+                }
+            }
         }
+        
+    });
+    
+}
+.@{z}-divide{
+    &\:last{
+        & > *{
+            border-bottom:1px solid @grey-bor6;
+        }
+    }
+
+    & > * + *{
+        border-top:1px solid @grey-bor6;
+    }
+}
+/*---- gap style starts here ----*/
+
+each(range(1, 30, 1), {
+    
+    .@{z}-gap\:@{value} {   
+       gap: ~"@{value}px";
     }
     
 });
+/*---- gap style ends here ----*/
 
-/*---- border style starts here ----*/
+/*---- line height starts here ----*/
+.@{z}-line-h{
 
-each(range(100, 1000, 100), {
+    each(range(10, 20, 1), {
+    
+        &\:@{value} {   
+           line-height: ~"@{value}px";
+        }
+        
+    });
+    
+    each(range(22, 40, 2), {
+        
+        &\:@{value} {   
+           line-height: ~"@{value}px";
+        }
+        
+    });
+    
+}
 
-    .width\:@{value}{
-        width:~"@{value}px";
+/*---- line height ends here ----*/
+
+.@{z}-txt-transform\:uc {
+    text-transform: uppercase;
+}
+
+.@{z}-width{
+
+    each(range(50, 1000, 100), {
+
+        &\:@{value}{
+            width:~"@{value}px";
+        }
+    
+    });
+    
+    each(range(10, 100, 10), {
+    
+        &\[\%\]\:@{value}{
+            width:~"@{value}%";
+        }
+    
+    });
+    
+    each(range(50, 1000, 50), {
+    
+        &\[min\]\:@{value}{
+            min-width:~"@{value}px";
+        }
+    
+    });
+    
+    each(range(50, 1000, 50), {
+    
+        &\[max\]\:@{value}{
+            max-width:~"@{value}px";
+        }
+    
+    });
+
+}
+.@{z}-height{
+    each(range(300, 1000, 50), {
+    
+        &\[min\]\:@{value}{
+            min-height:~"@{value}px";
+        }
+        &\[max\]\:@{value}{
+            max-height:~"@{value}px";
+        }
+    
+    });
+    &\:auto{
+        height:auto;
     }
+}
 
+each(range(0, 50, 1), {
+    
+    .@{z}-top\:@{value} {   
+       top: ~"@{value}px";
+    }
+    .@{z}-left\:@{value} {   
+       left: ~"@{value}px";
+    }
+    .@{z}-right\:@{value} {   
+       right: ~"@{value}px";
+    }
+    
 });
-
-each(range(10, 100, 10), {
-
-    .width\[\%\]\:@{value}{
-        width:~"@{value}%";
+each(range(55, 100, 5), {
+    
+    .@{z}-top\:@{value} {   
+       top: ~"@{value}px";
     }
-
+    .@{z}-left\:@{value} {   
+       left: ~"@{value}px";
+    }
+    .@{z}-right\:@{value} {   
+       right: ~"@{value}px";
+    }
+    
 });
-
-each(range(100, 1000, 50), {
-
-    .width\[min\]\:@{value}{
-        min-width:~"@{value}px";
-    }
-
+each(range(10, 50, 5), {
+    
+    :where(.@{z}-list-gap\:@{value} ){   
+        >  * + *{
+            margin-top: ~"@{value}px";
+        }
+        
+    }  
 });
-
-each(range(100, 1000, 50), {
-
-    .width\[max\]\:@{value}{
-        max-width:~"@{value}px";
-    }
-
+each(range(1, 3, 1), {
+    
+    .@{z}-index\:@{value} {   
+        z-index:~"@{value}"; 
+    }  
 });
 
 /*--- Less Loop function ends here ----*/
-
-:where(.title){
-    margin: 0;
-    font-weight: 600;
-    font-size: 18px;
-}
-:where(.select-option){
-    position: relative;
-    display: flex;
-    gap:10px;
-    align-items: flex-start;
-    font-size: 15px;
-    cursor: pointer;
-    user-select: none;
-
-    &.type\:row{
-        padding: 15px 10px;
-    }
-    &.type\:column{
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-}
-
-
-// @grey-bg1:#09f;
-
-// @grey-bg:--grey;
-// each(range(0, 10, 1), {
-//     .bg-c\: {
-//         &@{value}{
-//             background-color: ~"@{grey-bg}@{value}";
-//         }
-//     }
-// })

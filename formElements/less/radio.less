@@ -1,72 +1,43 @@
 @import "master.less";
 
-:where(.radio-option){
-    border: 1px solid @grey-bg4;
-    border-radius: 100%;
-    padding: 7px;
-    cursor: pointer;
-    margin:1px;
+.@{pre}-option-wrapper{
+    .@{pre}-select-option{
+        flex-grow: 1;
 
-    &:checked{
-        background-color: @accentcolor;
-        border-color: @accentcolor;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 8 8' fill='none'%3E%3Ccircle cx='4' cy='4' r='4' fill='white'/%3E%3C/svg%3E");        
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50%;
-
-    }
-    &:disabled{
-        cursor: default;
+        &.@{pre}-focus-within{
+            border-color: transparent;
+            border-radius: 5px;
+            box-shadow:0px 0px 0px 2px @accentcolor;
+        }
         
-        &:not(:checked){
-            background-color:@grey-bg6;
+    }
+    .@{pre}-select-option:first-child{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .@{pre}-select-option:last-child{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &.@{pre}-group-option{
+        .@{pre}-select-option{
+            &.@{pre}-focus-within{
+                --accent-l: 98%;
+                background-color: @accentcolor-light2;
+                box-shadow:0px 0px 0px 1px @accentcolor;
+
+                & .@{z}-txt\:grey2{
+                    color: @accentcolor;
+                }
+
+                & + .@{pre}-select-option{
+                    border-top:none;
+                }
+
+
+            }
         }
     }
-
-    &:focus{
-        outline: 2px solid @accentcolor;
-        outline-offset: 2px;
-    }
-    &.mark\:check{
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' %3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
-        background-size: 80%;
-        padding: 10px;
-    }
-} 
-.select\:focus{
-    &:focus-within{
-        border-color: transparent;
-        border-radius: 5px;
-        box-shadow:0px 0px 0px 2px @accentcolor
-    }
-} 
-.invisible-option{
-   width: 0;
-   height: 0;
-   position: absolute;
 }
-.option-wrapper{
-    .option-focus:first-child{
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .option-focus:last-child{
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-}
-.text-accent{
-    color: @grey-txt2;
-}
-.option-active{
-    --accent-l: 98%;
-    background-color: @accentcolor-light2;
-    border-color: @accentcolor;
-
-    & .text-accent{
-        color: @accentcolor;
-    }
-}
-
     

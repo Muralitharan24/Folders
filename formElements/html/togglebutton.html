@@ -7,156 +7,85 @@
     <title>Document</title>
 </head>
 <body>
-    <ul class="reset:ul list-gap:25">
+    <ul class="reset:ul z-list-gap:25">
         <li>
-            <p class="title">Simple toggle</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label>
-                    <span class="toggle">
-                        <input type="checkbox">
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
+            <div class="zln-title z-font-s:18 z-font-w:500">Simple toggle</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:10">
+                <label class="zln-toggle">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                </label>
+                <label class="zln-toggle s-type:outline">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
             </div>
         </li>
         <li>
-            <p class="title">Short toggle</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label>
-                    <span class="toggle short-toggle">
-                        <input type="checkbox">
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle button with icon</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:10">
+                <label class="zln-toggle s-type:icon">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                </label>
+                <label class="zln-toggle s-type:outline s-type:icon">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
             </div>
         </li>
         <li>
-            <p class="title">Toggle with icon</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10">
-                <label>
-                    <span class="toggle toggle:icon">
-                        <input type="checkbox">
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle button with text</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:10">
+                <label class="zln-toggle s-type:text">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state" on-data="On" off-data="Off">
+                        <span class="zln-toggle-btn"></span>
+                    </span>
+                </label>
+                <label class="zln-toggle s-type:text s-type:outline">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state" on-data="On" off-data="Off">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
             </div>
         </li>
         <li>
-            <p class="title">Toggle with left label and description</p>
-            <div class="dis:flex pad-tb:30 pad-lr:15 width[max]:550 mar:auto user-select:none mar-t:10">
-                <label class="dis:flex flex-align:center flex-justify:space-bet flex-grow cursor:poi">
-                    <span class="dis:flex-col">
-                        <span class="font-w:600">Available to hire</span>
-                        <span class="font-c:grey2 font-s:15 mar-t:3">Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+            <div class="zln-title z-font-s:18 z-font-w:500">Toggle button with different sizes</div>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:10">
+                <label class="zln-toggle s-size:small">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
                     </span>
-                    <span class="toggle">
-                        <input type="checkbox">
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
+                </label>
+                <label class="zln-toggle s-type:outline s-size:medium">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
             </div>
-        </li>
-        <li>
-            <p class="title">Toggle with right label</p>
-            <div class="dis:flex pad-tb:30 pad-lr:15 width[max]:250 mar:auto user-select:none mar-t:10">
-                <label class="dis:flex flex-align:center flex-justify:space-bet flex-grow cursor:poi">
-                    <span class="toggle">
-                        <input type="checkbox">
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>
-                        <span class="font-w:600">Annual billing</span>
-                        <span class="font-c:grey2 font-s:15">(Save 10%)</span>
+            <div class="z-dis:flex z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-gap:10">
+                <label class="zln-toggle s-type:text s-size:small">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state" on-data="On" off-data="Off">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
-            </div>
-        </li>
-        <li>
-            <p class="title">Disabled toggles</p>
-            <div class="dis:flex-col pad-tb:30 pad-lr:15 width[max]:250 mar:auto user-select:none mar-t:10">
-                <label class="dis:flex flex-align:center flex-grow cursor:poi gap:20">
-                    <span class="toggle">
-                        <input type="checkbox" disabled>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span class="font-c:grey2">Disabled unchecked</span>
-                </label>
-                <label class="dis:flex flex-align:center flex-grow cursor:poi mar-t:20 gap:20">
-                    <span class="toggle">
-                        <input type="checkbox" checked disabled>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span class="font-c:grey2">Disabled checked</span>
-                </label>
-            </div>
-        </li>
-        <li>
-            <p class="title">Toggles with theme color</p>
-            <div class="dis:flex-col pad-tb:30 pad-lr:15 width[max]:250 mar:auto user-select:none mar-t:10">
-                <label class="dis:flex flex-align:center flex-grow cursor:poi gap:20">
-                    <span class="toggle">
-                        <input type="checkbox" checked>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>Default toggle theme</span>
-                </label>
-                <label class="dis:flex flex-align:center flex-grow cursor:poi mar-t:20 gap:20">
-                    <span class="toggle toggle-theme:sucess">
-                        <input type="checkbox" checked>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>Success toggle theme</span>
-                </label>
-                <label class="dis:flex flex-align:center flex-grow cursor:poi mar-t:20 gap:20">
-                    <span class="toggle toggle-theme:failed">
-                        <input type="checkbox" checked>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>Failed toggle theme</span>
-                </label>
-                <label class="dis:flex flex-align:center flex-grow cursor:poi mar-t:20 gap:20">
-                    <span class="toggle toggle-theme:warning">
-                        <input type="checkbox" checked>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>Warning toggle theme</span>
-                </label>
-                <label class="dis:flex flex-align:center flex-grow cursor:poi mar-t:20 gap:20">
-                    <span class="toggle toggle-theme:info">
-                        <input type="checkbox" checked>
-                        <span class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                    <span>Info toggle theme</span>
-                </label>
-            </div>
-        </li>
-        <li>
-            <p class="title">Toggle with text</p>
-            <div class="dis:flex bor:1 bor-style:solid bor-c:grey4 pad-tb:20 pad-lr:15 bor-radius:6 mar-t:10 gap:15">
-                <label>
-                    <span class="toggle toggle:text">
-                        <input type="checkbox">
-                        <span on-data="ON" off-data="OFF"class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
-                    </span>
-                </label>
-                <label>
-                    <span class="toggle toggle:text">
-                        <input type="checkbox">
-                        <span on-data="Toggle Switched" off-data="Toggle Unswitched"class="toggle-state"></span>
-                        <span class="toggle-btn"></span>
+                <label class="zln-toggle s-type:text s-type:outline s-size:medium">
+                    <input type="checkbox" class="z-toggle-hide">
+                    <span class="zln-toggle-state" on-data="On" off-data="Off">
+                        <span class="zln-toggle-btn"></span>
                     </span>
                 </label>
             </div>

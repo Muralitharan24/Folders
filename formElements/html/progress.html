@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="z-list-gap:25">
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Default progress bar</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <div class="zln-progress-line:fg">
+                    <div class="zln-progress-line:bg" style="width:40%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Progress bar in different sizes</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10 z-list-gap:20">
+                <div class="zln-progress-line:fg">
+                    <div class="zln-progress-line:bg" style="width:40%;"></div>
+                </div>
+                <div class="zln-progress-line:fg s-size:small">
+                    <div class="zln-progress-line:bg" style="width:40%;"></div>
+                </div>
+                <div class="zln-progress-line:fg s-size:medium">
+                    <div class="zln-progress-line:bg" style="width:40%;"></div>
+                </div>
+                <div class="zln-progress-line:fg s-size:large">
+                    <div class="zln-progress-line:bg" style="width:40%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Progress bar with data outside</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <div class="zln-progress-container">
+                    <div class="zln-data-container z-dis:flex-ai-jc z-pad-b:10">
+                        <span class="zln-meta-data z-font-w:500 z-txt:accent">Progress</span>
+                        <span class="zln-meta-data z-font-w:500 z-txt:accent">40%</span>
+                    </div>
+                    <div class="zln-progress-line:fg">
+                        <div class="zln-progress-line:bg" style="width:40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Generate tick when loading ends</div>
+            <div class="z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <svg class="zln-show-tick" width="40" height="40" viewBox="0 0 30 30">
+                    <circle cx="15" cy="15" r="12" class="zln-progress-round:fg" fill="none" /> 
+                    <circle cx="15" cy="15" r="12" class="zln-progress-round:bg" fill="none" stroke-dasharray="75" stroke-dashoffset="0" /> 
+                    <rect width="12" height="4" x="11" y="12" fill="none" class="zln-checkmark" stroke-dasharray="36" stroke-dashoffset="-18" />
+                </svg>
+            </div>
+        </div>
+        <div class="zln-component">
+            <div class="zln-title z-font-s:18 z-font-w:500">Spinner in button</div>
+            <div class="z-dis:flex-al-c z-gap:20 z-bor:1 z-bor-style:solid z-bor-c:grey4 z-pad-tb:20 z-pad-lr:15 z-bor-radius:5 z-mar-t:10">
+                <button class="z-btn">
+                    <svg class="zln-show-tick" width="14" height="14" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="12" class="zln-progress-round:fg" fill="none" /> 
+                        <circle cx="15" cy="15" r="12" class="zln-progress-round:bg" fill="none" stroke-dasharray="75" stroke-dashoffset="0" /> 
+                        <rect width="12" height="4" x="11" y="12" fill="none" class="zln-checkmark" stroke-dasharray="36" stroke-dashoffset="-18" />
+                    </svg>
+                    <span class="z-pad-l:6">Loading...</span>
+                </button>
+                <button class="z-btn s-type:outline">
+                    <svg class="zln-show-tick" width="14" height="14" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="12" class="zln-progress-round:fg" fill="none" /> 
+                        <circle cx="15" cy="15" r="12" class="zln-progress-round:bg" fill="none" stroke-dasharray="75" stroke-dashoffset="0" /> 
+                        <rect width="12" height="4" x="11" y="12" fill="none" class="zln-checkmark" stroke-dasharray="36" stroke-dashoffset="-18" />
+                    </svg>
+                    <span class="z-pad-l:6">Loading...</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

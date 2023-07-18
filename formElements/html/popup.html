@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="zln-component">
+        <div class="zln-title z-font-s:18 z-font-w:500">Default popup</div>
+        <div class="z-pos:re z-bor:1 z-bor-style:solid z-bor-c:grey4 z-bor-radius:5 z-mar-t:10 z-height[min]:600">
+            <div class="zln-fadebg"></div>
+            <div class="zln-popup-container">    
+                <div class="zln-popup z-width:600">
+                    <div class="zln-header z-dis:flex-ai-jc z-pad:20 z-bor-b:1 z-bor-style:solid z-bor-c:grey5">
+                        <div class="zln-title z-font-s:18 z-font-w:500">Static model</div>
+                        <button class="zln-closebtn reset:btn zln-item[hover] z-dis:in-flex z-cursor:poi">
+                            <svg viewBox="0 0 24 24" class="z-ico o-ico-x-mark" width="22" height="22">
+                                <use xlink:href="#o-ico-x-mark"></use>
+                            </svg>
+                        </button> 
+                    </div>
+                    <div class="zln-data z-pad:20 z-txt-al:justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rem repudiandae, minus corporis veritatis atque suscipit nam ea nostrum nemo dicta eveniet fuga vero ab. Id nostrum asperiores consequuntur fuga?
+                        Hic harum fugiat ut eveniet impedit culpa quis facere neque error sint ex ad, assumenda unde dignissimos porro optio, quae asperiores molestias autem. Quas suscipit at, quasi ratione sunt reprehenderit!
+                        Id, unde fuga? Laboriosam, tenetur necessitatibus! Totam, nemo sapiente doloremque esse asperiores fugiat sit possimus cum facilis dolor perspiciatis eligendi placeat animi. Enim, fuga! Necessitatibus nobis veritatis ullam obcaecati tempore?
+                    </div>
+                    <div class="zln-footer z-dis:flex-al-c z-gap:10 z-pad:20 z-bor-t:1 z-bor-style:solid z-bor-c:grey5">
+                        <button class="z-btn">Accept</button>
+                        <button class="z-btn s-type:outline z-bor-c:grey4 z-txt:grey0 z-bg-hover:grey7">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zln-component">
+        <div class="zln-title z-font-s:18 z-font-w:500">Simply with grey footer</div>
+        <div class="z-pos:re z-bor:1 z-bor-style:solid z-bor-c:grey4 z-bor-radius:5 z-mar-t:10 z-height[min]:600">
+            <div class="zln-fadebg"></div>
+            <div class="zln-popup-container">    
+                <div class="zln-popup s-theme:red z-width:500 z-bor-radius:10">
+                    <div class="z-dis:flex z-gap:15 z-pad:20">
+                        <div class="zln-popup-ico zln-rounded zln-rounded:40">
+                            <svg viewBox="0 0 24 24" class="z-ico o-ico-exclamation-triangle" width="22" height="22">
+                                <use xlink:href="#o-ico-exclamation-triangle"></use>
+                            </svg>
+                        </div>
+                        <div class="zln-content">
+                            <div class="z-font-w:600 z-font-s:16">Deactivate account</div>
+                            <div class="z-txt:grey2 z-pad-t:10">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</div>
+                        </div>
+                    </div>
+                    <div class="zln-btn-container z-dis:flex z-flex-j:end z-pad-tb:15 z-pad-lr:20 z-gap:15 z-bg:grey8">
+                        <button class="z-btn s-type:outline-dark">Cancel</button>
+                        <button class="zln-btn-theme z-btn">Deactivate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zln-component">
+        <div class="zln-title z-font-s:18 z-font-w:500">Centered with single action</div>
+        <div class="z-pos:re z-bor:1 z-bor-style:solid z-bor-c:grey4 z-bor-radius:5 z-mar-t:10 z-height[min]:600">
+            <div class="zln-fadebg"></div>
+            <div class="zln-popup-container">    
+                <div class="zln-popup s-theme:green z-width:400 z-dis:flex-col z-flex-al:center z-gap:15 z-pad:20 z-bor-radius:10">
+                    <div class="zln-popup-ico z-bg:green zln-rounded zln-rounded:40">
+                        <svg viewBox="0 0 24 24" class="z-ico o-ico-exclamation-triangle" width="22" height="22">
+                            <use xlink:href="#o-ico-exclamation-triangle"></use>
+                        </svg>
+                    </div>
+                    <div class="zln-content z-txt-al:c">
+                        <div class="z-font-w:600">Deactivate account</div>
+                        <div class="z-txt:grey2 z-pad-t:10">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</div>
+                    </div>
+                    <button class="z-btn z-width[%]:100">Go back to dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
